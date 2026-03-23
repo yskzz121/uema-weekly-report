@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上間沖縄天ぷら 石川店 週次レポート 2026/03/15-03/21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-red:#CC2200;--brand-red-light:#FF4422;--brand-red-dark:#991100;
+  --brand-yellow:#F5C518;--brand-yellow-light:#FFD84A;--brand-white:#FFFFFF;
+  --chart-store:#F5C518;--chart-order:#CC2200;
+  --bg-page:#FDF8F2;--bg-card:#FFFFFF;--bg-section:#FFF5EC;--bg-header:#CC2200;
+  --text-primary:#1A0A00;--text-secondary:#5A3A2A;--text-dim:#9A7A6A;--text-white:#FFFFFF;
+  --accent-blue:#2266AA;--accent-orange:#E07830;--accent-green:#1A8A50;
+  --border:rgba(204,34,0,0.12);--border-light:rgba(204,34,0,0.06);
+  --shadow-card:0 2px 12px rgba(204,34,0,0.08);--shadow-hover:0 8px 24px rgba(204,34,0,0.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;background:var(--bg-page);color:var(--text-primary);line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+
+.header{background:linear-gradient(135deg,#CC2200 0%,#991100 60%,#6B0B00 100%);padding:32px 0 0;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-40px;right:-40px;width:300px;height:300px;background:var(--brand-yellow);opacity:0.07;border-radius:50%}
+.header-top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:28px}
+.header-left{display:flex;align-items:center;gap:18px}
+.logo-mark{background:var(--brand-yellow);color:var(--brand-red-dark);font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:28px;width:72px;height:72px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,0.3);letter-spacing:-1px}
+.header-brand{color:white}
+.brand-main{font-size:20px;font-weight:900;letter-spacing:0.05em}
+.brand-sub{font-size:12px;opacity:0.7;margin-top:2px}
+.header-right{color:white;text-align:right}
+.report-period{font-size:22px;font-weight:700}
+.report-label{font-size:12px;opacity:0.65;margin-top:2px}
+
+.score-banner{background:rgba(0,0,0,0.25);border-top:1px solid rgba(255,255,255,0.12);padding:20px 0;position:relative}
+.score-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--brand-yellow),#FFD84A,var(--brand-yellow))}
+.score-inner{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.score-circle-wrap{flex-shrink:0;position:relative;width:120px;height:120px}
+.score-circle-wrap svg{position:absolute;top:0;left:0}
+.score-circle-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+.score-num{font-family:'M PLUS Rounded 1c',sans-serif;font-size:36px;font-weight:900;color:white;line-height:1}
+.score-denom{font-size:13px;color:rgba(255,255,255,0.6)}
+.score-grade-wrap{display:flex;flex-direction:column;gap:4px}
+.score-grade{font-family:'M PLUS Rounded 1c',sans-serif;font-size:42px;font-weight:900;line-height:1;color:var(--brand-yellow)}
+.score-grade-label{font-size:14px;color:rgba(255,255,255,0.85);font-weight:700}
+.score-items{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap}
+.score-item{background:rgba(255,255,255,0.1);border-radius:12px;padding:10px 18px;text-align:center;min-width:130px}
+.score-item-label{font-size:11px;color:rgba(255,255,255,0.65);margin-bottom:4px}
+.score-item-bar{height:6px;background:rgba(255,255,255,0.2);border-radius:100px;overflow:hidden;margin-bottom:5px}
+.score-item-fill{height:100%;border-radius:100px;background:var(--brand-yellow);width:0;transition:width 1.6s ease-out}
+.score-item-pts{font-family:'M PLUS Rounded 1c',sans-serif;font-size:22px;font-weight:700;color:white}
+.score-item-max{font-size:11px;color:rgba(255,255,255,0.5)}
+
+.section{padding:28px 0;animation:fadeInUp 0.6s ease both}
+.section-header{background:var(--brand-red);color:white;padding:12px 20px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:10px}
+.sec-icon{font-size:18px}.sec-title{font-size:16px;font-weight:700}.sec-sub{font-size:11px;opacity:0.7;margin-left:auto}
+.section-body{background:var(--bg-section);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;padding:20px}
+
+.kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.kpi-card{background:white;border-radius:12px;padding:18px 16px;box-shadow:var(--shadow-card);border-top:4px solid var(--brand-red);transition:all 0.25s ease;cursor:default;animation:fadeInUp 0.6s ease both}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.kpi-card.orange{border-top-color:var(--accent-orange)}.kpi-card.green{border-top-color:var(--accent-green)}.kpi-card.blue{border-top-color:var(--accent-blue)}
+.kpi-label{font-size:11px;color:var(--text-dim);font-weight:700;letter-spacing:0.06em;margin-bottom:5px}
+.kpi-value{font-family:'M PLUS Rounded 1c',sans-serif;font-size:24px;font-weight:700;line-height:1.1}
+.kpi-sub{font-size:11px;color:var(--text-dim);margin-top:4px}
+.kpi-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:100px;margin-top:5px}
+.badge-up{background:#E8F5E9;color:#1A8A50}.badge-down{background:#FFEBEE;color:#CC2200}.badge-ok{background:#FFF8E1;color:var(--accent-orange)}
+
+.chart-legend{display:flex;gap:20px;justify-content:flex-end;margin-bottom:14px;font-size:12px}
+.legend-item{display:flex;align-items:center;gap:6px}.legend-dot{width:14px;height:14px;border-radius:3px}
+.daily-chart-area{display:flex;align-items:flex-end;gap:6px;height:230px;padding-left:52px;position:relative}
+.y-axis{position:absolute;left:0;top:0;width:48px;height:calc(100% - 90px);display:flex;flex-direction:column;justify-content:space-between;text-align:right;font-size:10px;color:var(--text-dim);padding-right:6px}
+.grid-lines{position:absolute;left:52px;right:0;top:0;bottom:90px;pointer-events:none}
+.grid-line{position:absolute;left:0;right:0;height:1px;background:rgba(204,34,0,0.06)}
+.day-col{flex:1;display:flex;flex-direction:column;align-items:center;position:relative}
+.bar-stack-wrap{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:140px;gap:1px;position:relative;cursor:pointer}
+.bar-seg{width:78%;transform-origin:bottom;animation:barGrow 1.2s ease-out both;border-radius:0}
+.bar-seg.store{background:var(--chart-store)}.bar-seg.order{background:var(--chart-order)}
+.bar-tooltip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(26,10,0,0.92);color:white;font-size:11px;padding:8px 12px;border-radius:8px;white-space:nowrap;z-index:20;pointer-events:none;line-height:1.8}
+.bar-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:rgba(26,10,0,0.92)}
+.day-col:hover .bar-tooltip{display:block}
+.day-info{margin-top:6px;text-align:center;width:100%}
+.day-label{font-size:12px;font-weight:700;color:var(--text-secondary)}.day-date{font-size:10px;color:var(--text-dim)}
+.day-total{font-size:10px;font-weight:700;color:var(--text-primary);margin-top:3px}
+.day-store-lbl{font-size:9px;color:#B5A000}.day-order-lbl{font-size:9px;color:var(--chart-order)}
+
+.compare-table{width:100%;border-collapse:collapse;font-size:13px}
+.compare-table th{padding:10px 14px;font-weight:700;font-size:12px}
+.compare-table td{padding:9px 14px;border-bottom:1px solid var(--border-light);vertical-align:middle}
+.compare-table tr:last-child td{border-bottom:none}.compare-table tbody tr:hover td{background:#fdfaf7}
+.th-weekday{background:#E3EEF8;color:var(--accent-blue)}.th-weekend{background:#FFF0E0;color:var(--accent-orange)}.th-diff{background:#F5F5F0;color:var(--text-secondary)}
+.diff-positive{color:var(--accent-orange);font-weight:700}.diff-negative{color:var(--accent-blue);font-weight:700}
+.diff-cell{display:flex;flex-direction:column;align-items:center;gap:3px}
+.diff-pct{font-size:13px;font-weight:700}.diff-sep{width:60%;height:1px;background:rgba(0,0,0,0.08)}.diff-amt{font-size:11px;opacity:0.85}
+.insight-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.insight-item{display:flex;align-items:flex-start;gap:10px;background:white;padding:10px 14px;border-radius:8px;border-left:4px solid var(--brand-yellow);font-size:12px;line-height:1.6}
+.insight-icon{font-size:16px;flex-shrink:0;line-height:1.6}
+
+.time-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.time-panel-title{font-size:13px;font-weight:700;margin-bottom:12px;padding:6px 12px;border-radius:6px;display:inline-block}
+.time-panel-title.weekday{background:#E3EEF8;color:var(--accent-blue)}.time-panel-title.weekend{background:#FFF0E0;color:var(--accent-orange)}
+.time-chart{display:flex;align-items:flex-end;gap:8px;height:140px}
+.time-bar-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end}
+.time-bar{width:80%;border-radius:4px 4px 0 0;transform-origin:bottom;animation:barGrow 1.2s ease-out both}
+.time-bar.peak{background:var(--brand-red)}.time-bar.sub-peak{background:var(--brand-yellow)}.time-bar.normal{background:#C8B8B0}
+.time-label{font-size:10px;color:var(--text-secondary)}.time-val{font-size:9px;color:var(--text-dim)}
+
+.loss-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.loss-card{background:white;border-radius:10px;padding:14px;text-align:center;box-shadow:var(--shadow-card);border-top:3px solid var(--brand-red)}
+.loss-card-label{font-size:11px;color:var(--text-dim);margin-bottom:5px}
+.loss-card-val{font-family:'M PLUS Rounded 1c',sans-serif;font-size:20px;font-weight:700;color:var(--brand-red)}
+.loss-card-pct{font-size:11px;color:var(--text-dim);margin-top:3px}
+
+.loss-row-v2{display:grid;grid-template-columns:24px 1fr 56px 3fr 56px 56px 56px 64px;gap:6px;align-items:center;padding:7px 6px;border-radius:6px;border-bottom:1px solid var(--border-light);transition:background 0.15s}
+.loss-row-v2:hover{background:#fdfaf7}.loss-row-v2:last-child{border-bottom:none}
+.loss-rank{font-size:11px;font-weight:700;color:white;background:var(--brand-red);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.loss-rank.low{background:var(--text-dim)}
+.loss-name-v2{font-size:12px;color:var(--text-secondary);font-weight:600}
+.loss-pct-v2{font-size:11px;font-weight:700;color:var(--brand-red);text-align:right;white-space:nowrap}
+.loss-bar-wrap{flex:1;background:#f0e8e4;border-radius:0;height:16px;overflow:hidden}
+.loss-bar{height:100%;border-radius:0;background:linear-gradient(90deg,var(--brand-red),var(--brand-red-light));transition:width 1.2s ease-out}
+.loss-qty{font-size:11px;font-weight:700;text-align:center;padding:2px 4px;border-radius:4px;white-space:nowrap}
+.loss-qty.wd{background:#E3EEF8;color:var(--accent-blue)}.loss-qty.we{background:#FFF0E0;color:var(--accent-orange)}.loss-qty.tot{background:#F5F5F0;color:var(--text-secondary)}
+.loss-val-v2{font-size:12px;color:var(--brand-red);font-weight:700;text-align:right;white-space:nowrap}
+.loss-analysis-box{background:white;border-radius:10px;padding:14px 16px;border-left:4px solid var(--brand-red);font-size:12px;line-height:1.7;color:var(--text-secondary)}
+.loss-analysis-box .analysis-title{font-weight:700;color:var(--brand-red);font-size:13px;margin-bottom:8px}
+.analysis-item{display:flex;gap:8px;margin-bottom:5px}.analysis-item::before{content:'→';color:var(--brand-red);flex-shrink:0}
+
+.abc-tabs{display:flex;gap:0;margin-bottom:0}
+.abc-tab{padding:8px 24px;font-size:13px;font-weight:700;cursor:pointer;border:none;background:#f0e8e4;color:var(--text-dim);transition:all 0.2s;font-family:'Noto Sans JP',sans-serif}
+.abc-tab:first-child{border-radius:8px 0 0 0}.abc-tab:last-child{border-radius:0 8px 0 0}
+.abc-tab.active{background:var(--brand-red);color:white}.abc-tab:hover:not(.active){background:#e0d0c8;color:var(--text-secondary)}
+.abc-panel{display:none}.abc-panel.active{display:block}
+.abc-col-header{display:grid;grid-template-columns:26px 1fr 3fr 60px 60px 64px 80px;gap:6px;align-items:center;padding:4px 6px;margin-top:12px;margin-bottom:4px;font-size:10px;font-weight:700;color:var(--text-dim);letter-spacing:0.05em}
+.abc-row{display:grid;grid-template-columns:26px 1fr 3fr 60px 60px 64px 80px;gap:6px;align-items:center;padding:8px 6px;border-bottom:1px solid var(--border-light);transition:background 0.15s}
+.abc-row:hover{background:#fdfaf7}.abc-row:last-child{border-bottom:none}
+.abc-rank-hot{font-size:11px;font-weight:900;background:var(--brand-yellow);color:var(--brand-red-dark);width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.abc-rank-cold{font-size:11px;font-weight:900;color:white;background:#9A7A6A;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.abc-name{font-size:12px;color:var(--text-secondary);font-weight:600}
+.abc-bar-wrap{height:10px;background:#f0e8e4;border-radius:0;overflow:hidden}
+.abc-bar-hot{height:100%;border-radius:0;background:linear-gradient(90deg,var(--brand-yellow),var(--brand-yellow-light));transition:width 1.2s ease-out}
+.abc-bar-cold{height:100%;border-radius:0;background:linear-gradient(90deg,#C8B8B0,#9A7A6A);transition:width 1.2s ease-out}
+.abc-qty{font-size:11px;font-weight:700;text-align:center;padding:2px 4px;border-radius:4px;white-space:nowrap}
+.abc-qty.wd{background:#E3EEF8;color:var(--accent-blue)}.abc-qty.we{background:#FFF0E0;color:var(--accent-orange)}.abc-qty.tot{background:#F5F5F0;color:var(--text-secondary)}
+.abc-amount{font-size:12px;font-weight:700;text-align:right;white-space:nowrap}.abc-amount.hot{color:var(--brand-red)}.abc-amount.cold{color:var(--text-dim)}
+
+.staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.staff-card{background:white;border-radius:10px;padding:12px 14px;box-shadow:var(--shadow-card);border-left:4px solid var(--brand-yellow);transition:all 0.25s ease}
+.staff-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.staff-name{font-weight:700;font-size:13px}.staff-days{font-size:11px;color:var(--text-dim)}
+.labor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.labor-item{background:white;border-radius:10px;padding:12px;text-align:center;box-shadow:var(--shadow-card)}
+.labor-label{font-size:11px;color:var(--text-dim);margin-bottom:3px}.labor-val{font-family:'M PLUS Rounded 1c',sans-serif;font-size:18px;font-weight:700}
+
+.improvement-header{background:linear-gradient(135deg,#CC2200,#991100);color:white;padding:22px 28px;border-radius:14px 14px 0 0;position:relative;overflow:hidden}
+.improvement-header::before{content:'';position:absolute;right:-20px;top:-20px;width:120px;height:120px;border-radius:50%;background:var(--brand-yellow);opacity:0.1}
+.imp-title{font-size:22px;font-weight:900}.imp-sub{font-size:12px;opacity:0.72}
+.filter-bar{display:flex;gap:8px;padding:14px 0;flex-wrap:wrap}
+.filter-btn{padding:5px 14px;border-radius:100px;border:2px solid var(--border);background:white;font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'Noto Sans JP',sans-serif}
+.filter-btn.active,.filter-btn:hover{background:var(--brand-red);border-color:var(--brand-red);color:white}
+.priority-action-card{background:var(--brand-red);border-radius:12px;padding:22px;color:white;border-left:8px solid var(--brand-yellow);animation:slideInLeft 0.8s ease-out,pulseBorder 3s infinite 1s;position:relative;overflow:hidden;margin-bottom:14px}
+.priority-badge{display:inline-flex;align-items:center;gap:5px;background:var(--brand-yellow);color:var(--brand-red-dark);font-size:11px;font-weight:900;padding:3px 10px;border-radius:100px;margin-bottom:10px}
+.priority-title{font-size:18px;font-weight:900;margin-bottom:14px}
+.action-steps{display:flex;flex-direction:column;gap:10px}
+.action-step{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.12);border-radius:8px;transition:all 0.2s;font-size:13px}
+.action-step.checked{text-decoration:line-through;opacity:0.45}
+.step-num{background:var(--brand-yellow);color:var(--brand-red-dark);font-weight:900;font-size:12px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-check{margin-left:auto;width:20px;height:20px;border-radius:5px;border:2px solid rgba(255,255,255,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent;transition:all 0.2s}
+.step-check.checked{background:var(--brand-yellow);border-color:var(--brand-yellow)}.step-check.checked::after{content:'✓';color:var(--brand-red-dark);font-size:12px;font-weight:900}
+.complete-msg{display:none;text-align:center;padding:12px;background:rgba(255,255,255,0.15);border-radius:8px;font-size:15px;font-weight:700;margin-top:10px;animation:fadeIn 0.5s ease}
+.kpi-highlight-row{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.kpi-hl-item{background:rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;text-align:center}
+.kpi-hl-val{font-family:'M PLUS Rounded 1c',sans-serif;font-size:20px;font-weight:700}.kpi-hl-label{font-size:10px;opacity:0.78}
+.imp-cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.imp-card{background:white;border-radius:12px;padding:18px;box-shadow:var(--shadow-card);border-top:4px solid var(--brand-red);transition:all 0.25s ease}
+.imp-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);border-top-width:7px}
+.imp-card[data-priority="today"]{border-top-color:var(--brand-yellow)}.imp-card[data-priority="month"]{border-top-color:var(--text-dim)}
+.imp-card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}.imp-icon{font-size:24px}.imp-card-title{font-size:15px;font-weight:900}
+.data-badge{display:inline-flex;gap:4px;background:#FFF8E1;border:1px solid var(--brand-yellow);color:var(--text-secondary);font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px;margin-bottom:9px}
+.data-badge .hl{color:var(--brand-red);font-size:12px}
+.imp-list{list-style:none;display:flex;flex-direction:column;gap:5px}
+.imp-list li{display:flex;gap:7px;font-size:12px;color:var(--text-secondary);line-height:1.5}
+.imp-list li::before{content:'•';color:var(--brand-red);flex-shrink:0;font-size:15px;line-height:1.3}
+.difficulty-badge{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px;margin-top:8px}
+.diff-1{background:#E8F5E9;color:#1A8A50}.diff-2{background:#FFF8E1;color:var(--accent-orange)}.diff-3{background:#FFEBEE;color:var(--brand-red)}
+.mini-sparkline{height:36px;display:flex;align-items:flex-end;gap:3px;margin-top:10px;padding-top:8px;border-top:1px solid var(--border-light)}
+.spark-bar{flex:1;border-radius:2px 2px 0 0;background:linear-gradient(180deg,var(--brand-red-light),var(--brand-red))}.spark-bar.yellow{background:linear-gradient(180deg,var(--brand-yellow-light),var(--brand-yellow))}
+.mini-gauge{margin-top:10px;padding-top:8px;border-top:1px solid var(--border-light)}
+.gauge-track{height:7px;background:#f0e8e4;border-radius:100px;overflow:hidden}
+.gauge-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--accent-green),#4CAF50);transition:width 1.2s ease-out}
+.gauge-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--text-dim);margin-top:3px}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes barGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulseBorder{0%,100%{border-left-color:var(--brand-yellow)}50%{border-left-color:rgba(245,197,24,0.4)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.footer{background:var(--brand-red-dark);color:rgba(255,255,255,0.55);text-align:center;padding:18px;font-size:11px;margin-top:28px}
+@media print{.filter-bar,.step-check,.complete-msg{display:none!important}*{animation:none!important;transition:none!important}}
+@media(max-width:768px){
+  body{padding:0}
+  .container{padding:0 10px}
+  .header{padding:24px 0 0}
+  .header-top{flex-direction:column;align-items:flex-start;gap:12px;padding-bottom:20px}
+  .logo-mark{width:56px;height:56px;font-size:22px}
+  .brand-main{font-size:17px}
+  .report-period{font-size:18px}
+  .score-items{margin-left:0}
+  .kpi-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .kpi-value{font-size:20px}
+  .kpi-label{font-size:10px}
+  .imp-cards-grid{grid-template-columns:1fr}
+  .time-grid{grid-template-columns:1fr}
+  .staff-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .labor-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .sec-title{font-size:14px}
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table th,table td{white-space:nowrap;padding:6px 8px;font-size:12px}
+}
+@media(max-width:480px){
+  .header-top{gap:8px}
+  .logo-mark{width:48px;height:48px;font-size:18px;border-radius:12px}
+  .brand-main{font-size:15px}
+  .report-period{font-size:15px}
+  .score-num{font-size:28px}
+  .score-grade{font-size:32px}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .kpi-value{font-size:18px}
+  .staff-grid,.labor-grid{grid-template-columns:1fr}
+  .sec-title{font-size:13px}
+  .footer{font-size:10px;padding:14px 8px}
+}
+</style>
+</head>
+<body>
+
+<!-- ① ヘッダー -->
+<header class="header">
+  <div class="container">
+    <div class="header-top">
+      <div class="header-left">
+        <div class="logo-mark">石川</div>
+        <img src="data:image/png;base64,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qaKK+OxGIqYifPUep6EIKCsgooornLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoFFPiG6ZB6sB+tUldpLqLpc+ONd1Iaz4g1LVPJ8n7bdS3Hl7t2zexbbnAzjOM4FZtB6miv0ZKysjx3uFFFFMAooooAKKKKACiiigAooooAK+/wCvgCvv+gAooooA+AKKKKACiiigAooooAWrmn6rqGkzNPp1/c2czoUaS2maNiuQdpKkZGQOOnFUqXFJq6swOi1zxz4m8Ro0ep6xcSwsgR4I8RROA24bkQBSc85IzwPQVztFFKMIwVoqw229wrtvh98PrrxpqBkkL2+kW7AXFyByx4PlpwQWORzyFByckhW2/h78KbvXJ7bVNet3t9GKCaOMth7oHOBwcqpxkk4JBG3ruHv1raW1jbrbWdtDbW6Z2wwRiNFySThQABkkngdSa8zMMzhhlyQ1l+X9djalRc9XsUtB0HT/AA1o8Ol6ZD5cEfJJILSMQMuxwMscDJ6AAAAAADToor5CrVnWm5zd2z0IxUVZBRRRWRQUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCsfxau7wV4gHpplyfyiY/0rYrkPilLNB8M9bkhleJ/LjUsjFSVaVFYEjsQxBHcEjoa3wsOetCPdr8yJu0Wz5Yooor9BPJCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooAnggluriK3gieWeVwkcaKWZ2JwAAOSSe1e5eAfg/BZI2oeLLWOa73DybIuGSLa2dzlThyccLyuCcgk4XL+AmnWc95rOoS2yPd2ohSCZskxBxJvx2BIUDPXGR0JB9xrws1zKdB+xp6O2/8AkdVCiprmkGSSSeSetFFFfKtt6s7rBRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvK/jvdW6eEdPs2kxdTXwljTaeURHDHOMDBdOp798HHqleF/H3UPM1fRdMMO3yLd7jzd2dwkYLtxjjHlE5zzu7Y59PKafPi49lr+BjXdqbPHaKKK+2PMCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooA9E+DviFNE8apZzu4ttTT7MQHYKJSQY2KgHcc5QdMeYTkDNfSVfGFvPLa3EVxbyvFPE4eOSNirIwOQQRyCD3r658M6yniHwzpurqyE3UCvII1ZVWQcOoDc4DhgMk5xkEjk/OZ9h/hrpeT/Q7MLPeJrUUUV8ydoUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwDvXzB8V9SXUfiNqhiuZJobcpboGLYjKIA6AHoBJv6cEknnOT9NXV1BY2k95dSeXbQRtLNJtLbUUEscAEnABOACeK+Ob+9uNSv7m+u5PMubmVppX2gbnY5Y4AwMkngcV9BkFK9SVR9F+f/DHJi5aJFSiiivqDhCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooAWva/gT4jhjW+8NzFEkdzd27HALnaFdck8kBVYADOA5J4rxStTw/q8mga/p+rRB2NpOsrIkmwyKD8ybgDgMuVPB4J4NYYmgq9KVN9UVCXLJM+waKitrmC9tILu1k8y3uIllik2ldyMNynBAIyCDggHnmpa+BnBwk4SVmtD1k01dBRRRWYwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDifivrb6L8P77y2dZr5hZI6qrABwS4bPTKK4yASCRjHUfMFewfHfXfO1PTdCilyltGbmcJNkF34VWQdGVVJBPaXgAcnx+vtMmo+zwqb3ev+R5uIlefoJRRRXqmAUUUUAFFFFABRRRQAUUUUAFFFFABX3/XwBX3/AEAFFFFAHwBRRRQAUUUUAFFFFABRRRQAUUUUAe+fA7xN9s0e58Nzt++scz2/HWFm+YcLj5XbOSST5mAMLXrVfIPhrXZvDXiSx1i3Xe1tJuaPIHmIRtdckHG5Swzg4zkcivrLSdUtdb0m01OyffbXUQkQ5BIBHKtgkBgcggE4II7V8rneE5JqtFaPf1/4J3YapdcrLlFFFeCdYUUUUgCiiimAUUUUgCiiimAUUUUgClUFmCgZJOAKSuQ+J+tLonw+1OTKebdp9jiWRWIYyZDAY6EJvYEkDKjr0OtGk6tRQXWyJlJRV30Mb4f/ABA1Pxj4q1i3Nqg0aINLby+SVeMFlWNGYMVyVDsQckndg4AA9IryL4CWE0Wi6zqBaMw3FxHAqgncGjUsSRjpiVcEeh46Z9drvzanTpYj2dNWskZUJOUbsKKKK8w3CiiikAUUUUwCiiikAUqguwUcknAHvSVw3xZ8QJofgW7gSfZeagPssKgKSVP+sJDHO3ZuUkAkFl6EgjahSdaoqa6smUlFXfQ+fvFmtnxH4p1PVizslxOTF5iKrCIfKgIXjIUKDjOSOp61iUUV+gwgoRUVsjyW7u4lFFFUIKKKKACiiigAooooAKKKKACiiigAr7/r4Ar7/oAKKKKAPgCiiigAooooAKKKKACiiigAooooAWvaPgj4wcTnwndndG4eaycsxKsAGaMDkBcBnHQAhs5LDHi9TQTyWs8U8ErxTRuHSRGKsrA5BBHII9axxFCNek6cupUJcskz7PorA8G+J7fxd4at9UgG2X/VXSBCojmCguq5J+X5gQcngjPOQN+vgq1GdGbpzVmj1YyUldBRRRWJQUUUUAFFFFABRRRQAUUUUAFfP3xx137d4pt9GWLaumRZZmXBZ5VVjg5IKhQmOByW68Gvb/EGtQeHPD99rFypaO1iL7Mkb2yAq5AONzFVzggZyeAa+Rr69n1G/uL66k8y5uZWllfaF3MxyTgcDknpXv5Fhuao6z2X5v8A4H5nLip2jy9z6P8Ag7Yw2nw3spomdmvJZZ5Qx4Vt5j+X0+WNTzk5J5xgDvKo6LYzaXoOmabcMjTWdpFbu0ZJUsiBSQSASCRxkA47Cr1edmNT2mJnLz/A1pK0EgooorhNQooooAKKKKACiiigAr5t+MXiFNa8ayWcDubfS0+zYLNtMoJMjBSBtIOEJ5z5YOSMV7b488Tf8In4QvNSjbF02ILTjP75gdp5Uj5QGbBGDtxnJr5PzX0eRYXV15dNF+px4qenKhKKKK+mOIKKKKACiiigAooooAKKKKACiiigAooooAK+/wCvgCvv+gAooooA+AKKKKACiiigAooooAKKKKACiiigAooooA7P4b+MW8H+JUklOdOu9sN2GZsIpYfvAFzll5PQ5BYDBOR9QRSxzwpNDIksMihkkjYMrKRkEEcEEEEEcEGvi2va/gz45iihHhbVLhIxuzpzFANxZiWjLDuScrkZOWGc7Vrxc4wHtoe1gveX4r/gHTh6vK+V7HtVFFFfIHoBRRRTAKKKKQBRRRTAKKKyfEfiCy8MaFc6reugSJT5cbPtM0mCVjU4JyxHUA4GSeASKhBzkoRV3eyE2lqzyD45eJvtGo23hqBv3dpi4ueOsrL8i8qCMIxOQSD5nqtefeDdI/t3xlpOnNb/AGiKW5UzRb9u6JTuk5yCPkDdDn05xWVfXs+o31xfXT+Zc3ErSyvtC7mY5JwOByT0Fem/AvREvfEl9q8qoy6fCEjBYhlllyAwA4I2rIDn+8CBnkfcU6ccFhbL7K+9nmSk6lQ9+ooor4Zu7ueoFFFFIAooopAFFFFMApQCSAASScACkryz4v8Ajz+x9Pfw7pskD3t7EyXh+80ETADbgjAZwT15AGcAsrDow2HliKqpw6kTmoJtnmXxN8Xp4u8UNJaSu2mWieVahgyhv7z7STgsehwCVVcgEGuK60UV95RpRo01ThsjypScndiUUUVoIKKKKACiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooAKKKKACiiigAooooA+mvhl4+bxnps1vfKiarZqvnFSqidDx5gUcjBADADaCVxgMFHeV8b6Zqd7o+pQahp1w1vdwNujkXGQfQjoQQSCCCCCQQQa+mfAXj2y8aacQQlvqsKg3NqCfpvTPJQnt1U4BzkFvls2y50261Je718juw9a/us6+iiivnzrCiiigAooooAK+c/i543TxJrC6Vp8ySaXYMSJYpGK3EpAy3YELyq4B6sQSGAHpPxY8bP4Y0NNPsJXj1W/U+XLFIoaCMEBnI5I3cqpAHIYggrg/Npr6XJMF/zETXp/mceJq/YQV9JfBjSobHwBFeqUabUJpJXYRhWUKxjVC3VgNhYZwAXIA6k/O9jZz6jf21jap5lxcyrFEm4DczHAGTwOSOtfYWn2UWmabaafA0jQ2kKQRmQgsVRQoJIABOAM4AHsK7M6r8mH5FvIyw0bzv2LNFFFfHHohRRRQAUUUUAFFFc/4v8X6d4O0c3t8d8z5W3tlYB5mAHA64UZBLEEAEcEkA6QhKclGKu3shNpK7IfHXi6Dwb4dlviYXvZPktLeRiPNfIycDkqoO49BwBkFhXy7qmp3us6lPqOo3LXF3O26SRupPTAHQAAAADgAAAACrXiHxDqPijWJdT1ObzJn4RV4SJOSEUZ4UZ+uck5JJORX2eW4FYWn73xP+rHm1qvO7dBKKKK9IxCiiigAooooAKKKKACiiigAooooAKKKKACiiigAr7/r4Ar7/AKACiiigD4AooooAKKKKACiiigAooooAKKKKACiiigAooooAWrumaleaPqMGoWFw9vdQNujkTqD0+hBBIIOQQSDxVKihpNWYJ21PqXwD49s/GumkfJBqsCg3NsD2zjencoTx3KkgHOQW7CvjfS9TvdH1KDUdOuGt7uBt8ci4yD0wR0IIJBByCCQQQa+hfAPxSs/FUZtNVa1sNWDAIgYrHOGbC+XuJO7JAKkkngjPIX5XMspdNurQV11XY7qNdP3ZHodFFFeAdYVjeKfEdr4U8PXOr3SeYsWFjhDhWldjhVBP4k4BIUMcHGK0L+/tNKsJ7+/uEt7SBS8krk4UZx25JJIAABJJAAJIFfL3j7xjN4y8QyXamdNOi+Szt5WBMa4ALEDjcxGT1I4GSFFenluAeKqe98K3/wAjCtVUF5syPEGuXniTXLrVr8x/aLhgWEa7VUABVUD0AAHOTxyScmsuiivtYxUUoxWiPObu7s9Q+B2jNfeMJtVZXEWm27YZWXHmSAoAwPJBXzDx0IHPY/Qtch8NPDkvhjwTa2tyHS6uWN3PG2R5bOFAXBAKkKqgg5IYNzjFdfXx+cYj2uI5U9I6f5noYeHLG76hRRRXjnQFFFFMAopkssdvDJPNIkcMal3kdgFVQCSSTwAACSTwAK8s8bfGSx01JdP8Nsl7eMjI14D+6gYNjKgj96cAkEHbypywJFdGHwtXET5aauROagrs7Txb4z0nwfpslxezJJd7QYLFJAJZSSQDjkquVOWIwMHGTgH5j8Q+IdR8UaxLqepzb5n4VVyEiTnCKD0UZ/HknJJJq6pqd7rOpT6hqNy1xdztukkbGSegGBwAAAABgAAAAAVSr67AZbTwq5t5d/8AI8+rWc9OglFFFekYhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFff8AXwBX3/QAUUUUAfAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAexeBfjLLaH7B4rlmuYTsWG9VAzx4wpEgGCy4y24ZbIOQ2RjvZvi54JihkdNYaVkUssaWsu6QjnaMqBk9BkgZ6kDmvmKkrzK+UYatPnej8jeGInFW3O2+IPxAuvGmoCOPfBpMDE29sTgsf+ej4JyxBPGSFBIGcktxNFFd9GjCjBQgrIylJyd2FdZ8PfDA8VeMLWxlUNZxD7RdjPWJcZX7wPzEquQcjdnsa5OvV/gn4l0rRNQ1Ox1O8S0N8sTRSzMEi+QPkMxICkhuM8HBGc4BnEzlToynBXdtAgk5JM9+JJJJOSaK5nUviF4R0ryvtPiCxfzc7fssn2jGMZz5Qbb1GM4zzjODjMu/i94KtrN54tVkupFxiCG2lDtk44Lqq9OTkjgHGTgH4dYPEzd+R/cz0/aQXVHc0V5LqHx60eHyjpujXt1nPmi5kSDb0xt27855z0xgdc8cjqnxw8T3u9bCKy01PNLRtHF5sgTkBGL5U8EZIUHI7DIrrpZPip7xsvNkSxEF1ufQV1dW9jayXV5cRW1vHjfNM4RFyQBliQBkkAZPUgV5/r/xn8N6PLLb2Czarcx8DyCEhLBiGBkOSeASCqspyMHkkfPt/qmoatOs+o31zeTKgRZLiVpGC5JwCxJAySce5qlXq4fIqcWnVlfy6f5nPPFN/CdZ4n+IniLxYrQ3t4ILJsZs7UGOI42n5hkl+VDDcTgk4x0rk6KK9unShTjywVkczk29RKKKKsQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV9/wBfAFff9ABRRRQB8AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABX3/AF8AV9/0AFFFFAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFFff9FAHwBRX3/RQB8AUV9/0UAfAFff8ARRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==" alt="上間沖縄天ぷら" style="height:72px;width:auto;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.4));">
+        <div class="header-brand">
+          <div class="brand-main">上間沖縄天ぷら</div>
+          <div class="brand-sub">週次パフォーマンスレポート</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="report-period">2026年03月15日（日）〜 03月21日（土）</div>
+        <div class="report-label">集計期間</div>
+      </div>
+    </div>
+  </div>
+  <div class="score-banner">
+    <div class="container">
+      <div class="score-inner">
+        <div class="score-circle-wrap">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="10"/>
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#F5C518" stroke-width="10" stroke-dasharray="326.7" stroke-dashoffset="326.7" stroke-linecap="round" transform="rotate(-90 60 60)" id="scoreArc"/>
+          </svg>
+          <div class="score-circle-center">
+            <div class="score-num" id="scoreTotalNum">0</div>
+            <div class="score-denom">/ 100点</div>
+          </div>
+        </div>
+        <div class="score-grade-wrap">
+          <div class="score-grade" id="scoreGrade">-</div>
+          <div class="score-grade-label" id="scoreGradeLabel">集計中...</div>
+        </div>
+        <div class="score-items">
+          <div class="score-item">
+            <div class="score-item-label">売上・予算達成率（40点満点）</div>
+            <div class="score-item-bar"><div class="score-item-fill" id="barSales"></div></div>
+            <div class="score-item-pts"><span id="ptsSales">0</span><span class="score-item-max"> / 40</span></div>
+          </div>
+          <div class="score-item">
+            <div class="score-item-label">ロス率（30点満点）</div>
+            <div class="score-item-bar"><div class="score-item-fill" id="barLoss"></div></div>
+            <div class="score-item-pts"><span id="ptsLoss">0</span><span class="score-item-max"> / 30</span></div>
+          </div>
+          <div class="score-item">
+            <div class="score-item-label">人件費率（30点満点）</div>
+            <div class="score-item-bar"><div class="score-item-fill" id="barLabor"></div></div>
+            <div class="score-item-pts"><span id="ptsLabor">0</span><span class="score-item-max"> / 30</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ② KPIカード -->
+<div class="container" style="margin-top:24px;">
+  <div class="kpi-grid">
+    <div class="kpi-card" style="animation-delay:0s">
+      <div class="kpi-label">週間合計売上</div>
+      <div class="kpi-value" data-count="969293" data-format="currency">¥969,293</div>
+      <span class="kpi-badge badge-up">▲ 予算比 +14.7%</span>
+      <div class="kpi-sub">日平均 ¥138,470</div>
+    </div>
+    <div class="kpi-card orange" style="animation-delay:0.1s">
+      <div class="kpi-label">週間店舗前出売上</div>
+      <div class="kpi-value" data-count="717971" data-format="currency">¥717,971</div>
+      <div class="kpi-sub">合計売上の74%</div>
+    </div>
+    <div class="kpi-card green" style="animation-delay:0.2s">
+      <div class="kpi-label">週間注文売上</div>
+      <div class="kpi-value" data-count="251322" data-format="currency">¥251,322</div>
+      <div class="kpi-sub">注文 31件</div>
+    </div>
+    <div class="kpi-card" style="animation-delay:0.3s">
+      <div class="kpi-label">ロス率（前出比）</div>
+      <div class="kpi-value" data-count="5.157142837245516" data-suffix="%">5.2%</div>
+      <span class="kpi-badge badge-up">目標6.0%以下 ✓</span>
+      <div class="kpi-sub">週間ロス ¥37,026</div>
+    </div>
+    <div class="kpi-card blue" style="animation-delay:0.4s">
+      <div class="kpi-label">人件費率</div>
+      <div class="kpi-value" data-count="18.62811348065033" data-suffix="%">18.6%</div>
+      <span class="kpi-badge badge-up">目標25.0%以下 ✓</span>
+      <div class="kpi-sub">週間人件費 ¥180,561</div>
+    </div>
+  </div>
+</div>
+
+<!-- ③ 日別売上チャート -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <span class="sec-icon">📊</span>
+      <span class="sec-title">日別売上推移</span>
+      <span class="sec-sub">店舗前出売上 + 注文売上</span>
+    </div>
+    <div class="section-body">
+      <div class="chart-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--chart-store)"></div><span>店舗前出売上</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--chart-order)"></div><span>注文売上</span></div>
+      </div>
+      <div class="daily-chart-area">
+        <div class="y-axis"><div>¥200,000</div><div>¥160,000</div><div>¥120,000</div><div>¥80,000</div><div>¥40,000</div><div>¥0</div></div>
+        <div class="grid-lines"><div class="grid-line" style="top:100.0%"></div><div class="grid-line" style="top:80.0%"></div><div class="grid-line" style="top:60.0%"></div><div class="grid-line" style="top:40.0%"></div><div class="grid-line" style="top:20.0%"></div><div class="grid-line" style="top:0.0%"></div></div>
+        
+    <div class="day-col">
+        <div class="bar-tooltip">
+            日（3/15）<br>
+            注文：¥9,704<br>
+            前出：¥150,124<br>
+            合計：¥159,828
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:6.8px"></div>
+            <div class="bar-seg store" style="height:105.1px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">日</div>
+            <div class="day-date">3/15</div>
+            <div class="day-total">¥159,828</div>
+            <div class="day-store-lbl">前出 ¥150,124</div>
+            <div class="day-order-lbl">注文 ¥9,704</div>
+        </div>
+    </div>
+    <div class="day-col">
+        <div class="bar-tooltip">
+            月（3/16）<br>
+            注文：¥9,675<br>
+            前出：¥84,912<br>
+            合計：¥94,587
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:6.8px"></div>
+            <div class="bar-seg store" style="height:59.4px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">月</div>
+            <div class="day-date">3/16</div>
+            <div class="day-total">¥94,587</div>
+            <div class="day-store-lbl">前出 ¥84,912</div>
+            <div class="day-order-lbl">注文 ¥9,675</div>
+        </div>
+    </div>
+    <div class="day-col">
+        <div class="bar-tooltip">
+            火（3/17）<br>
+            注文：¥71,019<br>
+            前出：¥66,407<br>
+            合計：¥137,426
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:49.7px"></div>
+            <div class="bar-seg store" style="height:46.5px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">火</div>
+            <div class="day-date">3/17</div>
+            <div class="day-total">¥137,426</div>
+            <div class="day-store-lbl">前出 ¥66,407</div>
+            <div class="day-order-lbl">注文 ¥71,019</div>
+        </div>
+    </div>
+    <div class="day-col">
+        <div class="bar-tooltip">
+            水（3/18）<br>
+            注文：¥82,534<br>
+            前出：¥86,404<br>
+            合計：¥168,938
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:57.8px"></div>
+            <div class="bar-seg store" style="height:60.5px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">水</div>
+            <div class="day-date">3/18</div>
+            <div class="day-total">¥168,938</div>
+            <div class="day-store-lbl">前出 ¥86,404</div>
+            <div class="day-order-lbl">注文 ¥82,534</div>
+        </div>
+    </div>
+    <div class="day-col">
+        <div class="bar-tooltip">
+            木（3/19）<br>
+            注文：¥23,917<br>
+            前出：¥83,706<br>
+            合計：¥107,623
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:16.7px"></div>
+            <div class="bar-seg store" style="height:58.6px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">木</div>
+            <div class="day-date">3/19</div>
+            <div class="day-total">¥107,623</div>
+            <div class="day-store-lbl">前出 ¥83,706</div>
+            <div class="day-order-lbl">注文 ¥23,917</div>
+        </div>
+    </div>
+    <div class="day-col">
+        <div class="bar-tooltip">
+            金（3/20）<br>
+            注文：¥31,855<br>
+            前出：¥117,242<br>
+            合計：¥149,097
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:22.3px"></div>
+            <div class="bar-seg store" style="height:82.1px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">金</div>
+            <div class="day-date">3/20</div>
+            <div class="day-total">¥149,097</div>
+            <div class="day-store-lbl">前出 ¥117,242</div>
+            <div class="day-order-lbl">注文 ¥31,855</div>
+        </div>
+    </div>
+    <div class="day-col">
+        <div class="bar-tooltip">
+            土（3/21）<br>
+            注文：¥22,618<br>
+            前出：¥129,176<br>
+            合計：¥151,794
+        </div>
+        <div class="bar-stack-wrap">
+            <div class="bar-seg order" style="height:15.8px"></div>
+            <div class="bar-seg store" style="height:90.4px"></div>
+        </div>
+        <div class="day-info">
+            <div class="day-label">土</div>
+            <div class="day-date">3/21</div>
+            <div class="day-total">¥151,794</div>
+            <div class="day-store-lbl">前出 ¥129,176</div>
+            <div class="day-order-lbl">注文 ¥22,618</div>
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ④ 平日/週末比較 -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <span class="sec-icon">📅</span>
+      <span class="sec-title">平日/週末 比較分析</span>
+      <span class="sec-sub">平日5日 vs 週末2日</span>
+    </div>
+    <div class="section-body">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th style="text-align:left">指標</th>
+            <th class="th-weekday">平日（日平均）</th>
+            <th class="th-weekend">週末（日平均）</th>
+            <th class="th-diff">差分（週末÷平日）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>合計売上</td>
+            <td style="text-align:center;font-weight:700;">¥131,534</td>
+            <td style="text-align:center;font-weight:700;">¥155,811</td>
+            <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+18.5%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥24,276</span>
+    </div></td>
+          </tr>
+          <tr>
+            <td>店舗前出売上</td>
+            <td style="text-align:center;font-weight:700;">¥87,734</td>
+            <td style="text-align:center;font-weight:700;">¥139,650</td>
+            <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+59.2%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥51,915</span>
+    </div></td>
+          </tr>
+          <tr>
+            <td>注文売上</td>
+            <td style="text-align:center;font-weight:700;">¥43,800</td>
+            <td style="text-align:center;font-weight:700;">¥16,161</td>
+            <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-negative">-63.1%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-negative">¥27,639</span>
+    </div></td>
+          </tr>
+          <tr>
+            <td>客数</td>
+            <td style="text-align:center;font-weight:700;">110人</td>
+            <td style="text-align:center;font-weight:700;">162人</td>
+            <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+47.0%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥51</span>
+    </div></td>
+          </tr>
+          <tr>
+            <td>客単価</td>
+            <td style="text-align:center;font-weight:700;">¥796</td>
+            <td style="text-align:center;font-weight:700;">¥862</td>
+            <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+8.3%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥65</span>
+    </div></td>
+          </tr>
+          <tr>
+            <td>ロス率</td>
+            <td style="text-align:center;font-weight:700;">6.5%</td>
+            <td style="text-align:center;font-weight:700;">3.1%</td>
+            <td style="text-align:center;"><div class="diff-cell">
+            <span class="diff-pct diff-positive">-52.8%</span>
+            <div class="diff-sep"></div>
+            <span class="diff-amt diff-positive">-3.4pt</span>
+        </div></td>
+          </tr>
+          <tr>
+            <td>人時生産高</td>
+            <td style="text-align:center;font-weight:700;">¥4,696</td>
+            <td style="text-align:center;font-weight:700;">¥4,589</td>
+            <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-negative">-2.3%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-negative">¥106</span>
+    </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="insight-list">
+        <div class="insight-item"><span class="insight-icon">💡 </span><span>週末の日平均売上は¥155,811で、平日比+18%。日曜の150,124円が牽引。</span></div><div class="insight-item"><span class="insight-icon">💡 </span><span>注文売上は平日¥43,800/日 vs 週末¥16,161/日。平日の法事・イベント注文が多い。</span></div><div class="insight-item"><span class="insight-icon">💡 </span><span>週末ロス率3.1%は平日6.5%より低い。週末の客足が廃棄を抑制。</span></div><div class="insight-item"><span class="insight-icon">💡 </span><span>週末の客単価¥862は平日¥796と比較して高い。</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ 時間帯別売上 -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <span class="sec-icon">⏰</span>
+      <span class="sec-title">時間帯別売上分布</span>
+      <span class="sec-sub">※店舗前出売上のみ（注文売上は含まない）</span>
+    </div>
+    <div class="section-body">
+      <div class="time-grid">
+        <div>
+          <div class="time-panel-title weekday">📅 平日（月〜金）日平均</div>
+          <div class="time-chart">
+        <div class="time-bar-group">
+            <div class="time-bar normal" style="height:86px"></div>
+            <div class="time-label">06-08</div>
+            <div class="time-val">¥19,297</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar peak" style="height:130px"></div>
+            <div class="time-label">09-11</div>
+            <div class="time-val">¥29,106</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar sub-peak" style="height:100px"></div>
+            <div class="time-label">12-14</div>
+            <div class="time-val">¥22,409</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar normal" style="height:56px"></div>
+            <div class="time-label">15-17</div>
+            <div class="time-val">¥12,559</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar normal" style="height:19px"></div>
+            <div class="time-label">18+</div>
+            <div class="time-val">¥4,360</div>
+        </div></div><div style="font-size:11px;color:var(--text-secondary);margin-top:8px;">🔴 ピーク: 09-11時（33%）</div>
+        </div>
+        <div>
+          <div class="time-panel-title weekend">🌟 週末（土・日）日平均</div>
+          <div class="time-chart">
+        <div class="time-bar-group">
+            <div class="time-bar sub-peak" style="height:128px"></div>
+            <div class="time-label">06-08</div>
+            <div class="time-val">¥44,200</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar peak" style="height:130px"></div>
+            <div class="time-label">09-11</div>
+            <div class="time-val">¥44,829</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar normal" style="height:97px"></div>
+            <div class="time-label">12-14</div>
+            <div class="time-val">¥33,355</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar normal" style="height:47px"></div>
+            <div class="time-label">15-17</div>
+            <div class="time-val">¥16,201</div>
+        </div>
+        <div class="time-bar-group">
+            <div class="time-bar normal" style="height:3px"></div>
+            <div class="time-label">18+</div>
+            <div class="time-val">¥1,064</div>
+        </div></div><div style="font-size:11px;color:var(--text-secondary);margin-top:8px;">🔴 ピーク: 09-11時（32%）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑥ 廃棄ロス分析 -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <span class="sec-icon">🗑️</span>
+      <span class="sec-title">廃棄ロス分析</span>
+      <span class="sec-sub">※ロス率の分母は店舗前出売上</span>
+    </div>
+    <div class="section-body">
+      <div class="loss-summary-grid">
+        <div class="loss-card">
+          <div class="loss-card-label">値引調整額</div>
+          <div class="loss-card-val">¥21,890</div>
+          <div style="font-size:22px;font-weight:700;color:var(--brand-red);">3.0%</div>
+          <div class="loss-card-pct">前出売上比（ロス全体の59%）</div>
+        </div>
+        <div class="loss-card">
+          <div class="loss-card-label">廃棄額</div>
+          <div class="loss-card-val">¥14,876</div>
+          <div style="font-size:22px;font-weight:700;color:var(--brand-red);">2.1%</div>
+          <div class="loss-card-pct">前出売上比（ロス全体の40%）</div>
+        </div>
+        <div class="loss-card">
+          <div class="loss-card-label">従業員割引額</div>
+          <div class="loss-card-val">¥260</div>
+          <div style="font-size:22px;font-weight:700;color:var(--brand-red);">0.04%</div>
+          <div class="loss-card-pct">前出売上比（ロス全体の1%）</div>
+        </div>
+      </div>
+
+      <!-- ロス率ハイライトバー -->
+      <div style="background:linear-gradient(135deg,#FFEBEE,#FFF0EE);border:1px solid rgba(204,34,0,0.2);border-radius:10px;padding:12px 18px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <div style="font-size:12px;font-weight:700;">週間ロス率（前出売上比）</div>
+        <div style="font-size:32px;font-weight:900;color:var(--brand-red);font-family:'M PLUS Rounded 1c',sans-serif;">5.2%</div>
+        <div style="font-size:11px;">目標 6.0%以下　<span style="color:var(--brand-red);">▲ 0.0pt 超過</span></div>
+        <div style="margin-left:auto;">
+          <div style="height:10px;width:180px;background:#f0e8e4;border-radius:100px;overflow:hidden;">
+            <div style="height:100%;width:52%;background:linear-gradient(90deg,#CC2200,#FF4422);border-radius:100px;"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text-dim);margin-top:2px;"><span>0%</span><span>目標6%</span><span>10%</span></div>
+        </div>
+      </div>
+
+      <!-- 廃棄TOP10 -->
+      <div style="font-size:13px;font-weight:700;margin-bottom:8px;">🔥 廃棄TOP10（廃棄区分のみ）</div>
+      <div style="display:grid;grid-template-columns:24px 1fr 56px 3fr 56px 56px 56px 64px;gap:6px;padding:4px 6px;font-size:10px;font-weight:700;color:var(--text-dim);">
+        <span></span><span>商品名</span><span style="text-align:right;">前出比</span><span></span>
+        <span style="color:var(--accent-blue);text-align:center;">平日</span>
+        <span style="color:var(--accent-orange);text-align:center;">週末</span>
+        <span style="text-align:center;">合計</span>
+        <span style="text-align:right;">廃棄額</span>
+      </div>
+      <div class="loss-top10">
+        
+    <div class="loss-row-v2">
+        <span class="loss-rank">1</span>
+        <span class="loss-name-v2">ミニ唐揚げ弁当</span>
+        <span class="loss-pct-v2">0.13%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:100%"></div></div>
+        <span class="loss-qty wd">2個</span>
+        <span class="loss-qty we">2個</span>
+        <span class="loss-qty tot">4個</span>
+        <span class="loss-val-v2">¥960</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank">2</span>
+        <span class="loss-name-v2">ごはん(小)200g</span>
+        <span class="loss-pct-v2">0.13%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:98%"></div></div>
+        <span class="loss-qty wd">13個</span>
+        <span class="loss-qty we">0個</span>
+        <span class="loss-qty tot">13個</span>
+        <span class="loss-val-v2">¥937</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank">3</span>
+        <span class="loss-name-v2">魚天ぷら</span>
+        <span class="loss-pct-v2">0.10%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:75%"></div></div>
+        <span class="loss-qty wd">0個</span>
+        <span class="loss-qty we">13個</span>
+        <span class="loss-qty tot">13個</span>
+        <span class="loss-val-v2">¥723</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">4</span>
+        <span class="loss-name-v2">のり弁当</span>
+        <span class="loss-pct-v2">0.10%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:74%"></div></div>
+        <span class="loss-qty wd">0個</span>
+        <span class="loss-qty we">3個</span>
+        <span class="loss-qty tot">3個</span>
+        <span class="loss-val-v2">¥707</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">5</span>
+        <span class="loss-name-v2">ゲソ天ぷら</span>
+        <span class="loss-pct-v2">0.09%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:64%"></div></div>
+        <span class="loss-qty wd">3個</span>
+        <span class="loss-qty we">4個</span>
+        <span class="loss-qty tot">7個</span>
+        <span class="loss-val-v2">¥617</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">6</span>
+        <span class="loss-name-v2">梅おにぎり　1個</span>
+        <span class="loss-pct-v2">0.08%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:60%"></div></div>
+        <span class="loss-qty wd">9個</span>
+        <span class="loss-qty we">0個</span>
+        <span class="loss-qty tot">9個</span>
+        <span class="loss-val-v2">¥576</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">7</span>
+        <span class="loss-name-v2">いなり大</span>
+        <span class="loss-pct-v2">0.07%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:53%"></div></div>
+        <span class="loss-qty wd">7個</span>
+        <span class="loss-qty we">1個</span>
+        <span class="loss-qty tot">8個</span>
+        <span class="loss-val-v2">¥506</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">8</span>
+        <span class="loss-name-v2">いなり中</span>
+        <span class="loss-pct-v2">0.07%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:52%"></div></div>
+        <span class="loss-qty wd">9個</span>
+        <span class="loss-qty we">1個</span>
+        <span class="loss-qty tot">10個</span>
+        <span class="loss-val-v2">¥494</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">9</span>
+        <span class="loss-name-v2">サーターアンダギー(カボチャ) 小</span>
+        <span class="loss-pct-v2">0.06%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:47%"></div></div>
+        <span class="loss-qty wd">15個</span>
+        <span class="loss-qty we">0個</span>
+        <span class="loss-qty tot">15個</span>
+        <span class="loss-val-v2">¥452</span>
+    </div>
+    <div class="loss-row-v2">
+        <span class="loss-rank low">10</span>
+        <span class="loss-name-v2">塩サバ弁当</span>
+        <span class="loss-pct-v2">0.05%</span>
+        <div class="loss-bar-wrap"><div class="loss-bar" style="width:39%"></div></div>
+        <span class="loss-qty wd">0個</span>
+        <span class="loss-qty we">1個</span>
+        <span class="loss-qty tot">1個</span>
+        <span class="loss-val-v2">¥379</span>
+    </div>
+      </div>
+
+      <!-- 分析コメント -->
+      <div class="loss-analysis-box">
+        <div class="analysis-title">📝 廃棄傾向の分析・コメント</div>
+        <div class="analysis-item">ミニ唐揚げ弁当（¥960）が廃棄額TOP1。平日・週末ともに2個ずつ廃棄が発生しており、製造量の微調整が有効。</div>
+        <div class="analysis-item">ごはん(小)200gが13個廃棄（すべて平日）。平日の弁当販売数に連動するため、火・木の発注量を2〜3個減が目安。</div>
+        <div class="analysis-item">魚天ぷらは週末のみ13個廃棄。日曜の来客数169人に対し製造過多の可能性。土曜の製造ペースを基準に調整。</div>
+        <div class="analysis-item">【良かった点】従業員割引は¥260（全体の1%）と極めて低水準で適正管理。</div>
+        <div class="analysis-item">【改善目標】来週はロス率を現在の5.2%→6.0%以下へ。特に火曜の12%を重点改善（発注量コントロール強化）。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ 売れ筋・死に筋分析 -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <span class="sec-icon">🏆</span>
+      <span class="sec-title">売れ筋・死に筋 分析</span>
+      <span class="sec-sub">週間販売実績 TOP10</span>
+    </div>
+    <div class="section-body" style="padding-top:0;">
+      <div class="abc-tabs">
+        <button class="abc-tab active" onclick="switchAbc('hot',this)">🔥 売れ筋 TOP10</button>
+        <button class="abc-tab" onclick="switchAbc('cold',this)">🧊 死に筋 TOP10</button>
+      </div>
+      <div class="abc-col-header">
+        <span></span><span>商品名</span><span></span>
+        <span style="color:var(--accent-blue);">平日</span>
+        <span style="color:var(--accent-orange);">週末</span>
+        <span>合計</span>
+        <span style="text-align:right;">売上合計</span>
+      </div>
+      <div class="abc-panel active" id="panel-hot">
+        
+        <div class="abc-row">
+            <span class="abc-rank-hot">1</span>
+            <span class="abc-name">魚天ぷら</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:100%"></div></div>
+            <span class="abc-qty wd">281個</span>
+            <span class="abc-qty we">179個</span>
+            <span class="abc-qty tot">460個</span>
+            <span class="abc-amount hot">¥72,780</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">2</span>
+            <span class="abc-name">イカ天ぷら</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:84%"></div></div>
+            <span class="abc-qty wd">237個</span>
+            <span class="abc-qty we">151個</span>
+            <span class="abc-qty tot">388個</span>
+            <span class="abc-amount hot">¥57,775</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">3</span>
+            <span class="abc-name">レジ袋</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:82%"></div></div>
+            <span class="abc-qty wd">230個</span>
+            <span class="abc-qty we">146個</span>
+            <span class="abc-qty tot">376個</span>
+            <span class="abc-amount hot">¥1,870</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">4</span>
+            <span class="abc-name">野菜天ぷら</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:50%"></div></div>
+            <span class="abc-qty wd">139個</span>
+            <span class="abc-qty we">89個</span>
+            <span class="abc-qty tot">228個</span>
+            <span class="abc-amount hot">¥31,920</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">5</span>
+            <span class="abc-name">沖縄そば(小)</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:33%"></div></div>
+            <span class="abc-qty wd">93個</span>
+            <span class="abc-qty we">60個</span>
+            <span class="abc-qty tot">153個</span>
+            <span class="abc-amount hot">¥24,480</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">6</span>
+            <span class="abc-name">イモ天ぷら</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:33%"></div></div>
+            <span class="abc-qty wd">93個</span>
+            <span class="abc-qty we">59個</span>
+            <span class="abc-qty tot">152個</span>
+            <span class="abc-amount hot">¥20,580</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">7</span>
+            <span class="abc-name">もずく天ぷら</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:30%"></div></div>
+            <span class="abc-qty wd">86個</span>
+            <span class="abc-qty we">54個</span>
+            <span class="abc-qty tot">140個</span>
+            <span class="abc-amount hot">¥20,775</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">8</span>
+            <span class="abc-name">ゲソ天ぷら</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:29%"></div></div>
+            <span class="abc-qty wd">82個</span>
+            <span class="abc-qty we">53個</span>
+            <span class="abc-qty tot">135個</span>
+            <span class="abc-amount hot">¥22,440</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">9</span>
+            <span class="abc-name">サーターアンダギー(カボチャ) 小</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:26%"></div></div>
+            <span class="abc-qty wd">74個</span>
+            <span class="abc-qty we">47個</span>
+            <span class="abc-qty tot">121個</span>
+            <span class="abc-amount hot">¥10,950</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-hot">10</span>
+            <span class="abc-name">骨なしチキン</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:23%"></div></div>
+            <span class="abc-qty wd">65個</span>
+            <span class="abc-qty we">41個</span>
+            <span class="abc-qty tot">106個</span>
+            <span class="abc-amount hot">¥18,720</span>
+        </div>
+      </div>
+      <div class="abc-panel" id="panel-cold">
+        
+        <div class="abc-row">
+            <span class="abc-rank-cold">1</span>
+            <span class="abc-name">そばだし</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥70</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">2</span>
+            <span class="abc-name">みそ汁（もずく）</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥120</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">3</span>
+            <span class="abc-name">アーサそば(大)</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥650</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">4</span>
+            <span class="abc-name">カップドリンク　コーラ</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥300</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">5</span>
+            <span class="abc-name">カーサもち　砂糖無し　白</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥150</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">6</span>
+            <span class="abc-name">チーズカレーそば(大)</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥740</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">7</span>
+            <span class="abc-name">チーズカレーそば(小)</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥490</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">8</span>
+            <span class="abc-name">ホットソース</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥20</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">9</span>
+            <span class="abc-name">ポテトフライ（M）</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥300</span>
+        </div>
+        <div class="abc-row">
+            <span class="abc-rank-cold">10</span>
+            <span class="abc-name">全部乗せそば（中）</span>
+            <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+            <span class="abc-qty wd">1個</span>
+            <span class="abc-qty we">0個</span>
+            <span class="abc-qty tot">1個</span>
+            <span class="abc-amount cold">¥850</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:12px;font-size:11px;">
+        <span><span style="background:#E3EEF8;color:var(--accent-blue);padding:1px 6px;border-radius:3px;font-weight:700;">平日</span> 月〜金の販売個数</span>
+        <span><span style="background:#FFF0E0;color:var(--accent-orange);padding:1px 6px;border-radius:3px;font-weight:700;">週末</span> 土・日の販売個数</span>
+        <span><span style="background:#F5F5F0;padding:1px 6px;border-radius:3px;font-weight:700;">合計</span> 週間合計個数</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑧ スタッフ・人件費 -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <span class="sec-icon">👥</span>
+      <span class="sec-title">スタッフ・人件費</span>
+      <span class="sec-sub">石川店 週間サマリー</span>
+    </div>
+    <div class="section-body">
+      <div class="staff-grid">
+        
+    <div class="staff-card">
+        <div class="staff-name">上原 龍弥</div>
+        <div class="staff-days">担当 5日 / 37.2h</div>
+    </div>
+    <div class="staff-card">
+        <div class="staff-name">福田 圭一</div>
+        <div class="staff-days">担当 5日 / 40.0h</div>
+    </div>
+    <div class="staff-card">
+        <div class="staff-name">長嶺凱</div>
+        <div class="staff-days">担当 5日 / 29.8h</div>
+    </div>
+    <div class="staff-card">
+        <div class="staff-name">登川 聖來</div>
+        <div class="staff-days">担当 4日 / 18.0h</div>
+    </div>
+    <div class="staff-card">
+        <div class="staff-name">ヤーダブ</div>
+        <div class="staff-days">担当 4日 / 26.2h</div>
+    </div>
+    <div class="staff-card">
+        <div class="staff-name">坂上ひとみ</div>
+        <div class="staff-days">担当 3日 / 8.0h</div>
+    </div>
+    <div class="staff-card">
+        <div class="staff-name">比嘉 勝彦</div>
+        <div class="staff-days">担当 1日 / 2.0h</div>
+    </div>
+      </div>
+      <div class="labor-grid">
+        <div class="labor-item"><div class="labor-label">週間人件費</div><div class="labor-val">¥180,561</div></div>
+        <div class="labor-item"><div class="labor-label">人件費率</div><div class="labor-val">18.6%</div></div>
+        <div class="labor-item"><div class="labor-label">残業実績</div><div class="labor-val" style="color:#1A8A50">なし ✓</div></div>
+        <div class="labor-item"><div class="labor-label">推定総労働時間</div><div class="labor-val">161.2h</div></div>
+        <div class="labor-item"><div class="labor-label">人時生産高（平均）</div><div class="labor-val">¥4,452</div></div>
+        <div class="labor-item"><div class="labor-label">目標人件費率</div><div class="labor-val" style="color:#1A8A50">25.0%</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑨ 店長への改善提案 -->
+<div class="container">
+  <div class="section">
+    <div class="improvement-header">
+      <img src="data:image/png;base64,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qaKK+OxGIqYifPUep6EIKCsgooornLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoFFPiG6ZB6sB+tUldpLqLpc+ONd1Iaz4g1LVPJ8n7bdS3Hl7t2zexbbnAzjOM4FZtB6miv0ZKysjx3uFFFFMAooooAKKKKACiiigAooooAK+/wCvgCvv+gAooooA+AKKKKACiiigAooooAWrmn6rqGkzNPp1/c2czoUaS2maNiuQdpKkZGQOOnFUqXFJq6swOi1zxz4m8Ro0ep6xcSwsgR4I8RROA24bkQBSc85IzwPQVztFFKMIwVoqw229wrtvh98PrrxpqBkkL2+kW7AXFyByx4PlpwQWORzyFByckhW2/h78KbvXJ7bVNet3t9GKCaOMth7oHOBwcqpxkk4JBG3ruHv1raW1jbrbWdtDbW6Z2wwRiNFySThQABkkngdSa8zMMzhhlyQ1l+X9djalRc9XsUtB0HT/AA1o8Ol6ZD5cEfJJILSMQMuxwMscDJ6AAAAAADToor5CrVnWm5zd2z0IxUVZBRRRWRQUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCsfxau7wV4gHpplyfyiY/0rYrkPilLNB8M9bkhleJ/LjUsjFSVaVFYEjsQxBHcEjoa3wsOetCPdr8yJu0Wz5Yooor9BPJCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooAnggluriK3gieWeVwkcaKWZ2JwAAOSSe1e5eAfg/BZI2oeLLWOa73DybIuGSLa2dzlThyccLyuCcgk4XL+AmnWc95rOoS2yPd2ohSCZskxBxJvx2BIUDPXGR0JB9xrws1zKdB+xp6O2/8AkdVCiprmkGSSSeSetFFFfKtt6s7rBRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvK/jvdW6eEdPs2kxdTXwljTaeURHDHOMDBdOp798HHqleF/H3UPM1fRdMMO3yLd7jzd2dwkYLtxjjHlE5zzu7Y59PKafPi49lr+BjXdqbPHaKKK+2PMCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACi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" alt="" style="height:40px;width:auto;object-fit:contain;mix-blend-mode:screen;position:absolute;right:20px;top:20px;opacity:0.3;">
+      <div class="imp-title">🏪 店長への改善提案</div>
+      <div class="imp-sub">今週のデータが導く、明日の行動</div>
+    </div>
+    <div style="background:var(--bg-section);border:1px solid var(--border);border-radius:0 0 14px 14px;padding:20px;">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterCards('all',this)">すべて表示</button>
+        <button class="filter-btn" onclick="filterCards('today',this)">★☆☆ 今日できる</button>
+        <button class="filter-btn" onclick="filterCards('week',this)">★★☆ 今週中</button>
+        <button class="filter-btn" onclick="filterCards('month',this)">★★★ 来月から</button>
+      </div>
+
+      <div class="priority-action-card" data-priority="week">
+        <div class="priority-badge">🔥 今週最も優先すべきアクション</div>
+        <div class="priority-title">火曜・木曜のロス率改善 — 発注量コントロール強化</div>
+        <div class="action-steps">
+          <div class="action-step" id="step0">
+            <div class="step-num">①</div>
+            <div style="flex:1"><strong>今日・上原さん</strong>が確認：火曜の弁当発注数を現状から5食減（26食→21食）に設定</div>
+            <div class="step-check" id="check0" onclick="toggleCheck(0)"></div>
+          </div>
+          <div class="action-step" id="step1">
+            <div class="step-num">②</div>
+            <div style="flex:1"><strong>水曜まで</strong>：おにぎり・いなり類の火木発注を各種1〜2個減で調整</div>
+            <div class="step-check" id="check1" onclick="toggleCheck(1)"></div>
+          </div>
+          <div class="action-step" id="step2">
+            <div class="step-num">③</div>
+            <div style="flex:1"><strong>金曜</strong>：11時以降のフライ追加揚げタイミングを客足と連動させるルール化</div>
+            <div class="step-check" id="check2" onclick="toggleCheck(2)"></div>
+          </div>
+        </div>
+        <div id="completeMsg" class="complete-msg">今週の改善完了！お疲れ様でした 🎉</div>
+        <div class="kpi-highlight-row">
+          <div class="kpi-hl-item"><div class="kpi-hl-val">5.2%</div><div class="kpi-hl-label">現在のロス率</div></div>
+          <div class="kpi-hl-item"><div class="kpi-hl-val">→ 6.0%</div><div class="kpi-hl-label">目標</div></div>
+          <div class="kpi-hl-item"><div class="kpi-hl-val">¥0</div><div class="kpi-hl-label">週間改善見込み額</div></div>
+        </div>
+      </div>
+
+      <div class="imp-cards-grid">
+        <div class="imp-card" data-priority="today">
+          <div class="imp-card-header"><span class="imp-icon">📈</span><span class="imp-card-title">今週の勝ちポイント</span></div>
+          <div class="data-badge">予算達成率 <span class="hl">114.7%</span></div>
+          <ul class="imp-list">
+            <li>注文売上¥251,322が全体の26%を占め、売上を大きく押し上げ</li>
+            <li>水曜の注文売上¥82,534（単日最高）が特に好調。法事・イベント需要を安定的に取り込めている</li>
+            <li>金曜の前出売上¥117,242は平日最高値。午前帯の集客が鍵</li>
+          </ul>
+          <div class="difficulty-badge diff-1">★☆☆ 今日できる（現状維持）</div>
+        </div>
+
+        <div class="imp-card" data-priority="week">
+          <div class="imp-card-header"><span class="imp-icon">🗑️</span><span class="imp-card-title">ロス削減チャレンジ</span></div>
+          <div class="data-badge">週間ロス率 <span class="hl">5.2%</span>（目標6.0%）</div>
+          <ul class="imp-list">
+            <li>値引調整¥21,890がロスの59%を占め最大要因。特に火曜のロス率12%が突出</li>
+            <li>火曜は客数89人と週間最低。天候・合格発表の影響を考慮し、火・木は製造量を15%カット</li>
+            <li>ごはん(小)・いなり類は平日に集中廃棄。前日の残数を見て翌日製造量を決める仕組みを導入</li>
+          </ul>
+          <div class="mini-sparkline"><div class="spark-bar" style="height:25%"></div><div class="spark-bar" style="height:53%"></div><div class="spark-bar" style="height:100%"></div><div class="spark-bar" style="height:40%"></div><div class="spark-bar" style="height:56%"></div><div class="spark-bar" style="height:38%"></div><div class="spark-bar" style="height:26%"></div></div>
+          <div class="difficulty-badge diff-2">★★☆ 今週中</div>
+        </div>
+
+        <div class="imp-card" data-priority="today">
+          <div class="imp-card-header"><span class="imp-icon">👥</span><span class="imp-card-title">人件費最適化ヒント</span></div>
+          <div class="data-badge">人件費率 <span class="hl">18.6%</span>・残業 <span class="hl">なし✅</span></div>
+          <ul class="imp-list">
+            <li>人件費率18.6%は目標25.0%を下回り良好。残業ゼロも達成</li>
+            <li>火曜の人件費率36.6%が突出。売上低迷日はシフトの事前調整（1名減）を検討</li>
+            <li>人時生産高¥4,452は安定圏。現状のシフト体制を維持</li>
+          </ul>
+          <div class="mini-gauge">
+            <div class="gauge-track"><div class="gauge-fill" style="width:62%"></div></div>
+            <div class="gauge-labels"><span>0%</span><span>目標25% ✓</span><span>30%</span></div>
+          </div>
+          <div class="difficulty-badge diff-1">★☆☆ 今日できる</div>
+        </div>
+
+        <div class="imp-card" data-priority="month">
+          <div class="imp-card-header"><span class="imp-icon">🌟</span><span class="imp-card-title">週末強化策</span></div>
+          <div class="data-badge">週末前出売上 <span class="hl">¥139,650/日</span></div>
+          <ul class="imp-list">
+            <li>日曜の前出売上¥150,124は週間最高。06-08時帯の¥48,316が牽引しており、朝型集客の強みを活かす</li>
+            <li>土曜は12-14時帯¥42,951がピーク。昼前の製造準備を充実させ、機会損失を防ぐ</li>
+            <li>週末の注文売上は日平均¥16,161と平日比で低い。週末限定セットメニューの提案を検討</li>
+          </ul>
+          <div class="mini-sparkline">
+            <div class="spark-bar yellow" style="height:100%"></div>
+            <div class="spark-bar yellow" style="height:86%"></div>
+          </div>
+          <div class="difficulty-badge diff-3">★★★ 来月から</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- フッター -->
+<div class="footer">
+  <img src="data:image/png;base64,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qaKK+OxGIqYifPUep6EIKCsgooornLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoFFPiG6ZB6sB+tUldpLqLpc+ONd1Iaz4g1LVPJ8n7bdS3Hl7t2zexbbnAzjOM4FZtB6miv0ZKysjx3uFFFFMAooooAKKKKACiiigAooooAK+/wCvgCvv+gAooooA+AKKKKACiiigAooooAWrmn6rqGkzNPp1/c2czoUaS2maNiuQdpKkZGQOOnFUqXFJq6swOi1zxz4m8Ro0ep6xcSwsgR4I8RROA24bkQBSc85IzwPQVztFFKMIwVoqw229wrtvh98PrrxpqBkkL2+kW7AXFyByx4PlpwQWORzyFByckhW2/h78KbvXJ7bVNet3t9GKCaOMth7oHOBwcqpxkk4JBG3ruHv1raW1jbrbWdtDbW6Z2wwRiNFySThQABkkngdSa8zMMzhhlyQ1l+X9djalRc9XsUtB0HT/AA1o8Ol6ZD5cEfJJILSMQMuxwMscDJ6AAAAAADToor5CrVnWm5zd2z0IxUVZBRRRWRQUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCsfxau7wV4gHpplyfyiY/0rYrkPilLNB8M9bkhleJ/LjUsjFSVaVFYEjsQxBHcEjoa3wsOetCPdr8yJu0Wz5Yooor9BPJCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooAnggluriK3gieWeVwkcaKWZ2JwAAOSSe1e5eAfg/BZI2oeLLWOa73DybIuGSLa2dzlThyccLyuCcgk4XL+AmnWc95rOoS2yPd2ohSCZskxBxJvx2BIUDPXGR0JB9xrws1zKdB+xp6O2/8AkdVCiprmkGSSSeSetFFFfKtt6s7rBRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvK/jvdW6eEdPs2kxdTXwljTaeURHDHOMDBdOp798HHqleF/H3UPM1fRdMMO3yLd7jzd2dwkYLtxjjHlE5zzu7Y59PKafPi49lr+BjXdqbPHaKKK+2PMCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACi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" alt="" style="height:28px;width:auto;object-fit:contain;mix-blend-mode:screen;margin-bottom:6px;opacity:0.5;display:block;margin-left:auto;margin-right:auto;">
+  上間沖縄天ぷら 石川店 ｜ 週次パフォーマンスレポート ｜ 2026年03月15日〜03月21日 ｜ Generated by AI
+</div>
+
+<script>
+const SALES_ACHIEVEMENT=114.7;
+const LOSS_RATE=5.2;
+const LABOR_RATE=18.6;
+const HAS_OVERTIME=false;
+
+function calcSalesScore(p){if(p>=100)return 40;if(p>=98)return 34;if(p>=95)return 26;if(p>=92)return 18;if(p>=90)return 10;return 0}
+function calcLossScore(r){if(r<=3)return 30;if(r<=4)return 24;if(r<=5)return 18;if(r<=6)return 12;if(r<=7)return 6;return 0}
+function calcLaborScore(r,o){const m=o?24:30;if(r<=25)return m;if(r<=26)return Math.round(m*0.6);if(r<=27)return Math.round(m*0.4);if(r<=28)return Math.round(m*0.2);return 0}
+function gradeLabel(s){if(s>=95)return{grade:'S',label:'今週は完璧な運営でした！'};if(s>=80)return{grade:'A',label:'優秀な週です'};if(s>=65)return{grade:'B',label:'標準的な週です'};if(s>=50)return{grade:'C',label:'改善の余地があります'};return{grade:'D',label:'要注意週です'}}
+
+const ptsSales=calcSalesScore(SALES_ACHIEVEMENT);
+const ptsLoss=calcLossScore(LOSS_RATE);
+const ptsLabor=calcLaborScore(LABOR_RATE,HAS_OVERTIME);
+const total=ptsSales+ptsLoss+ptsLabor;
+const{grade,label}=gradeLabel(total);
+
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    const arc=document.getElementById('scoreArc');
+    const circ=326.7;
+    arc.style.transition='stroke-dashoffset 1.8s ease-out';
+    arc.style.strokeDashoffset=circ*(1-total/100);
+    const numEl=document.getElementById('scoreTotalNum');
+    const dur=1600,start=performance.now();
+    (function tick(now){const p=Math.min((now-start)/dur,1);const e=1-Math.pow(1-p,4);numEl.textContent=Math.round(total*e);if(p<1)requestAnimationFrame(tick)})(performance.now());
+    document.getElementById('scoreGrade').textContent=grade;
+    document.getElementById('scoreGradeLabel').textContent=label;
+    setTimeout(()=>{
+      document.getElementById('barSales').style.width=(ptsSales/40*100)+'%';
+      document.getElementById('barLoss').style.width=(ptsLoss/30*100)+'%';
+      document.getElementById('barLabor').style.width=(ptsLabor/30*100)+'%';
+      document.getElementById('ptsSales').textContent=ptsSales;
+      document.getElementById('ptsLoss').textContent=ptsLoss;
+      document.getElementById('ptsLabor').textContent=ptsLabor;
+    },200);
+  },300);
+});
+
+function animateCount(el){
+  const target=parseFloat(el.dataset.count);const suffix=el.dataset.suffix||'';
+  const isFloat=!Number.isInteger(target);const dur=1500,start=performance.now();
+  (function tick(now){const p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,4);const cur=target*e;
+    el.textContent=el.dataset.format==='currency'?'¥'+Math.floor(cur).toLocaleString():(isFloat?cur.toFixed(1):Math.floor(cur).toLocaleString())+suffix;
+    if(p<1)requestAnimationFrame(tick)})(performance.now());
+}
+
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.style.animationPlayState='running';e.target.querySelectorAll('[data-count]').forEach(animateCount);io.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.section,.kpi-card').forEach(el=>{el.style.animationPlayState='paused';io.observe(el)});
+document.querySelectorAll('.kpi-card').forEach((c,i)=>{c.style.animationDelay=(i*0.1)+'s';c.style.animationPlayState='running';const ce=c.querySelector('[data-count]');if(ce)setTimeout(()=>animateCount(ce),i*100+400)});
+
+const cs=JSON.parse(localStorage.getItem('wr_checks_ishikawa_v1')||'{}');
+[0,1,2].forEach(i=>{if(cs[i]){document.getElementById('check'+i).classList.add('checked');document.getElementById('step'+i).classList.add('checked')}});
+function toggleCheck(i){const c=document.getElementById('check'+i);const s=document.getElementById('step'+i);const on=c.classList.toggle('checked');s.classList.toggle('checked',on);cs[i]=on;localStorage.setItem('wr_checks_ishikawa_v1',JSON.stringify(cs));document.getElementById('completeMsg').style.display=[0,1,2].every(j=>cs[j])?'block':'none'}
+function filterCards(priority,btn){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.imp-card,.priority-action-card').forEach(card=>{const m=priority==='all'||card.dataset.priority===priority;card.style.opacity=m?'1':'0.25';card.style.pointerEvents=m?'auto':'none'})}
+function switchAbc(type,btn){document.querySelectorAll('.abc-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.abc-panel').forEach(p=>p.classList.remove('active'));document.getElementById('panel-'+type).classList.add('active')}
+</script>
+</body>
+</html>
