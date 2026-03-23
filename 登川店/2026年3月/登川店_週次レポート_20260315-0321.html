@@ -4,361 +4,255 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>上間沖縄天ぷら 登川店 週次レポート 2026/03/15〜03/21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 :root {
-  --brand-red: #CC2200;
-  --brand-red-light: #FF4422;
-  --brand-red-dark: #991100;
-  --brand-yellow: #F5C518;
-  --brand-yellow-light: #FFD84A;
-  --brand-white: #FFFFFF;
-  --bg-page: #FDF8F2;
-  --bg-card: #FFFFFF;
-  --bg-section: #FFF5EC;
-  --bg-header: #CC2200;
-  --text-primary: #1A0A00;
-  --text-secondary: #5A3A2A;
-  --text-dim: #9A7A6A;
-  --text-white: #FFFFFF;
-  --accent-blue: #2266AA;
-  --accent-orange: #E07830;
-  --accent-green: #1A8A50;
-  --border: rgba(204,34,0,0.12);
-  --border-light: rgba(204,34,0,0.06);
-  --shadow-card: 0 2px 12px rgba(204,34,0,0.08);
-  --shadow-hover: 0 8px 24px rgba(204,34,0,0.16);
+  --brand-red:#CC2200;--brand-red-light:#FF4422;--brand-red-dark:#991100;
+  --brand-yellow:#F5C518;--brand-yellow-light:#FFD84A;--brand-white:#FFF;
+  --bg-page:#FDF8F2;--bg-card:#FFF;--bg-section:#FFF5EC;--bg-header:#CC2200;
+  --text-primary:#1A0A00;--text-secondary:#5A3A2A;--text-dim:#9A7A6A;--text-white:#FFF;
+  --accent-blue:#2266AA;--accent-orange:#E07830;--accent-green:#1A8A50;
+  --border:rgba(204,34,0,0.12);--border-light:rgba(204,34,0,0.06);
+  --shadow-card:0 2px 12px rgba(204,34,0,0.08);--shadow-hover:0 8px 24px rgba(204,34,0,0.16);
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
-  background: var(--bg-page);
-  color: var(--text-primary);
-  line-height: 1.6;
-}
-.kpi-value, .big-number {
-  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-}
-.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;background:var(--bg-page);color:var(--text-primary);line-height:1.6}
+.kpi-value{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:700}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
 
-/* Header */
-.header {
-  background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-dark) 100%);
-  color: var(--text-white);
-  padding: 40px 0 32px;
-  position: relative;
-  overflow: hidden;
-}
-.header::after {
-  content: '';
-  position: absolute;
-  right: 0; top: 0; bottom: 0;
-  width: 8px;
-  background: var(--brand-yellow);
-}
-.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-.header .brand-name { font-size: 56px; font-weight: 900; letter-spacing: 0.08em; }
-.header .brand-sub { font-size: 18px; opacity: 0.9; margin-top: -4px; letter-spacing: 0.15em; }
-.header .store-name { font-size: 28px; font-weight: 700; margin-top: 12px; }
-.header .period {
-  display: inline-block; margin-top: 8px;
-  background: rgba(255,255,255,0.15);
-  padding: 6px 18px; border-radius: 6px; font-size: 15px;
-}
-.header .yellow-bar {
-  display: inline-block; width: 60px; height: 4px;
-  background: var(--brand-yellow); border-radius: 2px; margin-top: 16px;
-}
+/* ① Header */
+.header{background:linear-gradient(135deg,var(--brand-red) 0%,var(--brand-red-dark) 100%);color:var(--text-white);padding:40px 0 32px;position:relative;overflow:hidden}
+.header::after{content:'';position:absolute;right:0;top:0;bottom:0;width:8px;background:var(--brand-yellow)}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.header .brand-name{font-size:56px;font-weight:900;letter-spacing:0.08em;font-family:'M PLUS Rounded 1c',sans-serif}
+.header .brand-sub{font-size:18px;opacity:0.9;letter-spacing:0.15em}
+.header .store-name{font-size:28px;font-weight:700;margin-top:12px}
+.header .period{display:inline-block;margin-top:8px;background:rgba(255,255,255,0.15);padding:6px 18px;border-radius:6px;font-size:15px}
+.header .yellow-bar{display:inline-block;width:60px;height:4px;background:var(--brand-yellow);border-radius:2px;margin-top:16px}
 
 /* Sections */
-.section {
-  margin-top: 32px;
-  opacity: 0; transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.section.visible { opacity: 1; transform: translateY(0); }
-.section-title {
-  font-size: 20px; font-weight: 900;
-  color: var(--brand-red);
-  margin-bottom: 16px;
-  padding-left: 14px;
-  border-left: 5px solid var(--brand-yellow);
-}
+.section{margin-top:32px;opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.section.visible{opacity:1;transform:translateY(0)}
+.section-title{font-size:20px;font-weight:900;color:var(--brand-red);margin-bottom:16px;padding-left:14px;border-left:5px solid var(--brand-yellow)}
 
-/* Week comparison badge */
-.week-badge {
-  display: inline-block; padding: 2px 10px; border-radius: 10px;
-  font-size: 11px; font-weight: 700; margin-left: 6px;
-}
-.week-badge.up { background: rgba(26,138,80,0.12); color: var(--accent-green); }
-.week-badge.down { background: rgba(204,34,0,0.1); color: var(--brand-red); }
+/* ② KPI Cards */
+.kpi-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
+.kpi-card{background:var(--bg-card);border-radius:14px;padding:20px 16px;text-align:center;box-shadow:var(--shadow-card);border-top:4px solid var(--brand-red);transition:all 0.25s ease;cursor:default}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.kpi-label{font-size:12px;color:var(--text-dim);margin-bottom:4px;font-weight:700}
+.kpi-val{font-size:30px;font-weight:700;color:var(--text-primary)}
+.kpi-sub{font-size:11px;color:var(--text-secondary);margin-top:4px}
+.wb{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;margin-left:4px}
+.wb.up{background:rgba(26,138,80,0.12);color:var(--accent-green)}
+.wb.down{background:rgba(204,34,0,0.1);color:var(--brand-red)}
 
-/* KPI Cards */
-.kpi-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 14px;
-}
-.kpi-card {
-  background: var(--bg-card);
-  border-radius: 14px;
-  padding: 20px 16px;
-  text-align: center;
-  box-shadow: var(--shadow-card);
-  border-top: 4px solid var(--brand-red);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: default;
-}
-.kpi-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-.kpi-label { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700; }
-.kpi-val { font-size: 32px; font-weight: 700; color: var(--text-primary); }
-.kpi-sub { font-size: 11px; color: var(--text-secondary); margin-top: 4px; }
+/* ③ Daily chart — 前出=黄色塗り / 注文=赤色塗り / 角丸なし */
+.daily-chart{display:flex;align-items:flex-end;gap:8px;height:280px;padding:20px 0}
+.daily-bar-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end;position:relative}
+.bar-stack{display:flex;flex-direction:column;align-items:center;width:100%}
+.bar-front{width:70%;background:var(--brand-yellow);border-radius:0;min-height:2px;transition:filter 0.2s;transform-origin:bottom;animation:barGrow 1.2s ease-out both}
+.bar-front:hover{filter:brightness(1.08)}
+.bar-order{width:70%;background:var(--brand-red);border-radius:0;min-height:2px;transform-origin:bottom;animation:barGrow 1.2s ease-out both}
+.bar-order:hover{filter:brightness(1.15)}
+@keyframes barGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.bar-label{font-size:12px;font-weight:700;color:var(--text-secondary);margin-top:6px}
+.bar-amount{font-size:11px;color:var(--text-dim);position:absolute;top:-20px;font-weight:700}
+.chart-legend{display:flex;gap:20px;justify-content:center;margin-top:8px;font-size:12px;color:var(--text-secondary)}
+.legend-dot{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:middle}
 
-/* Daily chart */
-.daily-chart { display: flex; align-items: flex-end; gap: 8px; height: 280px; padding: 20px 0; }
-.daily-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end; position: relative; }
-.bar-stack { display: flex; flex-direction: column; align-items: center; width: 100%; }
-.bar-front {
-  width: 70%; background: var(--brand-red); opacity: 0.85;
-  border-radius: 4px 4px 0 0; min-height: 2px;
-  transition: opacity 0.2s;
-  animation: barGrow 1.2s ease-out forwards;
-}
-.bar-front:hover { opacity: 1; }
-.bar-order {
-  width: 70%; background: var(--brand-yellow); border-radius: 0 0 4px 4px; min-height: 2px;
-  animation: barGrow 1.2s ease-out forwards;
-}
-.bar-order:hover { filter: brightness(1.1); }
-@keyframes barGrow { from { transform: scaleY(0); transform-origin: bottom; } to { transform: scaleY(1); transform-origin: bottom; } }
-.bar-label { font-size: 12px; font-weight: 700; color: var(--text-secondary); margin-top: 6px; }
-.bar-amount { font-size: 11px; color: var(--text-dim); position: absolute; top: -20px; font-weight: 700; }
-.chart-legend { display: flex; gap: 20px; justify-content: center; margin-top: 8px; font-size: 12px; color: var(--text-secondary); }
-.legend-dot { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
+/* Card */
+.card{background:var(--bg-card);border-radius:14px;padding:24px;box-shadow:var(--shadow-card);transition:all 0.25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
 
-/* Revenue structure */
-.revenue-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.donut-container { text-align: center; padding: 20px; }
-.donut-container svg { width: 180px; height: 180px; }
-.revenue-waterfall { padding: 20px; }
-.waterfall-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-light); font-size: 15px; }
-.waterfall-item .wf-label { color: var(--text-secondary); }
-.waterfall-item .wf-val { font-weight: 700; }
-.waterfall-item.positive .wf-val { color: var(--accent-green); }
-.waterfall-item.negative .wf-val { color: var(--brand-red); }
-.gp-bar-container { margin-top: 8px; }
-.gp-bar-item { display: flex; align-items: center; gap: 10px; margin: 6px 0; font-size: 13px; }
-.gp-bar-item .bar-bg { flex: 1; height: 22px; background: #f5f0eb; border-radius: 4px; overflow: hidden; }
-.gp-bar-item .bar-fill { height: 100%; background: linear-gradient(90deg, var(--brand-yellow), var(--brand-yellow-light)); border-radius: 4px; transition: width 1.5s ease-out; }
-.gp-bar-item .bar-name { width: 120px; font-weight: 700; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.gp-bar-item .bar-val { width: 80px; text-align: right; font-weight: 700; }
+/* ④ Revenue */
+.revenue-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.donut-container{text-align:center;padding:20px}
+.donut-container svg{width:180px;height:180px}
+.revenue-waterfall{padding:20px}
+.wf-item{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-light);font-size:15px}
+.wf-item .wf-label{color:var(--text-secondary)}.wf-item .wf-val{font-weight:700}
+.wf-item.pos .wf-val{color:var(--accent-green)}.wf-item.neg .wf-val{color:var(--brand-red)}
+.gp-bar-item{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:13px}
+.gp-bar-item .bar-bg{flex:1;height:22px;background:#f5f0eb;border-radius:4px;overflow:hidden}
+.gp-bar-item .bar-fill{height:100%;background:linear-gradient(90deg,var(--brand-yellow),var(--brand-yellow-light));border-radius:4px;transition:width 1.5s ease-out}
+.gp-bar-item .bar-name{width:120px;font-weight:700;color:var(--text-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gp-bar-item .bar-val{width:80px;text-align:right;font-weight:700}
 
-/* Card base */
-.card {
-  background: var(--bg-card);
-  border-radius: 14px;
-  padding: 24px;
-  box-shadow: var(--shadow-card);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+/* ⑤ Compare */
+.comp-table{width:100%;border-collapse:collapse;font-size:14px}
+.comp-table th,.comp-table td{padding:10px 14px;text-align:center}
+.comp-table thead th{color:white;font-weight:700}
+.comp-table th.col-wd{background:var(--accent-blue)}.comp-table th.col-we{background:var(--accent-orange)}
+.comp-table th.col-diff{background:var(--text-secondary)}.comp-table th.col-label{background:#f5f0eb;color:var(--text-primary);text-align:left}
+.comp-table tbody td{border-bottom:1px solid var(--border-light)}
+.comp-table tbody td:first-child{text-align:left;font-weight:700;color:var(--text-secondary)}
+.dp{color:var(--accent-green);font-weight:700}.dn{color:var(--brand-red);font-weight:700}
+.hourly-compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}
+.hourly-col h4{text-align:center;font-size:14px;margin-bottom:10px;padding:6px;border-radius:6px;color:white}
+.hourly-col.wd h4{background:var(--accent-blue)}.hourly-col.we h4{background:var(--accent-orange)}
+.hourly-bars{display:flex;align-items:flex-end;gap:6px;height:160px}
+.hourly-bar-group{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end}
+.h-bar{width:80%;border-radius:4px 4px 0 0;min-height:2px;transform-origin:bottom;animation:barGrow 1.2s ease-out both}
+.h-bar.wd{background:var(--accent-blue)}.h-bar.we{background:var(--accent-orange)}
+.h-bar-label{font-size:10px;color:var(--text-dim);margin-top:4px}
+.insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.insight-item{padding:14px;border-radius:10px;background:var(--bg-section);font-size:13px;border-left:4px solid var(--brand-yellow)}
+.insight-item strong{color:var(--brand-red)}
+
+/* ⑥ Time zone */
+.tz-chart{display:flex;align-items:flex-end;gap:16px;height:220px;padding:20px 0}
+.tz-bar-group{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end}
+.tz-bar{width:80%;border-radius:6px 6px 0 0;min-height:2px;transform-origin:bottom;animation:barGrow 1.2s ease-out both;transition:filter 0.2s}
+.tz-bar:hover{filter:brightness(1.1)}
+.tz-bar.peak{background:var(--brand-red)}.tz-bar.sub-peak{background:var(--brand-yellow)}.tz-bar.normal{background:#c8b8a8}
+.tz-label{font-size:12px;font-weight:700;color:var(--text-secondary);margin-top:8px}
+.tz-amount{font-size:11px;color:var(--text-dim);margin-top:2px}
+
+/* ⑦ Waste */
+.waste-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:16px}
+.waste-card{text-align:center;padding:16px;border-radius:12px;background:var(--bg-card);box-shadow:var(--shadow-card)}
+.waste-card .waste-val{font-size:24px;font-weight:700;color:var(--brand-red)}
+.waste-card .waste-label{font-size:12px;color:var(--text-dim)}
+.waste-bar-item{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:13px}
+.waste-bar-item .bar-bg{flex:1;height:24px;background:#f5eeee;border-radius:4px;overflow:hidden}
+.waste-bar-item .bar-fill{height:100%;background:linear-gradient(90deg,var(--brand-red),var(--brand-red-light));border-radius:4px;transition:width 1.5s ease-out}
+
+/* ⑦ Waste TOP10 rows */
+.loss-row-v2{display:grid;grid-template-columns:24px 1fr 56px 3fr 56px 56px 56px 64px;gap:6px;align-items:center;padding:7px 6px;border-radius:6px;border-bottom:1px solid var(--border-light);transition:background 0.15s}
+.loss-row-v2:hover{background:#fdfaf7}
+.loss-row-v2:last-child{border-bottom:none}
+.loss-rank{font-size:11px;font-weight:700;color:white;background:var(--brand-red);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.loss-rank.low{background:var(--text-dim)}
+.loss-name-v2{font-size:12px;color:var(--text-secondary);font-weight:600}
+.loss-pct-v2{font-size:11px;font-weight:700;color:var(--brand-red);text-align:right;white-space:nowrap}
+.loss-bar-wrap{flex:1;background:#f0e8e4;border-radius:4px;height:16px;overflow:hidden}
+.loss-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--brand-red),var(--brand-red-light));transition:width 1.2s ease-out}
+.loss-qty{font-size:11px;font-weight:700;text-align:center;padding:2px 4px;border-radius:4px;white-space:nowrap}
+.loss-qty.wd{background:#E3EEF8;color:var(--accent-blue)}
+.loss-qty.we{background:#FFF0E0;color:var(--accent-orange)}
+.loss-qty.tot{background:#F5F5F0;color:var(--text-secondary)}
+.loss-val-v2{font-size:12px;color:var(--brand-red);font-weight:700;text-align:right;white-space:nowrap}
+
+/* ⑧ Staff */
+.staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.staff-card{padding:14px;border-radius:10px;background:var(--bg-card);box-shadow:var(--shadow-card);font-size:13px;transition:all 0.25s ease}
+.staff-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.staff-name{font-weight:700;font-size:15px;margin-bottom:4px}
+.staff-detail{color:var(--text-secondary)}
+.labor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.labor-item{text-align:center;padding:16px;border-radius:10px;background:var(--bg-section)}
+.labor-item .l-val{font-size:22px;font-weight:700;color:var(--text-primary)}
+.labor-item .l-label{font-size:11px;color:var(--text-dim)}
+
+/* ⑨ Advice — v3 spec */
+.adv-header{background:linear-gradient(135deg,var(--brand-red),var(--brand-red-dark));color:white;padding:28px 32px;border-radius:16px 16px 0 0;position:relative;overflow:hidden}
+.adv-header::before{content:'';position:absolute;right:-20px;top:-20px;width:120px;height:120px;border-radius:50%;background:var(--brand-yellow);opacity:0.1}
+.adv-header h2{font-size:24px;font-weight:900}.adv-header p{font-size:14px;opacity:0.8;margin-top:4px}
+.adv-body{background:var(--bg-section);border:1px solid var(--border);border-top:none;border-radius:0 0 16px 16px;padding:20px}
+.filter-bar{display:flex;gap:8px;padding:14px 0;flex-wrap:wrap}
+.filter-btn{padding:6px 16px;border-radius:20px;border:2px solid var(--border);background:white;font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'Noto Sans JP',sans-serif}
+.filter-btn.active,.filter-btn:hover{background:var(--brand-red);border-color:var(--brand-red);color:white}
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.adv-card{background:var(--bg-card);border-radius:16px;padding:24px;box-shadow:var(--shadow-card);border-top:4px solid #ccc;transition:all 0.25s ease;position:relative}
+.adv-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-top-width:8px}
+.adv-card.priority{grid-column:1/-1;background:var(--brand-red);color:white;border-top:none;border-left:8px solid var(--brand-yellow);animation:pulseBorder 2s ease-in-out infinite}
+@keyframes pulseBorder{0%,100%{border-left-color:var(--brand-yellow)}50%{border-left-color:rgba(245,197,24,0.4)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:translateX(0)}}
+.adv-card.priority{animation:slideInLeft 0.8s ease-out,pulseBorder 2s ease-in-out infinite 1s}
+.adv-card .card-icon{font-size:28px;margin-bottom:4px}
+.adv-card .card-title{font-size:18px;font-weight:900;margin-bottom:10px}
+.priority .card-title{font-size:22px}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;margin-bottom:10px}
+.badge-kpi{background:rgba(204,34,0,0.1);color:var(--brand-red)}
+.priority .badge-kpi{background:var(--brand-yellow);color:var(--text-primary)}
+.adv-list{margin:10px 0;padding:0;list-style:none}
+.adv-list li{padding:6px 0;padding-left:18px;position:relative;font-size:14px;line-height:1.6}
+.adv-list li::before{content:'•';position:absolute;left:0;color:var(--brand-yellow);font-weight:900}
+.difficulty{margin-top:10px;font-size:12px;font-weight:700;color:var(--text-dim)}
+.priority .difficulty{color:rgba(255,255,255,0.7)}
+.adv-card[data-p="win"]{border-top-color:var(--brand-yellow)}
+.adv-card[data-p="loss"]{border-top-color:var(--brand-red)}
+.adv-card[data-p="labor"]{border-top-color:var(--brand-red-dark)}
+.adv-card[data-p="weekday"]{border-top-color:var(--accent-blue)}
+.adv-card[data-p="weekend"]{border-top-color:var(--accent-orange)}
+
+/* Checkbox — localStorage backed */
+.step-check{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.12);border-radius:8px;margin-bottom:8px;cursor:pointer;transition:all 0.2s;font-size:14px}
+.step-check.done{text-decoration:line-through;opacity:0.45}
+.step-num{background:var(--brand-yellow);color:var(--brand-red-dark);font-weight:900;font-size:12px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-chk{margin-left:auto;width:20px;height:20px;border-radius:5px;border:2px solid rgba(255,255,255,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent;transition:all 0.2s}
+.step-chk.checked{background:var(--brand-yellow);border-color:var(--brand-yellow)}
+.step-chk.checked::after{content:'✓';color:var(--brand-red-dark);font-size:12px;font-weight:900}
+.complete-msg{display:none;text-align:center;padding:12px;background:rgba(255,255,255,0.15);border-radius:8px;font-size:16px;font-weight:700;margin-top:10px}
+
+.footer{margin-top:40px;padding:24px;text-align:center;font-size:12px;color:var(--text-dim);border-top:2px solid var(--border)}
+
+@media(max-width:768px){
+  body{padding:0}
+  .container{padding:0 10px}
+  .header{padding:28px 0 24px}
+  .header-inner{padding:0 16px}
+  .header .brand-name{font-size:36px}
+  .header .store-name{font-size:20px}
+  .header .period{font-size:13px;padding:5px 12px}
+  .kpi-grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  .kpi-val{font-size:22px}
+  .kpi-label{font-size:11px}
+  .kpi-sub{font-size:10px}
+  .revenue-grid,.hourly-compare,.adv-grid,.insight-grid{grid-template-columns:1fr}
+  .staff-grid,.waste-summary,.labor-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .adv-card.priority{grid-column:1}
+  .daily-chart,.tz-chart{height:180px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .section-title{font-size:17px}
+  .card{padding:16px}
+  .compare-table{font-size:12px;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .compare-table th,.compare-table td{padding:8px;white-space:nowrap}
+  .donut-container svg{width:140px;height:140px}
+  .adv-card{padding:18px}
+  .adv-card .card-title{font-size:16px}
+  .adv-card.priority .card-title{font-size:18px}
+  .adv-list li{font-size:13px}
+  .filter-bar{gap:6px}
+  .filter-bar button{padding:6px 12px;font-size:12px}
+  .step-chk{font-size:13px}
+  .wf-item{font-size:13px}
+  .bar-amount{font-size:9px}
+  /* Accordion for advice cards on mobile */
+  .adv-card.accordion-collapsed .adv-list,
+  .adv-card.accordion-collapsed .difficulty,
+  .adv-card.accordion-collapsed .mini-chart{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.4s ease,opacity 0.3s ease}
+  .adv-card .adv-list,.adv-card .difficulty,.adv-card .mini-chart{max-height:600px;opacity:1;transition:max-height 0.4s ease,opacity 0.3s ease}
 }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-
-/* Compare table */
-.compare-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-.compare-table th, .compare-table td { padding: 10px 14px; text-align: center; }
-.compare-table thead th { color: white; font-weight: 700; }
-.compare-table th.col-wd { background: var(--accent-blue); }
-.compare-table th.col-we { background: var(--accent-orange); }
-.compare-table th.col-diff { background: var(--text-secondary); }
-.compare-table th.col-label { background: #f5f0eb; color: var(--text-primary); text-align: left; }
-.compare-table tbody td { border-bottom: 1px solid var(--border-light); }
-.compare-table tbody td:first-child { text-align: left; font-weight: 700; color: var(--text-secondary); }
-.diff-positive { color: var(--accent-green); font-weight: 700; }
-.diff-negative { color: var(--brand-red); font-weight: 700; }
-
-/* Hourly pattern */
-.hourly-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; }
-.hourly-col h4 { text-align: center; font-size: 14px; margin-bottom: 10px; padding: 6px; border-radius: 6px; color: white; }
-.hourly-col.wd h4 { background: var(--accent-blue); }
-.hourly-col.we h4 { background: var(--accent-orange); }
-.hourly-bars { display: flex; align-items: flex-end; gap: 6px; height: 160px; }
-.hourly-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
-.h-bar { width: 80%; border-radius: 4px 4px 0 0; min-height: 2px; animation: barGrow 1.2s ease-out forwards; }
-.h-bar.wd { background: var(--accent-blue); }
-.h-bar.we { background: var(--accent-orange); }
-.h-bar-label { font-size: 10px; color: var(--text-dim); margin-top: 4px; }
-
-/* Insight cards */
-.insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
-.insight-item { padding: 14px; border-radius: 10px; background: var(--bg-section); font-size: 13px; border-left: 4px solid var(--brand-yellow); }
-.insight-item strong { color: var(--brand-red); }
-
-/* Time zone chart */
-.tz-chart { display: flex; align-items: flex-end; gap: 16px; height: 220px; padding: 20px 0; }
-.tz-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
-.tz-bar {
-  width: 80%; border-radius: 6px 6px 0 0; min-height: 2px;
-  background: #ddd;
-  animation: barGrow 1.2s ease-out forwards;
-  transition: filter 0.2s;
+@media(max-width:480px){
+  .header .brand-name{font-size:28px}
+  .header .brand-sub{font-size:14px}
+  .header .store-name{font-size:16px}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .kpi-val{font-size:20px}
+  .staff-grid,.waste-summary,.labor-grid{grid-template-columns:1fr}
+  .hourly-bars{height:120px}
+  .daily-chart,.tz-chart{height:160px}
+  .section-title{font-size:15px}
+  .adv-card .card-title{font-size:15px}
+  .adv-card.priority .card-title{font-size:16px}
+  .insight-item{font-size:12px}
+  .footer{font-size:11px;padding:16px 8px}
 }
-.tz-bar:hover { filter: brightness(1.1); }
-.tz-bar.peak { background: var(--brand-red); }
-.tz-bar.sub-peak { background: var(--brand-yellow); }
-.tz-bar.normal { background: #c8b8a8; }
-.tz-label { font-size: 12px; font-weight: 700; color: var(--text-secondary); margin-top: 8px; }
-.tz-amount { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
-
-/* Waste */
-.waste-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 16px; }
-.waste-card { text-align: center; padding: 16px; border-radius: 12px; background: var(--bg-card); box-shadow: var(--shadow-card); }
-.waste-card .waste-val { font-size: 24px; font-weight: 700; color: var(--brand-red); }
-.waste-card .waste-label { font-size: 12px; color: var(--text-dim); }
-.waste-bar-item { display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 13px; }
-.waste-bar-item .bar-bg { flex: 1; height: 24px; background: #f5eeee; border-radius: 4px; overflow: hidden; }
-.waste-bar-item .bar-fill { height: 100%; background: linear-gradient(90deg, var(--brand-red), var(--brand-red-light)); border-radius: 4px; transition: width 1.5s ease-out; }
-
-/* Staff */
-.staff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.staff-card {
-  padding: 14px; border-radius: 10px; background: var(--bg-card);
-  box-shadow: var(--shadow-card); font-size: 13px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.staff-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
-.staff-name { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
-.staff-detail { color: var(--text-secondary); }
-.labor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
-.labor-item { text-align: center; padding: 16px; border-radius: 10px; background: var(--bg-section); }
-.labor-item .l-val { font-size: 22px; font-weight: 700; color: var(--text-primary); }
-.labor-item .l-label { font-size: 11px; color: var(--text-dim); }
-
-/* Advice section */
-.advice-header {
-  background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-dark) 100%);
-  color: white; padding: 28px 32px; border-radius: 16px 16px 0 0; position: relative;
-}
-.advice-header h2 { font-size: 28px; font-weight: 900; }
-.advice-header p { font-size: 15px; opacity: 0.85; margin-top: 4px; }
-.advice-filter { display: flex; gap: 8px; padding: 16px 0; flex-wrap: wrap; }
-.advice-filter button {
-  padding: 8px 18px; border-radius: 20px; border: 2px solid var(--border);
-  background: white; font-size: 13px; font-weight: 700; cursor: pointer;
-  transition: all 0.2s;
-}
-.advice-filter button.active, .advice-filter button:hover {
-  background: var(--brand-red); color: white; border-color: var(--brand-red);
-}
-.advice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.advice-card {
-  background: var(--bg-card); border-radius: 16px; padding: 24px;
-  box-shadow: var(--shadow-card);
-  border-top: 4px solid #ccc;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-top-width 0.25s ease;
-  position: relative;
-}
-.advice-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-top-width: 8px; }
-.advice-card.priority {
-  grid-column: 1 / -1;
-  background: var(--brand-red); color: white;
-  border-top: none; border-left: 8px solid var(--brand-yellow);
-  animation: pulse-border 2s ease-in-out infinite;
-}
-@keyframes pulse-border {
-  0%, 100% { border-left-color: var(--brand-yellow); box-shadow: var(--shadow-card); }
-  50% { border-left-color: var(--brand-red-light); box-shadow: 0 4px 20px rgba(245,197,24,0.3); }
-}
-.advice-card.priority:hover { transform: translateY(-6px); }
-.advice-card .card-icon { font-size: 28px; margin-bottom: 4px; }
-.advice-card .card-title { font-size: 18px; font-weight: 900; margin-bottom: 10px; }
-.priority .card-title { font-size: 22px; }
-.badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
-.badge-kpi { background: rgba(204,34,0,0.1); color: var(--brand-red); }
-.priority .badge-kpi { background: var(--brand-yellow); color: var(--text-primary); }
-.advice-list { margin: 10px 0; padding: 0; list-style: none; }
-.advice-list li { padding: 6px 0; padding-left: 18px; position: relative; font-size: 14px; line-height: 1.6; }
-.advice-list li::before { content: '•'; position: absolute; left: 0; color: var(--brand-yellow); font-weight: 900; }
-.difficulty { margin-top: 10px; font-size: 12px; font-weight: 700; color: var(--text-dim); }
-.priority .difficulty { color: rgba(255,255,255,0.7); }
-.advice-card.win { border-top-color: var(--brand-yellow); }
-.advice-card.loss-reduce { border-top-color: var(--brand-red); }
-.advice-card.labor-opt { border-top-color: var(--brand-red-dark); }
-.advice-card.weekday-boost { border-top-color: var(--accent-blue); }
-.advice-card.weekend-boost { border-top-color: var(--accent-orange); }
-
-/* Checkbox */
-.step-check { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; font-size: 15px; cursor: pointer; }
-.step-check input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--brand-yellow); margin-top: 2px; flex-shrink: 0; }
-.step-check.done .step-text { text-decoration: line-through; opacity: 0.5; }
-.completion-msg { display: none; text-align: center; padding: 16px; font-size: 18px; font-weight: 700; color: var(--brand-yellow); animation: fadeIn 0.5s ease; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-.mini-chart { margin-top: 12px; }
-.sparkline { display: flex; align-items: flex-end; gap: 3px; height: 50px; }
-.spark-bar { flex: 1; border-radius: 2px 2px 0 0; min-height: 2px; }
-
-.footer { margin-top: 40px; padding: 24px; text-align: center; font-size: 12px; color: var(--text-dim); border-top: 2px solid var(--border); }
-
-@media (max-width: 768px) {
-  body { padding: 0; }
-  .container { padding: 0 10px; }
-  .header { padding: 28px 0 24px; }
-  .header-inner { padding: 0 16px; }
-  .header .brand-name { font-size: 36px; }
-  .header .store-name { font-size: 20px; }
-  .header .period { font-size: 13px; padding: 5px 12px; }
-  .kpi-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .kpi-val { font-size: 22px; }
-  .kpi-label { font-size: 11px; }
-  .kpi-sub { font-size: 10px; }
-  .revenue-grid, .hourly-compare, .advice-grid, .insight-grid { grid-template-columns: 1fr; }
-  .staff-grid, .waste-summary, .labor-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .advice-card.priority { grid-column: 1; }
-  .daily-chart, .tz-chart { height: 180px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .section-title { font-size: 17px; }
-  .card { padding: 16px; }
-  .compare-table { font-size: 12px; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .compare-table th, .compare-table td { padding: 8px 8px; white-space: nowrap; }
-  .donut-container svg { width: 140px; height: 140px; }
-  .advice-card { padding: 18px; }
-  .advice-card .card-title { font-size: 16px; }
-  .priority .card-title { font-size: 18px; }
-  .advice-list li { font-size: 13px; }
-  .advice-filter { gap: 6px; }
-  .advice-filter button { padding: 6px 12px; font-size: 12px; }
-  .step-check { font-size: 13px; }
-  .waterfall-item { font-size: 13px; }
-  .bar-amount { font-size: 9px; }
-}
-@media (max-width: 480px) {
-  .header .brand-name { font-size: 28px; }
-  .header .brand-sub { font-size: 14px; }
-  .header .store-name { font-size: 16px; }
-  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-  .kpi-val { font-size: 20px; }
-  .staff-grid, .waste-summary, .labor-grid { grid-template-columns: 1fr; }
-  .hourly-bars { height: 120px; }
-  .daily-chart, .tz-chart { height: 160px; }
-  .section-title { font-size: 15px; }
-  .advice-card .card-title { font-size: 15px; }
-  .priority .card-title { font-size: 16px; }
-  .insight-item { font-size: 12px; }
-  .footer { font-size: 11px; padding: 16px 8px; }
-}
-@media print {
-  .section { opacity: 1 !important; transform: none !important; }
-  .card:hover, .kpi-card:hover, .advice-card:hover, .staff-card:hover { transform: none; box-shadow: var(--shadow-card); }
-  .advice-filter { display: none; }
-  .advice-grid { grid-template-columns: 1fr; }
-  .step-check input[type="checkbox"] { display: none; }
-  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@media print{
+  .section{opacity:1!important;transform:none!important}
+  .card:hover,.kpi-card:hover,.adv-card:hover,.staff-card:hover{transform:none;box-shadow:var(--shadow-card)}
+  .filter-bar,.step-chk,.complete-msg{display:none!important}
+  .adv-grid{grid-template-columns:1fr}
+  *{animation:none!important;transition:none!important}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style>
 </head>
 <body>
 
-<!-- Header -->
+<!-- ① Header -->
 <div class="header">
   <div class="header-inner">
     <div class="brand-name">上間</div>
@@ -371,506 +265,336 @@ body {
 
 <div class="container">
 
-<!-- KPI Hero Cards -->
-<div class="section" id="kpi-section">
+<!-- ② KPI Hero Cards -->
+<div class="section">
   <div class="section-title">📊 週次 KPI サマリー</div>
   <div class="kpi-grid">
     <div class="kpi-card" style="border-top-color:var(--brand-red)">
       <div class="kpi-label">合計売上</div>
       <div class="kpi-val kpi-value" data-target="3587841" data-prefix="¥">¥0</div>
-      <div class="kpi-sub">予算達成率 <strong style="color:var(--accent-green)">128.1%</strong> <span class="week-badge up">前週比+17.4%</span></div>
+      <div class="kpi-sub">予算達成率 <strong style="color:var(--accent-green)">128.1%</strong> <span class="wb up">前週+17.4%</span></div>
     </div>
-    <div class="kpi-card" style="border-top-color:var(--brand-red)">
+    <div class="kpi-card" style="border-top-color:var(--brand-red-dark)">
       <div class="kpi-label">店舗前出売上</div>
-      <div class="kpi-val kpi-value" style="font-size:26px" data-target="3096668" data-prefix="¥">¥0</div>
-      <div class="kpi-sub">全体の 86.3% <span class="week-badge up">+9.9%</span></div>
+      <div class="kpi-val kpi-value" style="font-size:24px" data-target="3096668" data-prefix="¥">¥0</div>
+      <div class="kpi-sub">全体の 86.3% <span class="wb up">+9.9%</span></div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--brand-yellow)">
       <div class="kpi-label">注文売上</div>
-      <div class="kpi-val kpi-value" style="font-size:26px" data-target="491173" data-prefix="¥">¥0</div>
-      <div class="kpi-sub">全体の 13.7%｜50件 <span class="week-badge up">+107%</span></div>
+      <div class="kpi-val kpi-value" style="font-size:24px" data-target="491173" data-prefix="¥">¥0</div>
+      <div class="kpi-sub">全体の 13.7%｜50件 <span class="wb up">+107%</span></div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--accent-green)">
       <div class="kpi-label">粗利率</div>
       <div class="kpi-val kpi-value" data-target="55.0" data-suffix="%" data-decimal="1">0%</div>
-      <div class="kpi-sub">粗利額 ¥1,703,525 <span class="week-badge up">+0.4pt</span></div>
+      <div class="kpi-sub">粗利額 ¥1,703,525 <span class="wb up">+0.4pt</span></div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--brand-red-light)">
       <div class="kpi-label">ロス率</div>
       <div class="kpi-val kpi-value" data-target="3.0" data-suffix="%" data-decimal="1">0%</div>
-      <div class="kpi-sub">ロス額 ¥93,023 <span class="week-badge up">−0.1pt</span></div>
+      <div class="kpi-sub">ロス額 ¥93,023 <span class="wb up">−0.1pt</span></div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--accent-blue)">
       <div class="kpi-label">人件費率</div>
       <div class="kpi-val kpi-value" data-target="15.5" data-suffix="%" data-decimal="1">0%</div>
-      <div class="kpi-sub">人件費 ¥556,474 <span class="week-badge up">−2.2pt</span></div>
+      <div class="kpi-sub">人件費 ¥556,474 <span class="wb up">−2.2pt</span></div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--brand-yellow)">
       <div class="kpi-label">客単価</div>
       <div class="kpi-val kpi-value" data-target="871" data-prefix="¥">¥0</div>
-      <div class="kpi-sub">週間客数 3,555人 <span class="week-badge up">+¥50</span></div>
+      <div class="kpi-sub">週間客数 3,555人 <span class="wb up">+¥50</span></div>
     </div>
   </div>
 </div>
 
-<!-- Daily Sales Chart -->
-<div class="section">
-  <div class="section-title">📈 日別売上推移</div>
-  <div class="card">
-    <div class="daily-chart" id="daily-chart"></div>
-    <div class="chart-legend">
-      <span><span class="legend-dot" style="background:var(--brand-red);opacity:0.85"></span>店舗前出売上</span>
-      <span><span class="legend-dot" style="background:var(--brand-yellow)"></span>注文売上</span>
-    </div>
-  </div>
+<!-- ③ Daily Sales Chart -->
+<div class="section"><div class="section-title">📈 日別売上推移</div><div class="card"><div class="daily-chart" id="daily-chart"></div><div class="chart-legend"><span><span class="legend-dot" style="background:var(--brand-yellow)"></span>店舗前出売上</span><span><span class="legend-dot" style="background:var(--brand-red)"></span>注文売上</span></div></div></div>
+
+
+<!-- ⑤ Weekday/Weekend Compare -->
+<div class="section"><div class="section-title">📅 平日 vs 週末 比較分析</div><div class="card"><div style="font-size:11px;color:var(--text-dim);margin-bottom:8px">※ 平日＝月〜金（5日） / 週末＝土・日（2日）｜祝日は考慮しない</div><table class="comp-table"><thead><tr><th class="col-label">指標</th><th class="col-wd">平日（5日）</th><th class="col-we">週末（2日）</th><th class="col-diff">差分</th></tr></thead><tbody>
+<tr><td>日平均合計売上</td><td>¥469,005</td><td>¥621,407</td><td class="dp">+32.5%</td></tr>
+<tr><td>日平均前出売上</td><td>¥391,530</td><td>¥569,508</td><td class="dp">+45.5%</td></tr>
+<tr><td>日平均注文売上</td><td>¥77,475</td><td>¥51,899</td><td class="dn">−33.0%</td></tr>
+<tr><td>日平均客数</td><td>474人</td><td>592人</td><td class="dp">+24.8%</td></tr>
+<tr><td>客単価（前出）</td><td>¥826</td><td>¥962</td><td class="dp">+16.5%</td></tr>
+<tr><td>日平均ロス額</td><td>¥10,733</td><td>¥19,680</td><td class="dn">+83.4%</td></tr>
+<tr><td>ロス率（前出比）</td><td>2.7%</td><td>3.5%</td><td class="dn">+0.8pt</td></tr>
+<tr><td>人件費率</td><td>16.3%</td><td>14.0%</td><td class="dp">−2.3pt</td></tr>
+</tbody></table>
+<div class="hourly-compare"><div class="hourly-col wd"><h4>平日パターン（日平均）</h4><div class="hourly-bars" id="hourly-wd"></div></div><div class="hourly-col we"><h4>週末パターン（日平均）</h4><div class="hourly-bars" id="hourly-we"></div></div></div>
+<div class="insight-grid">
+<div class="insight-item">📈 金曜（春分の日）は平日扱いだが売上 <strong>¥678,868</strong>。祝日効果で平日日平均を大幅に押し上げ。</div>
+<div class="insight-item">⚠️ 週末のロス率 <strong>3.5%</strong> が平日 <strong>2.7%</strong> を上回る。土曜の行事商品・工場あまりが主因。</div>
+<div class="insight-item">💡 平日の注文売上は日平均 <strong>¥77,475</strong> と週末を上回る。法事需要は平日にも分散。</div>
+<div class="insight-item">🎯 週末の人時生産高が高効率。人件費率 <strong>14.0%</strong> は目標15%を下回る好水準。</div>
+</div></div></div>
+
+<!-- ⑥ Time zone -->
+<div class="section"><div class="section-title">🕐 時間帯別売上分布</div><div class="card"><div class="tz-chart" id="tz-chart"></div><div style="font-size:11px;color:var(--text-dim);text-align:center;margin-top:4px">※ 店舗前出売上のみ（注文売上は含まない）</div></div></div>
+
+<!-- ⑦ Waste -->
+<div class="section"><div class="section-title">🗑️ 廃棄ロス分析</div>
+<div style="background:linear-gradient(135deg,#FFEBEE,#FFF0EE);border:1px solid rgba(204,34,0,0.2);border-radius:10px;padding:12px 18px;margin-bottom:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap"><div style="font-size:13px;font-weight:700;color:var(--text-secondary)">週間ロス率（前出売上比）</div><div class="kpi-value" style="font-size:32px;font-weight:900;color:var(--brand-red);line-height:1">3.00%</div><div style="font-size:12px;color:var(--text-dim)">ロス額 ¥93,023 / 前出売上 ¥3,096,668</div></div>
+<div class="waste-summary"><div class="waste-card"><div class="waste-label">値引調整</div><div class="waste-val kpi-value" data-target="44740" data-prefix="¥">¥0</div><div class="waste-label">48.1%</div></div><div class="waste-card"><div class="waste-label">廃棄</div><div class="waste-val kpi-value" data-target="40403" data-prefix="¥">¥0</div><div class="waste-label">43.4%</div></div><div class="waste-card"><div class="waste-label">従業員割引</div><div class="waste-val kpi-value" data-target="7880" data-prefix="¥">¥0</div><div class="waste-label">8.5%</div></div></div>
+<div class="card"><h4 style="font-size:14px;color:var(--text-secondary);margin-bottom:12px">廃棄 TOP10（廃棄区分のみ）</h4>
+
+<!-- Column headers -->
+<div style="display:grid;grid-template-columns:24px 1fr 56px 3fr 56px 56px 56px 64px;gap:6px;align-items:center;padding:4px 6px;margin-bottom:4px;font-size:10px;font-weight:700;color:var(--text-dim);letter-spacing:0.05em">
+<span></span><span>商品名</span><span style="text-align:right">前出比</span><span></span>
+<span style="text-align:center;color:var(--accent-blue)">平日</span>
+<span style="text-align:center;color:var(--accent-orange)">週末</span>
+<span style="text-align:center;color:var(--text-secondary)">合計</span>
+<span style="text-align:right">廃棄額</span>
 </div>
 
-<!-- Revenue Structure -->
-<div class="section">
-  <div class="section-title">💰 収益構造</div>
-  <div class="revenue-grid">
-    <div class="card donut-container">
-      <h4 style="margin-bottom:12px;color:var(--text-secondary)">粗利率</h4>
-      <svg viewBox="0 0 120 120">
-        <circle cx="60" cy="60" r="48" fill="none" stroke="#f0e8e0" stroke-width="14"/>
-        <circle cx="60" cy="60" r="48" fill="none" stroke="var(--accent-green)" stroke-width="14"
-          stroke-dasharray="301.6" stroke-dashoffset="301.6" stroke-linecap="round"
-          transform="rotate(-90 60 60)" class="donut-arc" data-target="135.7"/>
-        <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="900" fill="var(--accent-green)" class="kpi-value">55.0%</text>
-        <text x="60" y="74" text-anchor="middle" font-size="10" fill="var(--text-dim)">粗利率</text>
-      </svg>
-      <div style="margin-top:12px">
-        <h4 style="font-size:14px;color:var(--text-secondary);margin-bottom:8px">粗利額 TOP5</h4>
-        <div class="gp-bar-container" id="gp-bars"></div>
-      </div>
-    </div>
-    <div class="card revenue-waterfall">
-      <h4 style="margin-bottom:12px;color:var(--text-secondary)">収益ウォーターフォール</h4>
-      <div class="waterfall-item"><span class="wf-label">売上（税抜）</span><span class="wf-val">¥3,096,668</span></div>
-      <div class="waterfall-item positive"><span class="wf-label">粗利額</span><span class="wf-val">¥1,703,525</span></div>
-      <div class="waterfall-item negative"><span class="wf-label">人件費</span><span class="wf-val">−¥556,474</span></div>
-      <div class="waterfall-item negative"><span class="wf-label">ロス</span><span class="wf-val">−¥93,023</span></div>
-      <div class="waterfall-item" style="border-top:3px solid var(--brand-yellow);margin-top:8px;padding-top:14px">
-        <span class="wf-label" style="font-weight:900;font-size:16px">営業利益</span>
-        <span class="wf-val" style="color:var(--accent-green);font-size:20px">¥1,054,028</span>
-      </div>
-      <div style="margin-top:6px;font-size:12px;color:var(--text-dim)">営業利益率: 34.0%（対税抜売上）<span class="week-badge up">前週比+1.7pt</span></div>
-    </div>
-  </div>
+<div id="waste-top10"></div>
+
+<div style="display:flex;gap:12px;margin-top:8px;margin-bottom:12px;font-size:11px;flex-wrap:wrap">
+<span style="display:flex;align-items:center;gap:4px"><span style="background:#E3EEF8;color:var(--accent-blue);font-weight:700;padding:1px 7px;border-radius:4px">平日</span>月〜金の廃棄個数</span>
+<span style="display:flex;align-items:center;gap:4px"><span style="background:#FFF0E0;color:var(--accent-orange);font-weight:700;padding:1px 7px;border-radius:4px">週末</span>土・日の廃棄個数</span>
+<span style="display:flex;align-items:center;gap:4px"><span style="background:#F5F5F0;color:var(--text-secondary);font-weight:700;padding:1px 7px;border-radius:4px">合計</span>週間合計個数</span>
 </div>
 
-<!-- Weekday vs Weekend -->
-<div class="section">
-  <div class="section-title">📅 平日 vs 週末 比較分析</div>
-  <div class="card">
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th class="col-label">指標</th>
-          <th class="col-wd">平日（5日）</th>
-          <th class="col-we">週末（2日）</th>
-          <th class="col-diff">差分</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>日平均合計売上</td><td>¥469,005</td><td>¥621,407</td><td class="diff-positive">+32.5%</td></tr>
-        <tr><td>日平均前出売上</td><td>¥391,530</td><td>¥569,508</td><td class="diff-positive">+45.5%</td></tr>
-        <tr><td>日平均客数</td><td>474人</td><td>592人</td><td class="diff-positive">+24.8%</td></tr>
-        <tr><td>日平均客単価</td><td>¥826</td><td>¥962</td><td class="diff-positive">+16.5%</td></tr>
-        <tr><td>日平均ロス</td><td>¥10,733</td><td>¥19,680</td><td class="diff-negative">+83.4%</td></tr>
-        <tr><td>人件費率</td><td>16.3%</td><td>14.0%</td><td class="diff-positive">−2.3pt</td></tr>
-      </tbody>
-    </table>
-    <div class="hourly-compare">
-      <div class="hourly-col wd"><h4>平日パターン（日平均）</h4><div class="hourly-bars" id="hourly-wd"></div></div>
-      <div class="hourly-col we"><h4>週末パターン（日平均）</h4><div class="hourly-bars" id="hourly-we"></div></div>
-    </div>
-    <div class="insight-grid">
-      <div class="insight-item">📈 今週は金曜が祝日（春分の日）で売上 <strong>¥678,868</strong>。平日数値を大幅に押し上げ、平日日平均が前週比+32%。</div>
-      <div class="insight-item">⚠️ 週末ロスが前週比 <strong>+56.5%</strong>（¥19,680/日）に悪化。土曜の彼岸商品・工場あまりが主因。</div>
-      <div class="insight-item">💡 木曜のロス率 <strong>1.2%</strong>（¥4,576）は週内ベスト。「平日ロスコントロール」施策の成果が出始めている。</div>
-      <div class="insight-item">🎯 注文売上が前週比 <strong>+107%</strong>（¥491,173）。火曜の¥154,091が突出。彼岸需要の取り込みに成功。</div>
-    </div>
-  </div>
+<div style="font-size:11px;color:var(--text-dim)">※ ロス率は店舗前出売上（¥3,096,668）ベース。注文売上は受注生産のためロス対象外。</div></div></div>
+
+<!-- ⑧ Staff -->
+<div class="section"><div class="section-title">👥 スタッフ・人件費</div><div class="staff-grid" id="staff-grid"></div><div class="labor-grid">
+<div class="labor-item"><div class="l-val kpi-value" data-target="556474" data-prefix="¥">¥0</div><div class="l-label">週間人件費</div></div>
+<div class="labor-item"><div class="l-val kpi-value" data-target="15.5" data-suffix="%" data-decimal="1">0%</div><div class="l-label">人件費率</div></div>
+<div class="labor-item"><div class="l-val">465.2h</div><div class="l-label">推定総労働時間</div></div>
+<div class="labor-item"><div class="l-val kpi-value" data-target="1196" data-prefix="¥">¥0</div><div class="l-label">平均時給</div></div>
+<div class="labor-item"><div class="l-val">22名</div><div class="l-label">稼働スタッフ数</div></div>
+<div class="labor-item"><div class="l-val kpi-value" data-target="6657" data-prefix="¥">¥0</div><div class="l-label">人時生産高</div></div>
+</div></div>
+
+<!-- ⑨ Advice — v3 spec compliant -->
+<div class="section" id="adv-section">
+<div class="adv-header"><h2>🏪 店長への改善提案</h2><p>今週のデータが導く、明日の行動</p></div>
+<div class="adv-body">
+<div class="filter-bar" id="filter-bar">
+<button class="filter-btn active" data-f="all">すべて表示</button>
+<button class="filter-btn" data-f="today">★☆☆ 今日できる</button>
+<button class="filter-btn" data-f="week">★★☆ 今週中</button>
+<button class="filter-btn" data-f="month">★★★ 来月から</button>
+</div>
+<div class="adv-grid">
+
+<!-- ① Win -->
+<div class="adv-card" data-p="win" data-d="today">
+<div class="card-icon">📈</div><div class="card-title">今週の勝ちポイント</div>
+<span class="badge badge-kpi">予算達成率 128.1%</span><span class="badge" style="background:rgba(26,138,80,0.1);color:var(--accent-green)">営業利益 ¥1,054,028</span>
+<ul class="adv-list">
+<li><strong>予算を+28.1%超過達成</strong>　—　彼岸需要の取り込みに成功。注文売上が前週比+107%（¥491,173）</li>
+<li><strong>木曜ロス率1.2%が週内ベスト</strong>　—　「平日ロスコントロール」施策が成果を出し始めた</li>
+<li><strong>人件費率15.5%で目標達成</strong>　—　前週17.7%から−2.2pt改善。売上増にシフトが連動</li>
+<li><strong>日曜の人時生産高¥9,287</strong>　—　追加製造判断・フェイス管理の成功例を標準化する</li>
+</ul>
+<div class="difficulty">★☆☆ 今日できる — 成功事例をスタッフに共有</div>
+<div class="mini-chart" style="text-align:center;margin-top:8px"><svg viewBox="0 0 100 100" width="70" height="70"><circle cx="50" cy="50" r="40" fill="none" stroke="#f0e8e0" stroke-width="10"/><circle cx="50" cy="50" r="40" fill="none" stroke="var(--accent-green)" stroke-width="10" stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" transform="rotate(-90 50 50)" class="donut-arc" data-target="-29.8"/><text x="50" y="54" text-anchor="middle" font-size="15" font-weight="900" fill="var(--accent-green)">128%</text></svg><div style="font-size:10px;color:var(--text-dim)">予算達成率</div></div>
 </div>
 
-<!-- Time zone chart -->
-<div class="section">
-  <div class="section-title">🕐 時間帯別売上分布</div>
-  <div class="card">
-    <div class="tz-chart" id="tz-chart"></div>
-    <div style="font-size:11px;color:var(--text-dim);text-align:center;margin-top:4px">※ 店舗前出売上のみ（注文売上は含まない）</div>
-  </div>
+<!-- ② Priority Action (full width) -->
+<div class="adv-card priority" data-d="today">
+<div class="badge badge-kpi">🔥 今週最も優先すべきアクション</div>
+<div class="card-title">土曜のロス率4.7%（¥23,936）を3.0%以下に改善する</div>
+<p style="opacity:0.85;font-size:14px;margin-bottom:14px">土曜（3/21）は値引調整¥14,160が突出。彼岸商品（ちゃわきOB・行事用おかず）の売れ残り＋工場あまり35個が主因。</p>
+<div class="action-steps" id="action-steps">
+<div class="step-check" id="step0" onclick="toggleCheck(0)"><div class="step-num">①</div><div style="flex:1"><strong>明日朝・担当者全員</strong>：行事商品（ちゃわき・法事おかず）は事前予約ベースのみ製造。店頭分は各2Pに限定する</div><div class="step-chk" id="chk0"></div></div>
+<div class="step-check" id="step1" onclick="toggleCheck(1)"><div class="step-num">②</div><div style="flex:1"><strong>今週中・金城奈苗</strong>：工場あまりの受入ルールを策定。弁当10個以上の場合は店舗判断で一部返送を提案する</div><div class="step-chk" id="chk1"></div></div>
+<div class="step-check" id="step2" onclick="toggleCheck(2)"><div class="step-num">③</div><div style="flex:1"><strong>継続・店長</strong>：土曜の値引調整を¥7,000以内に管理。14時に残量チェック→早めの値引き開始で廃棄ゼロを目指す</div><div class="step-chk" id="chk2"></div></div>
+</div>
+<div id="completeMsg" class="complete-msg">今週の改善完了！お疲れ様でした 🎉</div>
+<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+<div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;text-align:center"><div class="kpi-value" style="font-size:20px">4.7%</div><div style="font-size:10px;opacity:0.78">現在の土曜ロス率</div></div>
+<div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;text-align:center"><div class="kpi-value" style="font-size:20px">→ 3.0%</div><div style="font-size:10px;opacity:0.78">目標</div></div>
+<div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;text-align:center"><div class="kpi-value" style="font-size:20px">¥8,700</div><div style="font-size:10px;opacity:0.78">週間改善見込み額</div></div>
+</div>
 </div>
 
-<!-- Waste Analysis -->
-<div class="section">
-  <div class="section-title">🗑️ 廃棄ロス分析</div>
-  <div class="waste-summary">
-    <div class="waste-card">
-      <div class="waste-label">値引調整</div>
-      <div class="waste-val kpi-value" data-target="44740" data-prefix="¥">¥0</div>
-      <div class="waste-label">48.1%</div>
-    </div>
-    <div class="waste-card">
-      <div class="waste-label">廃棄</div>
-      <div class="waste-val kpi-value" data-target="40403" data-prefix="¥">¥0</div>
-      <div class="waste-label">43.4%</div>
-    </div>
-    <div class="waste-card">
-      <div class="waste-label">従業員割引</div>
-      <div class="waste-val kpi-value" data-target="7880" data-prefix="¥">¥0</div>
-      <div class="waste-label">8.5%</div>
-    </div>
-  </div>
-  <div class="card">
-    <h4 style="font-size:14px;color:var(--text-secondary);margin-bottom:12px">廃棄 TOP5（廃棄区分のみ）</h4>
-    <div id="waste-bars"></div>
-    <div style="font-size:11px;color:var(--text-dim);margin-top:8px">※ ロス分析は店舗前出売上ベース（注文売上は受注生産のためロス対象外）</div>
-  </div>
+<!-- ③ Loss -->
+<div class="adv-card" data-p="loss" data-d="week">
+<div class="card-icon">🗑️</div><div class="card-title">ロス削減チャレンジ</div>
+<span class="badge badge-kpi">ロス率 3.0%（¥93,023）</span>
+<ul class="adv-list">
+<li><strong>三枚肉弁当の廃棄¥3,565を¥1,500以内に抑える</strong>　—　廃棄TOP1。週末の製造量を2割減で試行</li>
+<li><strong>ちゃわきOB¥3,050は行事日のみ限定製造に切替える</strong>　—　彼岸でも常連の反応が鈍く、見込み製造のリスクが高い</li>
+<li><strong>木曜の成功パターン（ロス率1.2%）を月・火にも横展開する</strong>　—　製造数量目安表＋15時残量チェックの標準化</li>
+<li><strong>工場あまりの受入量を日次でコントロールする</strong>　—　月曜37個・土曜35個のロスが発生。上限10個ルールを提案</li>
+</ul>
+<div class="difficulty">★★☆ 今週中に体制構築</div>
+<div class="mini-chart"><div style="display:flex;gap:3px;height:40px;align-items:flex-end;margin-top:8px"><div style="flex:1;background:var(--brand-red);border-radius:3px 3px 0 0;height:96%"></div><div style="flex:1;background:var(--brand-red-light);border-radius:3px 3px 0 0;height:87%"></div><div style="flex:1;background:#dcc;border-radius:3px 3px 0 0;height:17%"></div></div><div style="display:flex;gap:3px;font-size:9px;color:var(--text-dim)"><span style="flex:1;text-align:center">値引¥44.7K</span><span style="flex:1;text-align:center">廃棄¥40.4K</span><span style="flex:1;text-align:center">従割¥7.9K</span></div></div>
 </div>
 
-<!-- Staff & Labor -->
-<div class="section">
-  <div class="section-title">👥 スタッフ・人件費</div>
-  <div class="staff-grid" id="staff-grid"></div>
-  <div class="labor-grid">
-    <div class="labor-item"><div class="l-val kpi-value" data-target="556474" data-prefix="¥">¥0</div><div class="l-label">週間人件費</div></div>
-    <div class="labor-item"><div class="l-val kpi-value" data-target="15.5" data-suffix="%" data-decimal="1">0%</div><div class="l-label">人件費率</div></div>
-    <div class="labor-item"><div class="l-val">465.2h</div><div class="l-label">総労働時間</div></div>
-    <div class="labor-item"><div class="l-val kpi-value" data-target="1196" data-prefix="¥">¥0</div><div class="l-label">平均時給</div></div>
-    <div class="labor-item"><div class="l-val">22名</div><div class="l-label">稼働スタッフ数</div></div>
-    <div class="labor-item"><div class="l-val kpi-value" data-target="6657" data-prefix="¥">¥0</div><div class="l-label">平均人時生産高</div></div>
-  </div>
+<!-- ④ Labor -->
+<div class="adv-card" data-p="labor" data-d="month">
+<div class="card-icon">👥</div><div class="card-title">人件費最適化ヒント</div>
+<span class="badge badge-kpi">人件費率 15.5%（前週17.7%から改善）</span>
+<ul class="adv-list">
+<li><strong>日曜の人件費率12.1%を全週末の基準にする</strong>　—　高売上日の効率を維持。売上¥50万超日は人件費率13%以下を目標に</li>
+<li><strong>月曜のシフトを-1名で検証する</strong>　—　月曜売上¥316K対して人件費¥66Kは過剰（人件費率20.9%）</li>
+<li><strong>ミラさん退職後のシフト穴を早期に補填する</strong>　—　3/15最終勤務。既存メンバーの追加シフトで対応可能か確認</li>
+<li><strong>外国籍スタッフへの教育投資を継続する</strong>　—　ビム・アワイスの製造調整教育が木曜ロス率1.2%に直結</li>
+</ul>
+<div class="difficulty">★★★ 来月からシフト改革</div>
+<div class="mini-chart"><svg viewBox="0 0 100 60" width="100" height="60" style="margin-top:8px"><rect x="5" y="5" width="90" height="20" rx="10" fill="#f0e8e0"/><rect x="5" y="5" width="28" height="20" rx="10" fill="var(--accent-green)"/><text x="50" y="19" text-anchor="middle" font-size="9" fill="var(--text-primary)" font-weight="700">15.5%</text><text x="50" y="45" text-anchor="middle" font-size="8" fill="var(--text-dim)">目標: 15%以下</text><line x1="27" y1="3" x2="27" y2="27" stroke="var(--brand-yellow)" stroke-width="2" stroke-dasharray="3"/></svg></div>
 </div>
 
-<!-- Advice Section -->
-<div class="section" id="advice-section">
-  <div class="advice-header">
-    <h2>🎯 店長へのアドバイス</h2>
-    <p>今週のデータが導く、明日の行動プラン</p>
-  </div>
-  <div style="padding:16px 0">
-    <div class="advice-filter" id="advice-filter">
-      <button class="active" data-filter="all">すべて</button>
-      <button data-filter="today">★☆☆ 今日できる</button>
-      <button data-filter="week">★★☆ 今週中</button>
-      <button data-filter="month">★★★ 来月から</button>
-    </div>
-  </div>
-  <div class="advice-grid">
+<!-- ⑤ Weekday boost -->
+<div class="adv-card" data-p="weekday" data-d="week">
+<div class="card-icon">📅</div><div class="card-title">平日強化策</div>
+<span class="badge badge-kpi">平日前出売上 ¥391,530/日</span>
+<ul class="adv-list">
+<li><strong>水曜の成功パターン（¥390K・予算+11.5%）を月・火にも展開する</strong>　—　ランチ帯¥137Kが牽引</li>
+<li><strong>月曜の売上¥316Kを¥350K以上に底上げする</strong>　—　月曜朝の品揃え強化。日曜残り在庫の活用セット提案</li>
+<li><strong>注文売上の平日獲得を継続する</strong>　—　火曜¥154K・木曜¥95Kと法事需要が平日にも分散。法人リスト継続フォロー</li>
+<li><strong>製造数量目安表を全平日スタッフに配布する</strong>　—　木曜の成功（ロス1.2%）はアワイスへの数量管理教育が鍵</li>
+</ul>
+<div class="difficulty">★★☆ 今週中</div>
+<div class="mini-chart"><div style="display:flex;gap:3px;height:50px;align-items:flex-end;margin-top:8px"><div style="flex:1;background:var(--accent-blue);border-radius:2px 2px 0 0;height:46%" title="月¥316K"></div><div style="flex:1;background:var(--accent-blue);border-radius:2px 2px 0 0;height:72%" title="火¥491K"></div><div style="flex:1;background:var(--accent-blue);border-radius:2px 2px 0 0;height:58%" title="水¥397K"></div><div style="flex:1;background:var(--accent-blue);border-radius:2px 2px 0 0;height:68%" title="木¥463K"></div><div style="flex:1;background:var(--accent-blue);border-radius:2px 2px 0 0;height:100%" title="金¥679K"></div></div><div style="display:flex;gap:3px;font-size:9px;color:var(--text-dim)"><span style="flex:1;text-align:center">月</span><span style="flex:1;text-align:center">火</span><span style="flex:1;text-align:center">水</span><span style="flex:1;text-align:center">木</span><span style="flex:1;text-align:center">金</span></div></div>
+</div>
 
-    <!-- Win Point -->
-    <div class="advice-card win" data-difficulty="today">
-      <div class="card-icon">📈</div>
-      <div class="card-title">今週の勝ちポイント</div>
-      <span class="badge badge-kpi">予算達成率 128.1%</span>
-      <span class="badge badge-kpi">営業利益 ¥1,054,028</span>
-      <ul class="advice-list">
-        <li><strong>全KPIが前週比改善</strong>　—　合計売上+17.4%、粗利率+0.4pt、人件費率−2.2pt。彼岸需要の取り込みに成功</li>
-        <li><strong>注文売上が前週比+107%（¥491,173）</strong>　—　火曜¥154,091・金曜¥114,029と法事需要を確実に獲得</li>
-        <li><strong>木曜ロス率1.2%が週内ベスト</strong>　—　「平日ロスコントロール」施策が成果を出し始めている。金城さんの教育効果</li>
-        <li><strong>日曜の人時生産高¥9,287</strong>　—　追加製造の判断・フェイス管理が高効率を実現</li>
-      </ul>
-      <div class="difficulty">★☆☆ 今日できる — 成功事例をチームに共有</div>
-    </div>
+<!-- ⑥ Weekend boost -->
+<div class="adv-card" data-p="weekend" data-d="week">
+<div class="card-icon">🌟</div><div class="card-title">週末強化策</div>
+<span class="badge badge-kpi">週末売上 ¥621,407/日</span>
+<ul class="adv-list">
+<li><strong>日曜モデル（¥659K・ロス率2.5%）を土曜にも展開する</strong>　—　追加製造判断・11時前フェイス整備の標準化</li>
+<li><strong>土曜の行事商品を予約ベース製造に切替える</strong>　—　ちゃわきOB・法事おかずの見込み製造をやめ廃棄リスクゼロに</li>
+<li><strong>工場あまりの店頭値引き開始を13時に前倒しする</strong>　—　土曜の工場あまり35個がロスに直結。早期値引きで廃棄最小化</li>
+<li><strong>新商品「ゆし豆腐そば」のSNS告知を金曜夕方に発信する</strong>　—　新規客に売れる傾向。週末前の認知拡大で集客アップ</li>
+</ul>
+<div class="difficulty">★★☆ 今週中</div>
+<div class="mini-chart"><div style="display:flex;gap:3px;height:50px;align-items:flex-end;margin-top:8px"><div style="flex:1;background:var(--accent-orange);border-radius:2px 2px 0 0;height:100%" title="日¥659K"></div><div style="flex:1;background:var(--accent-orange);border-radius:2px 2px 0 0;height:89%" title="土¥584K"></div></div><div style="display:flex;gap:3px;font-size:9px;color:var(--text-dim)"><span style="flex:1;text-align:center">日</span><span style="flex:1;text-align:center">土</span></div></div>
+</div>
 
-    <!-- Priority Action -->
-    <div class="advice-card priority" data-difficulty="today">
-      <span class="badge badge-kpi">🔥 今週最も優先すべきアクション</span>
-      <div class="card-title">土曜のロス率4.7%（¥23,936）を3.0%以下に改善</div>
-      <p style="opacity:0.85;font-size:14px;margin-bottom:14px">土曜（3/21）は値引調整¥14,160が突出。彼岸商品（ちゃわきOB・行事用おかず）の売れ残り＋工場あまり35個が主因。祝祭日の仕込み判断に改善余地あり。</p>
-      <div class="step-check" onclick="toggleCheck(this)">
-        <input type="checkbox"><span class="step-text"><strong>① 明日朝</strong>：行事商品（ちゃわき・法事おかず）は事前予約数ベースのみ製造。店頭分は最小ロット（各2P）に限定する</span>
-      </div>
-      <div class="step-check" onclick="toggleCheck(this)">
-        <input type="checkbox"><span class="step-text"><strong>② 今週中</strong>：工場あまりの受入ルールを策定。弁当10個以上の場合は店舗判断で一部返送できる仕組みを提案</span>
-      </div>
-      <div class="step-check" onclick="toggleCheck(this)">
-        <input type="checkbox"><span class="step-text"><strong>③ 継続</strong>：土曜の値引調整を¥7,000以内に管理。14時時点の残量チェック→早めの値引き開始で廃棄ゼロを目指す</span>
-      </div>
-      <div class="completion-msg" id="completion-msg">🎉 今週の改善完了！お疲れ様でした</div>
-    </div>
-
-    <!-- Loss Reduction -->
-    <div class="advice-card loss-reduce" data-difficulty="week">
-      <div class="card-icon">🗑️</div>
-      <div class="card-title">ロス削減チャレンジ</div>
-      <span class="badge badge-kpi">週間ロス ¥93,023（3.0%）</span>
-      <ul class="advice-list">
-        <li><strong>三枚肉弁当の廃棄¥3,565を¥1,500以内に</strong>　—　廃棄TOP1。週末の製造量を2割減で試行</li>
-        <li><strong>ちゃわきOB¥3,050は行事日のみ限定製造に</strong>　—　彼岸でも常連の反応が鈍く、需要予測が困難</li>
-        <li><strong>「ゆし豆腐そば」は新規客に売れている</strong>　—　新商品のPOP強化で認知拡大。常連への試食提供で慣れを作る</li>
-        <li><strong>木曜のロスコントロール成功パターンを月・火にも横展開</strong>　—　製造数量目安表＋15時残量チェックの標準化</li>
-      </ul>
-      <div class="difficulty">★★☆ 今週中</div>
-      <div class="mini-chart">
-        <div style="display:flex;gap:3px;height:40px;align-items:flex-end;margin-top:8px">
-          <div style="flex:1;background:var(--brand-red);border-radius:3px 3px 0 0;height:96%" title="値引調整 ¥44,740"></div>
-          <div style="flex:1;background:var(--brand-red-light);border-radius:3px 3px 0 0;height:87%" title="廃棄 ¥40,403"></div>
-          <div style="flex:1;background:#dcc;border-radius:3px 3px 0 0;height:17%" title="従業員割 ¥7,880"></div>
-        </div>
-        <div style="display:flex;gap:3px;font-size:9px;color:var(--text-dim)"><span style="flex:1;text-align:center">値引</span><span style="flex:1;text-align:center">廃棄</span><span style="flex:1;text-align:center">従割</span></div>
-      </div>
-    </div>
-
-    <!-- Labor Optimization -->
-    <div class="advice-card labor-opt" data-difficulty="month">
-      <div class="card-icon">👥</div>
-      <div class="card-title">人件費最適化ヒント</div>
-      <span class="badge badge-kpi">人件費率 15.5%（前週17.7%から改善）</span>
-      <ul class="advice-list">
-        <li><strong>日曜の人件費率12.1%が理想形</strong>　—　高売上日の効率を平日にも横展開。売上¥40万超日は人件費率16%以下を目標に</li>
-        <li><strong>月曜の人件費率20.9%が課題</strong>　—　売上¥316K対して人件費¥66Kは過剰。朝帯の配置を-1名で検証</li>
-        <li><strong>ミラさん退職（3/15最終勤務）への対応</strong>　—　シフト穴の補填計画を早期に確定。既存メンバーの追加シフトで対応可能か確認</li>
-        <li><strong>外国籍スタッフへの教育投資が功を奏している</strong>　—　ビム・アワイスへの製造調整教育が木曜のロス率1.2%に直結</li>
-      </ul>
-      <div class="difficulty">★★★ 来月からシフト改革</div>
-      <div class="mini-chart">
-        <svg viewBox="0 0 100 60" width="100" height="60" style="margin-top:8px">
-          <rect x="5" y="5" width="90" height="20" rx="10" fill="#f0e8e0"/>
-          <rect x="5" y="5" width="28" height="20" rx="10" fill="var(--accent-green)"/>
-          <text x="50" y="19" text-anchor="middle" font-size="9" fill="var(--text-primary)" font-weight="700">15.5%</text>
-          <text x="50" y="45" text-anchor="middle" font-size="8" fill="var(--text-dim)">目標: 15%以下</text>
-          <line x1="27" y1="3" x2="27" y2="27" stroke="var(--brand-yellow)" stroke-width="2" stroke-dasharray="3"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- Weekday Boost -->
-    <div class="advice-card weekday-boost" data-difficulty="week">
-      <div class="card-icon">📅</div>
-      <div class="card-title">平日強化策</div>
-      <span class="badge badge-kpi">平日前出売上 ¥391,530/日（前週比+18.5%）</span>
-      <ul class="advice-list">
-        <li><strong>水曜¥390,350が好調</strong>　—　予算達成率111.5%。ランチ帯¥136,516が牽引。水曜レベルを月・火にも展開</li>
-        <li><strong>月曜の売上¥316Kを¥350K以上に</strong>　—　月曜朝の品揃えを強化。日曜の残り在庫を活用した朝セット提案</li>
-        <li><strong>注文売上の平日獲得を継続</strong>　—　今週は火曜¥154K・木曜¥95Kと好調。法人営業リストの継続フォロー</li>
-        <li><strong>製造数量目安表を全平日に配布</strong>　—　木曜の成功（ロス率1.2%）の鍵は数量管理。アワイスに任せた午後の調整も有効</li>
-      </ul>
-      <div class="difficulty">★★☆ 今週中</div>
-    </div>
-
-    <!-- Weekend Boost -->
-    <div class="advice-card weekend-boost" data-difficulty="week">
-      <div class="card-icon">🌟</div>
-      <div class="card-title">週末強化策</div>
-      <span class="badge badge-kpi">週末売上 ¥621,407/日</span>
-      <ul class="advice-list">
-        <li><strong>日曜モデル（¥659K・ロス率2.5%）を土曜にも展開</strong>　—　平安名さんの追加製造判断・フェイス管理を土曜担当にも共有</li>
-        <li><strong>土曜の行事商品は予約ベースに切替</strong>　—　ちゃわきOB・法事おかずの見込み製造をやめ、廃棄リスクをゼロに</li>
-        <li><strong>工場あまりの店頭値引き開始を13時に前倒し</strong>　—　土曜は工場あまり35個がロスに直結。早期値引きで廃棄を最小化</li>
-        <li><strong>新商品「ゆし豆腐そば」のSNS告知を週末前に</strong>　—　新規客に売れる傾向あり。金曜夕方のSNS投稿で週末の認知を上げる</li>
-      </ul>
-      <div class="difficulty">★★☆ 今週中</div>
-    </div>
-
-  </div>
+</div><!-- /adv-grid -->
+</div><!-- /adv-body -->
 </div>
 
 <!-- Footer -->
 <div class="footer">
-  <p>上間沖縄天ぷら 登川店 ｜ 週次レポート ｜ 集計期間: 2026/03/15〜03/21</p>
-  <p>データソース: 営業日報PDF×7 / ABC分析CSV / 廃棄リストCSV / POSデータCSV / 人件費CSV</p>
+<p>上間沖縄天ぷら 登川店 ｜ 週次レポート ｜ 集計期間: 2026/03/15〜03/21</p>
+<p>データソース: 営業日報PDF×7 / ABC分析CSV / 廃棄リストCSV / POSデータCSV / 人件費CSV</p>
 </div>
-
 </div>
 
 <script>
-const dailyData = [
-  {date:'3/15(日)', front:624532, order:34439, total:658971},
-  {date:'3/16(月)', front:298315, order:17628, total:315943},
-  {date:'3/17(火)', front:336970, order:154091, total:491061},
-  {date:'3/18(水)', front:390350, order:6222, total:396572},
-  {date:'3/19(木)', front:367177, order:95406, total:462583},
-  {date:'3/20(金)', front:564839, order:114029, total:678868},
-  {date:'3/21(土)', front:514485, order:69358, total:583843},
+/* === DATA === */
+const D=[
+{d:'3/15(日)',fr:624532,or:34439,t:658971,we:true},
+{d:'3/16(月)',fr:298315,or:17628,t:315943,we:false},
+{d:'3/17(火)',fr:336970,or:154091,t:491061,we:false},
+{d:'3/18(水)',fr:390350,or:6222,t:396572,we:false},
+{d:'3/19(木)',fr:367177,or:95406,t:462583,we:false},
+{d:'3/20(金)',fr:564839,or:114029,t:678868,we:false},
+{d:'3/21(土)',fr:514485,or:69358,t:583843,we:true},
+];
+const TZ=[{l:'06-08',s:784884,c:1087},{l:'09-11',s:907888,c:947},{l:'12-14',s:892582,c:954},{l:'15-17',s:449424,c:461},{l:'18+',s:61890,c:106}];
+const hwdAvg=[91503,112535,119080,61815,6597];
+const hweAvg=[163685,172608,148590,70174,14452];
+const W10=[
+{n:'三枚肉弁当',amt:3565,pct:'0.12',wd:6,we:5,tot:11},
+{n:'ちゃわきOB(赤)',amt:3050,pct:'0.10',wd:0,we:2,tot:2},
+{n:'骨なしチキン',amt:2445,pct:'0.08',wd:33,we:1,tot:34},
+{n:'いなり大',amt:1519,pct:'0.05',wd:13,we:11,tot:24},
+{n:'とんかつ弁当',amt:1501,pct:'0.05',wd:3,we:2,tot:5},
+{n:'おにコロパック(ジューシー)',amt:1467,pct:'0.05',wd:12,we:1,tot:13},
+{n:'レグチキン(大)',amt:1210,pct:'0.04',wd:7,we:0,tot:7},
+{n:'みそおにぎり1個',amt:1196,pct:'0.04',wd:7,we:13,tot:20},
+{n:'魚天ぷら',amt:1169,pct:'0.04',wd:3,we:18,tot:21},
+{n:'カリカリ梅おにぎり',amt:875,pct:'0.03',wd:8,we:4,tot:12},
+];
+const ST=[
+{n:'金城 奈苗',h:40.0,d:4,p:72520},{n:'上間 清美',h:39.5,d:5,p:49503},
+{n:'平安名 雅幸',h:36.25,d:5,p:39467},{n:'ロク',h:38.25,d:6,p:39398},
+{n:'ラーマン',h:36.25,d:5,p:37084},{n:'ジョエル',h:27.25,d:5,p:34079},
+{n:'ライ ビジュワ',h:29.5,d:5,p:30178},{n:'徳永 恭子',h:29.0,d:5,p:30160},
+{n:'兼山 梨絵',h:26.25,d:4,p:27300},
 ];
 
-const hourlyTotal = [
-  {label:'06-08', sales:784884, customers:1087},
-  {label:'09-11', sales:907888, customers:947},
-  {label:'12-14', sales:892582, customers:954},
-  {label:'15-17', sales:449424, customers:461},
-  {label:'18+', sales:61890, customers:106},
-];
-
-const hourlyWD = [91503, 112535, 119080, 61815, 6597];
-const hourlyWE = [163685, 172608, 148590, 70174, 14452];
-
-const gpTop5 = [
-  {name:'魚天ぷら', val:171158},
-  {name:'イカ天ぷら', val:154100},
-  {name:'沖縄そば(小)', val:86596},
-  {name:'野菜天ぷら', val:67016},
-  {name:'ゲソ天ぷら', val:49060},
-];
-
-const wasteTop5 = [
-  {name:'三枚肉弁当', val:3565},
-  {name:'ちゃわきOB(赤)', val:3050},
-  {name:'骨なしチキン', val:2445},
-  {name:'いなり大', val:1519},
-  {name:'とんかつ弁当', val:1501},
-];
-
-const staffData = [
-  {name:'金城 奈苗', hours:40.0, days:4, wage:1813, pay:72520},
-  {name:'上間 清美', hours:39.5, days:5, wage:1085, pay:49503},
-  {name:'平安名 雅幸', hours:36.25, days:5, wage:1085, pay:39467},
-  {name:'ロク', hours:38.25, days:6, wage:1030, pay:39398},
-  {name:'ラーマン', hours:36.25, days:5, wage:1023, pay:37084},
-  {name:'ジョエル', hours:27.25, days:5, wage:1023, pay:34079},
-  {name:'ライ　ビジュワ', hours:29.5, days:5, wage:1023, pay:30178},
-  {name:'徳永 恭子', hours:29.0, days:5, wage:1040, pay:30160},
-  {name:'兼山 梨絵', hours:26.25, days:4, wage:1040, pay:27300},
-];
-
-// Build daily chart
-const maxTotal = Math.max(...dailyData.map(d=>d.total));
-const chartEl = document.getElementById('daily-chart');
-dailyData.forEach(d => {
-  const frontH = (d.front/maxTotal*220);
-  const orderH = (d.order/maxTotal*220);
-  const isWeekend = d.date.includes('日)') || d.date.includes('土)');
-  chartEl.innerHTML += `
-    <div class="daily-bar-group">
-      <div class="bar-amount">¥${(d.total/10000).toFixed(1)}万</div>
-      <div class="bar-stack" title="前出: ¥${d.front.toLocaleString()}&#10;注文: ¥${d.order.toLocaleString()}&#10;合計: ¥${d.total.toLocaleString()}">
-        <div class="bar-front" style="height:${frontH}px"></div>
-        <div class="bar-order" style="height:${orderH}px"></div>
-      </div>
-      <div style="font-size:10px;color:var(--text-dim);margin-top:2px;text-align:center;line-height:1.3">
-        <span style="color:var(--brand-red)">¥${(d.front/10000).toFixed(1)}万</span><br>
-        <span style="color:#b8960a">¥${(d.order/10000).toFixed(1)}万</span>
-      </div>
-      <div class="bar-label" style="${isWeekend?'color:var(--brand-red);font-weight:900':''}">${d.date}</div>
-    </div>`;
+/* ③ Daily chart — 前出=黄色 / 注文=赤色 / 角丸なし */
+const maxT=Math.max(...D.map(x=>x.t));
+const cEl=document.getElementById('daily-chart');
+D.forEach(x=>{
+const fH=x.fr/maxT*220,oH=x.or/maxT*220;
+cEl.innerHTML+=`<div class="daily-bar-group"><div class="bar-amount">¥${(x.t/1e4).toFixed(1)}万</div><div class="bar-stack" title="前出:¥${x.fr.toLocaleString()}&#10;注文:¥${x.or.toLocaleString()}&#10;合計:¥${x.t.toLocaleString()}"><div class="bar-front" style="height:${fH}px"></div><div class="bar-order" style="height:${oH}px"></div></div><div style="font-size:10px;color:var(--text-dim);margin-top:2px;text-align:center;line-height:1.3"><span style="color:#b8960a">¥${(x.fr/1e4).toFixed(1)}万</span><br><span style="color:var(--brand-red)">¥${(x.or/1e4).toFixed(1)}万</span></div><div class="bar-label" style="${x.we?'color:var(--brand-red);font-weight:900':''}">${x.d}</div></div>`;
 });
 
-// Time zone chart
-const maxTZ = Math.max(...hourlyTotal.map(d=>d.sales));
-const tzEl = document.getElementById('tz-chart');
-hourlyTotal.forEach((d,i) => {
-  const h = (d.sales/maxTZ*180);
-  const cls = i<=2?'peak':i===3?'sub-peak':'normal';
-  tzEl.innerHTML += `
-    <div class="tz-bar-group">
-      <div class="tz-bar ${cls}" style="height:${h}px" title="¥${d.sales.toLocaleString()}"></div>
-      <div class="tz-label">${d.label}</div>
-      <div class="tz-amount">¥${(d.sales/10000).toFixed(1)}万</div>
-      <div class="tz-amount">${d.customers}人</div>
-    </div>`;
+/* ⑥ Time zone */
+const maxTZ=Math.max(...TZ.map(x=>x.s));
+const tzEl=document.getElementById('tz-chart');
+TZ.forEach((x,i)=>{
+const h=x.s/maxTZ*180;const cls=i<=2?'peak':i===3?'sub-peak':'normal';
+tzEl.innerHTML+=`<div class="tz-bar-group"><div class="tz-bar ${cls}" style="height:${h}px"></div><div class="tz-label">${x.l}</div><div class="tz-amount">¥${(x.s/1e4).toFixed(1)}万</div><div class="tz-amount">${x.c}人</div></div>`;
 });
 
-// GP top5
-const gpEl = document.getElementById('gp-bars');
-const maxGP = gpTop5[0].val;
-gpTop5.forEach(d => {
-  gpEl.innerHTML += `
-    <div class="gp-bar-item">
-      <div class="bar-name">${d.name}</div>
-      <div class="bar-bg"><div class="bar-fill" style="width:0%" data-width="${d.val/maxGP*100}%"></div></div>
-      <div class="bar-val">¥${(d.val/10000).toFixed(1)}万</div>
-    </div>`;
+/* Waste TOP10 */
+const wt10El=document.getElementById('waste-top10');const mW=W10[0].amt;
+W10.forEach((x,i)=>{
+const rankCls=i<3?'loss-rank':'loss-rank low';
+wt10El.innerHTML+=`<div class="loss-row-v2"><span class="${rankCls}">${i+1}</span><span class="loss-name-v2">${x.n}</span><span class="loss-pct-v2">${x.pct}%</span><div class="loss-bar-wrap"><div class="loss-bar-fill" style="width:0%" data-width="${x.amt/mW*100}%"></div></div><span class="loss-qty wd">${x.wd}個</span><span class="loss-qty we">${x.we}個</span><span class="loss-qty tot">${x.tot}個</span><span class="loss-val-v2">¥${x.amt.toLocaleString()}</span></div>`;
 });
 
-// Waste top5
-const wasteEl = document.getElementById('waste-bars');
-const maxW = wasteTop5[0].val;
-wasteTop5.forEach(d => {
-  wasteEl.innerHTML += `
-    <div class="waste-bar-item">
-      <div class="bar-name" style="width:140px;font-weight:700;color:var(--text-secondary)">${d.name}</div>
-      <div class="bar-bg"><div class="bar-fill" style="width:0%" data-width="${d.val/maxW*100}%"></div></div>
-      <div class="bar-val" style="width:80px;text-align:right;font-weight:700">¥${d.val.toLocaleString()}</div>
-    </div>`;
+/* Hourly compare */
+const maxH=Math.max(...hwdAvg,...hweAvg);const tl=['06-08','09-11','12-14','15-17','18+'];
+['hourly-wd','hourly-we'].forEach((id,idx)=>{
+const el=document.getElementById(id);const data=idx===0?hwdAvg:hweAvg;const cls=idx===0?'wd':'we';
+data.forEach((v,i)=>{el.innerHTML+=`<div class="hourly-bar-group"><div class="h-bar ${cls}" style="height:${v/maxH*130}px"></div><div class="h-bar-label">${tl[i]}</div></div>`;});
 });
 
-// Hourly compare
-const maxH = Math.max(...hourlyWD, ...hourlyWE);
-const labels = ['06-08','09-11','12-14','15-17','18+'];
-['hourly-wd','hourly-we'].forEach((id,idx) => {
-  const el = document.getElementById(id);
-  const data = idx===0 ? hourlyWD : hourlyWE;
-  const cls = idx===0 ? 'wd' : 'we';
-  data.forEach((v,i) => {
-    el.innerHTML += `
-      <div class="hourly-bar-group">
-        <div class="h-bar ${cls}" style="height:${v/maxH*130}px"></div>
-        <div class="h-bar-label">${labels[i]}</div>
-      </div>`;
-  });
-});
+/* Staff */
+const sEl=document.getElementById('staff-grid');
+ST.forEach(x=>{sEl.innerHTML+=`<div class="staff-card"><div class="staff-name">${x.n}</div><div class="staff-detail">出勤${x.d}日 / ${x.h}h / ¥${x.p.toLocaleString()}</div></div>`;});
 
-// Staff grid
-const staffEl = document.getElementById('staff-grid');
-staffData.forEach(s => {
-  staffEl.innerHTML += `
-    <div class="staff-card">
-      <div class="staff-name">${s.name}</div>
-      <div class="staff-detail">出勤 ${s.days}日 / ${s.hours}h / ¥${s.pay.toLocaleString()}</div>
-    </div>`;
-});
-
-// Count up
-function countUp(el) {
-  const target = parseFloat(el.dataset.target);
-  const prefix = el.dataset.prefix || '';
-  const suffix = el.dataset.suffix || '';
-  const decimal = parseInt(el.dataset.decimal) || 0;
-  const duration = 1500;
-  const start = performance.now();
-  function update(now) {
-    const p = Math.min((now - start) / duration, 1);
-    const ease = 1 - Math.pow(1 - p, 4);
-    const val = target * ease;
-    el.textContent = decimal > 0 ? prefix + val.toFixed(decimal) + suffix : prefix + Math.round(val).toLocaleString() + suffix;
-    if (p < 1) requestAnimationFrame(update);
-  }
-  requestAnimationFrame(update);
+/* Count up */
+function countUp(el){
+const tgt=parseFloat(el.dataset.target),pfx=el.dataset.prefix||'',sfx=el.dataset.suffix||'',dec=parseInt(el.dataset.decimal)||0;
+const dur=1500,st=performance.now();
+!function up(now){const p=Math.min((now-st)/dur,1),e=1-Math.pow(1-p,4),v=tgt*e;
+el.textContent=dec>0?pfx+v.toFixed(dec)+sfx:pfx+Math.round(v).toLocaleString()+sfx;
+if(p<1)requestAnimationFrame(up)}(performance.now());
 }
 
-// Observer
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      entry.target.querySelectorAll('.kpi-value[data-target]').forEach(el => countUp(el));
-      entry.target.querySelectorAll('.bar-fill[data-width]').forEach(el => {
-        setTimeout(() => { el.style.width = el.dataset.width; }, 300);
-      });
-      entry.target.querySelectorAll('.donut-arc[data-target]').forEach(el => {
-        const target = parseFloat(el.dataset.target);
-        setTimeout(() => { el.style.transition = 'stroke-dashoffset 1.5s ease-out'; el.style.strokeDashoffset = target; }, 300);
-      });
-    }
-  });
-}, { threshold: 0.1 });
-document.querySelectorAll('.section').forEach(el => observer.observe(el));
+/* Observer */
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){
+e.target.classList.add('visible');
+e.target.querySelectorAll('.kpi-value[data-target]').forEach(countUp);
+e.target.querySelectorAll('.bar-fill[data-width],.loss-bar-fill[data-width]').forEach(el=>{setTimeout(()=>{el.style.width=el.dataset.width},300)});
+e.target.querySelectorAll('.donut-arc[data-target]').forEach(el=>{setTimeout(()=>{el.style.transition='stroke-dashoffset 1.5s ease-out';el.style.strokeDashoffset=parseFloat(el.dataset.target)},300)});
+}})},{threshold:0.1});
+document.querySelectorAll('.section').forEach(el=>io.observe(el));
 
-function toggleCheck(el) {
-  el.classList.toggle('done');
-  const cb = el.querySelector('input');
-  cb.checked = !cb.checked;
-  const allChecks = document.querySelectorAll('.priority .step-check');
-  const allDone = [...allChecks].every(c => c.classList.contains('done'));
-  document.getElementById('completion-msg').style.display = allDone ? 'block' : 'none';
+/* Checkbox with localStorage */
+const LS_KEY='togawa_w2_checks';
+const cs=JSON.parse(localStorage.getItem(LS_KEY)||'{}');
+[0,1,2].forEach(i=>{if(cs[i]){document.getElementById('chk'+i).classList.add('checked');document.getElementById('step'+i).classList.add('done')}});
+function toggleCheck(i){
+const c=document.getElementById('chk'+i),s=document.getElementById('step'+i);
+const on=c.classList.toggle('checked');s.classList.toggle('done',on);
+cs[i]=on;localStorage.setItem(LS_KEY,JSON.stringify(cs));
+document.getElementById('completeMsg').style.display=[0,1,2].every(j=>cs[j])?'block':'none';
 }
 
-document.getElementById('advice-filter').addEventListener('click', e => {
-  if (e.target.tagName !== 'BUTTON') return;
-  document.querySelectorAll('.advice-filter button').forEach(b => b.classList.remove('active'));
-  e.target.classList.add('active');
-  const filter = e.target.dataset.filter;
-  document.querySelectorAll('.advice-card').forEach(card => {
-    if (filter === 'all' || card.dataset.difficulty === filter) {
-      card.style.opacity = '1'; card.style.transform = '';
-    } else {
-      card.style.opacity = '0.25'; card.style.transform = 'scale(0.97)';
-    }
-  });
+/* Filter */
+document.getElementById('filter-bar').addEventListener('click',e=>{
+if(e.target.tagName!=='BUTTON')return;
+document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+e.target.classList.add('active');const f=e.target.dataset.f;
+document.querySelectorAll('.adv-card').forEach(c=>{
+const m=f==='all'||c.dataset.d===f;c.style.opacity=m?'1':'0.25';c.style.pointerEvents=m?'auto':'none';c.style.transform=m?'':'scale(0.97)';
 });
+});
+
+/* Accordion on mobile */
+if(window.innerWidth<=768){
+document.querySelectorAll('.adv-card:not(.priority)').forEach(c=>{
+c.classList.add('accordion-collapsed');
+const h=c.querySelector('.card-title');
+if(h)h.style.cursor='pointer';
+h&&h.addEventListener('click',()=>c.classList.toggle('accordion-collapsed'));
+});
+}
 </script>
 </body>
 </html>
