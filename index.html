@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上間沖縄天ぷら 週次レポート</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+:root {
+  --brand-red: #CC2200;
+  --brand-red-dark: #991100;
+  --brand-yellow: #F5C518;
+  --bg-page: #FDF8F2;
+  --text-primary: #1A0A00;
+  --text-secondary: #5A3A2A;
+  --text-dim: #9A7A6A;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Noto Sans JP',sans-serif; background:var(--bg-page); color:var(--text-primary); min-height:100vh; }
+.header {
+  background:linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-dark) 100%);
+  color:white; padding:48px 20px 36px; text-align:center;
+}
+.header h1 { font-size:2.4em; font-weight:900; letter-spacing:0.06em; }
+.header p { font-size:1em; opacity:0.85; margin-top:4px; }
+.yellow-bar { display:inline-block; width:60px; height:4px; background:var(--brand-yellow); border-radius:2px; margin-top:16px; }
+.container { max-width:900px; margin:0 auto; padding:32px 16px; }
+.store-section { margin-bottom:32px; }
+.store-title { font-size:1.3em; font-weight:900; color:var(--brand-red); margin-bottom:12px; padding-left:14px; border-left:5px solid var(--brand-yellow); }
+.report-list { list-style:none; }
+.report-list li { margin-bottom:8px; }
+.report-list a {
+  display:block; padding:16px 20px; background:white; border-radius:12px;
+  box-shadow:0 2px 8px rgba(204,34,0,0.08); text-decoration:none; color:var(--text-primary);
+  font-weight:700; font-size:0.95em; transition:all 0.2s;
+  border-left:4px solid var(--brand-yellow);
+}
+.report-list a:hover { transform:translateX(4px); box-shadow:0 4px 16px rgba(204,34,0,0.15); }
+.report-list .date { color:var(--text-dim); font-size:0.85em; font-weight:400; }
+.footer { text-align:center; padding:24px; font-size:12px; color:var(--text-dim); }
+@media(max-width:480px){
+  .header h1 { font-size:1.6em; }
+  .report-list a { padding:12px 14px; font-size:0.85em; }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>上間沖縄天ぷら</h1>
+  <p>週次パフォーマンスレポート</p>
+  <div><div class="yellow-bar"></div></div>
+</div>
+<div class="container">
+  <div class="store-section">
+    <div class="store-title">📍 登川店</div>
+    <ul class="report-list">
+      <li>
+        <a href="登川店/2026年3月/登川店_週次レポート_20260315-0321.html">
+          2026年3月15日〜3月21日 週次レポート
+          <span class="date">予算達成率 128.1% ｜ 合計売上 ¥3,587,841</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="footer">上間沖縄天ぷら 週次レポートアーカイブ</div>
+</body>
+</html>
