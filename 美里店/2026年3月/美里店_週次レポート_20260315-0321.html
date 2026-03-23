@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上間沖縄天ぷら 美里店 週次レポート 2026/03/15-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-red: #CC2200;
+  --brand-red-light: #FF4422;
+  --brand-red-dark: #991100;
+  --brand-yellow: #F5C518;
+  --brand-yellow-light: #FFD84A;
+  --brand-white: #FFFFFF;
+  --chart-store: #F5C518;
+  --chart-order: #CC2200;
+  --bg-page: #FDF8F2;
+  --bg-card: #FFFFFF;
+  --bg-section: #FFF5EC;
+  --bg-header: #CC2200;
+  --text-primary: #1A0A00;
+  --text-secondary: #5A3A2A;
+  --text-dim: #9A7A6A;
+  --text-white: #FFFFFF;
+  --accent-blue: #2266AA;
+  --accent-orange: #E07830;
+  --accent-green: #1A8A50;
+  --border: rgba(204,34,0,0.12);
+  --border-light: rgba(204,34,0,0.06);
+  --shadow-card: 0 2px 12px rgba(204,34,0,0.08);
+  --shadow-hover: 0 8px 24px rgba(204,34,0,0.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;background:var(--bg-page);color:var(--text-primary);line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+.header{background:linear-gradient(135deg,#CC2200 0%,#991100 60%,#6B0B00 100%);padding:32px 0 0;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-40px;right:-40px;width:300px;height:300px;background:var(--brand-yellow);opacity:0.07;border-radius:50%}
+.header-top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:28px}
+.header-left{display:flex;align-items:center;gap:18px}
+.logo-mark{background:var(--brand-yellow);color:var(--brand-red-dark);font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:28px;width:72px;height:72px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,0.3);letter-spacing:-1px}
+.header-brand{color:white}
+.brand-main{font-size:20px;font-weight:900;letter-spacing:0.05em}
+.brand-sub{font-size:12px;opacity:0.7;margin-top:2px}
+.header-right{color:white;text-align:right}
+.report-period{font-size:22px;font-weight:700}
+.report-label{font-size:12px;opacity:0.65;margin-top:2px}
+.score-banner{background:rgba(0,0,0,0.25);border-top:1px solid rgba(255,255,255,0.12);padding:20px 0;position:relative}
+.score-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--brand-yellow),#FFD84A,var(--brand-yellow))}
+.score-inner{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.score-circle-wrap{flex-shrink:0;position:relative;width:120px;height:120px}
+.score-circle-wrap svg{position:absolute;top:0;left:0}
+.score-circle-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+.score-num{font-family:'M PLUS Rounded 1c',sans-serif;font-size:36px;font-weight:900;color:white;line-height:1}
+.score-denom{font-size:13px;color:rgba(255,255,255,0.6)}
+.score-grade-wrap{display:flex;flex-direction:column;gap:4px}
+.score-grade{font-family:'M PLUS Rounded 1c',sans-serif;font-size:42px;font-weight:900;line-height:1;color:var(--brand-yellow)}
+.score-grade-label{font-size:14px;color:rgba(255,255,255,0.85);font-weight:700}
+.score-items{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap}
+.score-item{background:rgba(255,255,255,0.1);border-radius:12px;padding:10px 18px;text-align:center;min-width:130px}
+.score-item-label{font-size:11px;color:rgba(255,255,255,0.65);margin-bottom:4px}
+.score-item-bar{height:6px;background:rgba(255,255,255,0.2);border-radius:100px;overflow:hidden;margin-bottom:5px}
+.score-item-fill{height:100%;border-radius:100px;background:var(--brand-yellow);width:0;transition:width 1.6s ease-out}
+.score-item-pts{font-family:'M PLUS Rounded 1c',sans-serif;font-size:22px;font-weight:700;color:white}
+.score-item-max{font-size:11px;color:rgba(255,255,255,0.5)}
+.section{padding:28px 0;animation:fadeInUp 0.6s ease both}
+.section-header{background:var(--brand-red);color:white;padding:12px 20px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:10px}
+.sec-icon{font-size:18px}
+.sec-title{font-size:16px;font-weight:700}
+.sec-sub{font-size:11px;opacity:0.7;margin-left:auto}
+.section-body{background:var(--bg-section);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;padding:20px}
+.kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.kpi-card{background:white;border-radius:12px;padding:18px 16px;box-shadow:var(--shadow-card);border-top:4px solid var(--brand-red);transition:all 0.25s ease;cursor:default;animation:fadeInUp 0.6s ease both}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.kpi-card.orange{border-top-color:var(--accent-orange)}
+.kpi-card.green{border-top-color:var(--accent-green)}
+.kpi-card.blue{border-top-color:var(--accent-blue)}
+.kpi-label{font-size:11px;color:var(--text-dim);font-weight:700;letter-spacing:0.06em;margin-bottom:5px}
+.kpi-value{font-family:'M PLUS Rounded 1c',sans-serif;font-size:24px;font-weight:700;line-height:1.1}
+.kpi-sub{font-size:11px;color:var(--text-dim);margin-top:4px}
+.kpi-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:100px;margin-top:5px}
+.badge-up{background:#E8F5E9;color:#1A8A50}
+.badge-down{background:#FFEBEE;color:#CC2200}
+.badge-ok{background:#FFF8E1;color:var(--accent-orange)}
+.chart-legend{display:flex;gap:20px;justify-content:flex-end;margin-bottom:14px;font-size:12px}
+.legend-item{display:flex;align-items:center;gap:6px}
+.legend-dot{width:14px;height:14px;border-radius:3px}
+.daily-chart-area{display:flex;align-items:flex-end;gap:6px;height:230px;padding-left:52px;position:relative}
+.y-axis{position:absolute;left:0;top:0;width:48px;height:calc(100% - 90px);display:flex;flex-direction:column;justify-content:space-between;text-align:right;font-size:10px;color:var(--text-dim);padding-right:6px}
+.grid-lines{position:absolute;left:52px;right:0;top:0;bottom:90px;pointer-events:none}
+.grid-line{position:absolute;left:0;right:0;height:1px;background:rgba(204,34,0,0.06)}
+.day-col{flex:1;display:flex;flex-direction:column;align-items:center;position:relative}
+.bar-stack-wrap{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:140px;gap:1px;position:relative;cursor:pointer}
+.bar-seg{width:78%;transform-origin:bottom;animation:barGrow 1.2s ease-out both;border-radius:0}
+.bar-seg.store{background:var(--chart-store)}
+.bar-seg.order{background:var(--chart-order)}
+.bar-tooltip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(26,10,0,0.92);color:white;font-size:11px;padding:8px 12px;border-radius:8px;white-space:nowrap;z-index:20;pointer-events:none;line-height:1.8}
+.bar-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:rgba(26,10,0,0.92)}
+.day-col:hover .bar-tooltip{display:block}
+.day-info{margin-top:6px;text-align:center;width:100%}
+.day-label{font-size:12px;font-weight:700;color:var(--text-secondary)}
+.day-date{font-size:10px;color:var(--text-dim)}
+.day-total{font-size:10px;font-weight:700;color:var(--text-primary);margin-top:3px}
+.day-store-lbl{font-size:9px;color:#b8a800}
+.day-order-lbl{font-size:9px;color:var(--chart-order)}
+.compare-table{width:100%;border-collapse:collapse;font-size:13px}
+.compare-table th{padding:10px 14px;font-weight:700;font-size:12px}
+.compare-table td{padding:9px 14px;border-bottom:1px solid var(--border-light);vertical-align:middle}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tbody tr:hover td{background:#fdfaf7}
+.th-weekday{background:#E3EEF8;color:var(--accent-blue)}
+.th-weekend{background:#FFF0E0;color:var(--accent-orange)}
+.th-diff{background:#F5F5F0;color:var(--text-secondary)}
+.diff-positive{color:var(--accent-orange);font-weight:700}
+.diff-negative{color:var(--accent-blue);font-weight:700}
+.diff-cell{display:flex;flex-direction:column;align-items:center;gap:3px}
+.diff-pct{font-size:13px;font-weight:700}
+.diff-sep{width:60%;height:1px;background:rgba(0,0,0,0.08)}
+.diff-amt{font-size:11px;opacity:0.85}
+.insight-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.insight-item{display:flex;align-items:flex-start;gap:10px;background:white;padding:10px 14px;border-radius:8px;border-left:4px solid var(--brand-yellow);font-size:12px;line-height:1.6}
+.insight-icon{font-size:16px;flex-shrink:0;line-height:1.6}
+.time-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.time-panel-title{font-size:13px;font-weight:700;margin-bottom:12px;padding:6px 12px;border-radius:6px;display:inline-block}
+.time-panel-title.weekday{background:#E3EEF8;color:var(--accent-blue)}
+.time-panel-title.weekend{background:#FFF0E0;color:var(--accent-orange)}
+.time-chart{display:flex;align-items:flex-end;gap:8px;height:140px}
+.time-bar-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end}
+.time-bar{width:80%;border-radius:4px 4px 0 0;transform-origin:bottom;animation:barGrow 1.2s ease-out both}
+.time-bar.peak{background:var(--brand-red)}
+.time-bar.sub-peak{background:var(--brand-yellow)}
+.time-bar.normal{background:#C8B8B0}
+.time-label{font-size:10px;color:var(--text-secondary)}
+.time-val{font-size:9px;color:var(--text-dim)}
+.loss-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.loss-card{background:white;border-radius:10px;padding:14px;text-align:center;box-shadow:var(--shadow-card);border-top:3px solid var(--brand-red)}
+.loss-card-label{font-size:11px;color:var(--text-dim);margin-bottom:5px}
+.loss-card-val{font-family:'M PLUS Rounded 1c',sans-serif;font-size:20px;font-weight:700;color:var(--brand-red)}
+.loss-card-pct{font-size:11px;color:var(--text-dim);margin-top:3px}
+.loss-row-v2{display:grid;grid-template-columns:24px 1fr 56px 3fr 56px 56px 56px 64px;gap:6px;align-items:center;padding:7px 6px;border-radius:6px;border-bottom:1px solid var(--border-light);transition:background 0.15s}
+.loss-row-v2:hover{background:#fdfaf7}
+.loss-row-v2:last-child{border-bottom:none}
+.loss-rank{font-size:11px;font-weight:700;color:white;background:var(--brand-red);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.loss-rank.low{background:var(--text-dim)}
+.loss-name-v2{font-size:12px;color:var(--text-secondary);font-weight:600}
+.loss-pct-v2{font-size:11px;font-weight:700;color:var(--brand-red);text-align:right;white-space:nowrap}
+.loss-bar-wrap{flex:1;background:#f0e8e4;border-radius:0;height:16px;overflow:hidden}
+.loss-bar{height:100%;border-radius:0;background:linear-gradient(90deg,var(--brand-red),var(--brand-red-light));transition:width 1.2s ease-out}
+.loss-qty{font-size:11px;font-weight:700;text-align:center;padding:2px 4px;border-radius:4px;white-space:nowrap}
+.loss-qty.wd{background:#E3EEF8;color:var(--accent-blue)}
+.loss-qty.we{background:#FFF0E0;color:var(--accent-orange)}
+.loss-qty.tot{background:#F5F5F0;color:var(--text-secondary)}
+.loss-val-v2{font-size:12px;color:var(--brand-red);font-weight:700;text-align:right;white-space:nowrap}
+.loss-analysis-box{background:white;border-radius:10px;padding:14px 16px;border-left:4px solid var(--brand-red);font-size:12px;line-height:1.7;color:var(--text-secondary)}
+.loss-analysis-box .analysis-title{font-weight:700;color:var(--brand-red);font-size:13px;margin-bottom:8px}
+.analysis-item{display:flex;gap:8px;margin-bottom:5px}
+.analysis-item::before{content:'→';color:var(--brand-red);flex-shrink:0}
+.abc-tabs{display:flex;gap:0;margin-bottom:0}
+.abc-tab{padding:8px 24px;font-size:13px;font-weight:700;cursor:pointer;border:none;background:#f0e8e4;color:var(--text-dim);transition:all 0.2s;font-family:'Noto Sans JP',sans-serif}
+.abc-tab:first-child{border-radius:8px 0 0 0}
+.abc-tab:last-child{border-radius:0 8px 0 0}
+.abc-tab.active{background:var(--brand-red);color:white}
+.abc-tab:hover:not(.active){background:#e0d0c8;color:var(--text-secondary)}
+.abc-panel{display:none}
+.abc-panel.active{display:block}
+.abc-col-header{display:grid;grid-template-columns:26px 1fr 3fr 60px 60px 64px 80px;gap:6px;align-items:center;padding:4px 6px;margin-top:12px;margin-bottom:4px;font-size:10px;font-weight:700;color:var(--text-dim);letter-spacing:0.05em}
+.abc-row{display:grid;grid-template-columns:26px 1fr 3fr 60px 60px 64px 80px;gap:6px;align-items:center;padding:8px 6px;border-bottom:1px solid var(--border-light);transition:background 0.15s}
+.abc-row:hover{background:#fdfaf7}
+.abc-row:last-child{border-bottom:none}
+.abc-rank-hot{font-size:11px;font-weight:900;background:var(--brand-yellow);color:var(--brand-red-dark);width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.abc-rank-cold{font-size:11px;font-weight:900;color:white;background:#9A7A6A;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.abc-name{font-size:12px;color:var(--text-secondary);font-weight:600}
+.abc-bar-wrap{height:10px;background:#f0e8e4;border-radius:0;overflow:hidden}
+.abc-bar-hot{height:100%;border-radius:0;background:linear-gradient(90deg,var(--brand-yellow),var(--brand-yellow-light));transition:width 1.2s ease-out}
+.abc-bar-cold{height:100%;border-radius:0;background:linear-gradient(90deg,#C8B8B0,#9A7A6A);transition:width 1.2s ease-out}
+.abc-qty{font-size:11px;font-weight:700;text-align:center;padding:2px 4px;border-radius:4px;white-space:nowrap}
+.abc-qty.wd{background:#E3EEF8;color:var(--accent-blue)}
+.abc-qty.we{background:#FFF0E0;color:var(--accent-orange)}
+.abc-qty.tot{background:#F5F5F0;color:var(--text-secondary)}
+.abc-amount{font-size:12px;font-weight:700;text-align:right;white-space:nowrap}
+.abc-amount.hot{color:var(--brand-red)}
+.abc-amount.cold{color:var(--text-dim)}
+.staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.staff-card{background:white;border-radius:10px;padding:12px 14px;box-shadow:var(--shadow-card);border-left:4px solid var(--brand-yellow);transition:all 0.25s ease}
+.staff-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.staff-name{font-weight:700;font-size:13px}
+.staff-days{font-size:11px;color:var(--text-dim)}
+.labor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.labor-item{background:white;border-radius:10px;padding:12px;text-align:center;box-shadow:var(--shadow-card)}
+.labor-label{font-size:11px;color:var(--text-dim);margin-bottom:3px}
+.labor-val{font-family:'M PLUS Rounded 1c',sans-serif;font-size:18px;font-weight:700}
+.improvement-header{background:linear-gradient(135deg,#CC2200,#991100);color:white;padding:22px 28px;border-radius:14px 14px 0 0;position:relative;overflow:hidden}
+.improvement-header::before{content:'';position:absolute;right:-20px;top:-20px;width:120px;height:120px;border-radius:50%;background:var(--brand-yellow);opacity:0.1}
+.imp-title{font-size:22px;font-weight:900}
+.imp-sub{font-size:12px;opacity:0.72}
+.filter-bar{display:flex;gap:8px;padding:14px 0;flex-wrap:wrap}
+.filter-btn{padding:5px 14px;border-radius:100px;border:2px solid var(--border);background:white;font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'Noto Sans JP',sans-serif}
+.filter-btn.active,.filter-btn:hover{background:var(--brand-red);border-color:var(--brand-red);color:white}
+.priority-action-card{background:var(--brand-red);border-radius:12px;padding:22px;color:white;border-left:8px solid var(--brand-yellow);animation:slideInLeft 0.8s ease-out,pulseBorder 3s infinite 1s;position:relative;overflow:hidden;margin-bottom:14px}
+.priority-badge{display:inline-flex;align-items:center;gap:5px;background:var(--brand-yellow);color:var(--brand-red-dark);font-size:11px;font-weight:900;padding:3px 10px;border-radius:100px;margin-bottom:10px}
+.priority-title{font-size:18px;font-weight:900;margin-bottom:14px}
+.action-steps{display:flex;flex-direction:column;gap:10px}
+.action-step{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.12);border-radius:8px;transition:all 0.2s;font-size:13px}
+.action-step.checked{text-decoration:line-through;opacity:0.45}
+.step-num{background:var(--brand-yellow);color:var(--brand-red-dark);font-weight:900;font-size:12px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-check{margin-left:auto;width:20px;height:20px;border-radius:5px;border:2px solid rgba(255,255,255,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent;transition:all 0.2s}
+.step-check.checked{background:var(--brand-yellow);border-color:var(--brand-yellow)}
+.step-check.checked::after{content:'✓';color:var(--brand-red-dark);font-size:12px;font-weight:900}
+.complete-msg{display:none;text-align:center;padding:12px;background:rgba(255,255,255,0.15);border-radius:8px;font-size:15px;font-weight:700;margin-top:10px;animation:fadeIn 0.5s ease}
+.kpi-highlight-row{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.kpi-hl-item{background:rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;text-align:center}
+.kpi-hl-val{font-family:'M PLUS Rounded 1c',sans-serif;font-size:20px;font-weight:700}
+.kpi-hl-label{font-size:10px;opacity:0.78}
+.imp-cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.imp-card{background:white;border-radius:12px;padding:18px;box-shadow:var(--shadow-card);border-top:4px solid var(--brand-red);transition:all 0.25s ease}
+.imp-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);border-top-width:7px}
+.imp-card[data-priority="today"]{border-top-color:var(--brand-yellow)}
+.imp-card[data-priority="month"]{border-top-color:var(--text-dim)}
+.imp-card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.imp-icon{font-size:24px}
+.imp-card-title{font-size:15px;font-weight:900}
+.data-badge{display:inline-flex;gap:4px;background:#FFF8E1;border:1px solid var(--brand-yellow);color:var(--text-secondary);font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px;margin-bottom:9px}
+.data-badge .hl{color:var(--brand-red);font-size:12px}
+.imp-list{list-style:none;display:flex;flex-direction:column;gap:5px}
+.imp-list li{display:flex;gap:7px;font-size:12px;color:var(--text-secondary);line-height:1.5}
+.imp-list li::before{content:'•';color:var(--brand-red);flex-shrink:0;font-size:15px;line-height:1.3}
+.difficulty-badge{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px;margin-top:8px}
+.diff-1{background:#E8F5E9;color:#1A8A50}
+.diff-2{background:#FFF8E1;color:var(--accent-orange)}
+.diff-3{background:#FFEBEE;color:var(--brand-red)}
+.mini-sparkline{height:36px;display:flex;align-items:flex-end;gap:3px;margin-top:10px;padding-top:8px;border-top:1px solid var(--border-light)}
+.spark-bar{flex:1;border-radius:2px 2px 0 0;background:linear-gradient(180deg,var(--brand-red-light),var(--brand-red))}
+.spark-bar.yellow{background:linear-gradient(180deg,var(--brand-yellow-light),var(--brand-yellow))}
+.mini-gauge{margin-top:10px;padding-top:8px;border-top:1px solid var(--border-light)}
+.gauge-track{height:7px;background:#f0e8e4;border-radius:100px;overflow:hidden}
+.gauge-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--accent-green),#4CAF50);transition:width 1.2s ease-out}
+.gauge-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--text-dim);margin-top:3px}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes barGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulseBorder{0%,100%{border-left-color:var(--brand-yellow)}50%{border-left-color:rgba(245,197,24,0.4)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.footer{background:var(--brand-red-dark);color:rgba(255,255,255,0.55);text-align:center;padding:18px;font-size:11px;margin-top:28px}
+@media print{.filter-bar,.step-check,.complete-msg{display:none!important}*{animation:none!important;transition:none!important}}
+@media (max-width:768px){
+  body{padding:0}
+  .container{padding:0 10px}
+  .header{padding:24px 0 0}
+  .header-top{flex-direction:column;align-items:flex-start;gap:12px;padding-bottom:20px}
+  .logo-mark{width:56px;height:56px;font-size:22px}
+  .brand-main{font-size:17px}
+  .report-period{font-size:18px}
+  .score-items{margin-left:0}
+  .kpi-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .kpi-value{font-size:20px}
+  .kpi-label{font-size:10px}
+  .imp-cards-grid{grid-template-columns:1fr}
+  .time-grid{grid-template-columns:1fr}
+  .staff-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .labor-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .sec-title{font-size:14px}
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table th,table td{white-space:nowrap;padding:6px 8px;font-size:12px}
+}
+@media (max-width:480px){
+  .header-top{gap:8px}
+  .logo-mark{width:48px;height:48px;font-size:18px;border-radius:12px}
+  .brand-main{font-size:15px}
+  .report-period{font-size:15px}
+  .score-num{font-size:28px}
+  .score-grade{font-size:32px}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .kpi-value{font-size:18px}
+  .staff-grid,.labor-grid{grid-template-columns:1fr}
+  .sec-title{font-size:13px}
+  .footer{font-size:10px;padding:14px 8px}
+}
+</style>
+</head>
+<body>
+
+<!-- ① HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header-top">
+      <div class="header-left">
+        <div class="logo-mark">美里</div>
+        <img src="data:image/png;base64,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qaKK+OxGIqYifPUep6EIKCsgooornLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoFFPiG6ZB6sB+tUldpLqLpc+ONd1Iaz4g1LVPJ8n7bdS3Hl7t2zexbbnAzjOM4FZtB6miv0ZKysjx3uFFFFMAooooAKKKKACiiigAooooAK+/wCvgCvv+gAooooA+AKKKKACiiigAooooAWrmn6rqGkzNPp1/c2czoUaS2maNiuQdpKkZGQOOnFUqXFJq6swOi1zxz4m8Ro0ep6xcSwsgR4I8RROA24bkQBSc85IzwPQVztFFKMIwVoqw229wrtvh98PrrxpqBkkL2+kW7AXFyByx4PlpwQWORzyFByckhW2/h78KbvXJ7bVNet3t9GKCaOMth7oHOBwcqpxkk4JBG3ruHv1raW1jbrbWdtDbW6Z2wwRiNFySThQABkkngdSa8zMMzhhlyQ1l+X9djalRc9XsUtB0HT/AA1o8Ol6ZD5cEfJJILSMQMuxwMscDJ6AAAAAADToor5CrVnWm5zd2z0IxUVZBRRRWRQUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCiiikAUUUUwCsfxau7wV4gHpplyfyiY/0rYrkPilLNB8M9bkhleJ/LjUsjFSVaVFYEjsQxBHcEjoa3wsOetCPdr8yJu0Wz5Yooor9BPJCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACiiigAooooAnggluriK3gieWeVwkcaKWZ2JwAAOSSe1e5eAfg/BZI2oeLLWOa73DybIuGSLa2dzlThyccLyuCcgk4XL+AmnWc95rOoS2yPd2ohSCZskxBxJvx2BIUDPXGR0JB9xrws1zKdB+xp6O2/8AkdVCiprmkGSSSeSetFFFfKtt6s7rBRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvK/jvdW6eEdPs2kxdTXwljTaeURHDHOMDBdOp798HHqleF/H3UPM1fRdMMO3yLd7jzd2dwkYLtxjjHlE5zzu7Y59PKafPi49lr+BjXdqbPHaKKK+2PMCiiigAooooAKKKKACiiigAooooAK+/6+AK+/6ACiiigD4AooooAKKKKACi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" alt="上間沖縄天ぷら" style="height:72px;width:auto;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.4));">
+        <div class="header-brand">
+          <div class="brand-main">上間沖縄天ぷら</div>
+          <div class="brand-sub">週次パフォーマンスレポート</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="report-period">2026年03月15日（日）〜 03月21日（土）</div>
+        <div class="report-label">集計期間　美里店</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="score-banner">
+    <div class="container">
+      <div class="score-inner">
+        <div class="score-circle-wrap">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="10"/>
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#F5C518" stroke-width="10"
+              stroke-dasharray="326.7" stroke-dashoffset="326.7"
+              stroke-linecap="round" transform="rotate(-90 60 60)" id="scoreArc"/>
+          </svg>
+          <div class="score-circle-center">
+            <div class="score-num" id="scoreTotalNum">0</div>
+            <div class="score-denom">/ 100点</div>
+          </div>
+        </div>
+        <div class="score-grade-wrap">
+          <div class="score-grade" id="scoreGrade">-</div>
+          <div class="score-grade-label" id="scoreGradeLabel">集計中...</div>
+        </div>
+        <div class="score-items">
+          <div class="score-item">
+            <div class="score-item-label">売上・予算達成率（40点満点）</div>
+            <div class="score-item-bar"><div class="score-item-fill" id="barSales"></div></div>
+            <div class="score-item-pts"><span id="ptsSales">0</span><span class="score-item-max"> / 40</span></div>
+          </div>
+          <div class="score-item">
+            <div class="score-item-label">ロス率（30点満点）</div>
+            <div class="score-item-bar"><div class="score-item-fill" id="barLoss"></div></div>
+            <div class="score-item-pts"><span id="ptsLoss">0</span><span class="score-item-max"> / 30</span></div>
+          </div>
+          <div class="score-item">
+            <div class="score-item-label">人件費率（30点満点）</div>
+            <div class="score-item-bar"><div class="score-item-fill" id="barLabor"></div></div>
+            <div class="score-item-pts"><span id="ptsLabor">0</span><span class="score-item-max"> / 30</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ② KPI HERO CARDS -->
+<div class="section">
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">週間合計売上</div>
+      <div class="kpi-value" data-count="1152289" data-format="currency">¥0</div>
+      <span class="kpi-badge badge-up">▲ 予算比 +31.7%</span>
+      <div class="kpi-sub">日平均 ¥164,612</div>
+    </div>
+    <div class="kpi-card orange">
+      <div class="kpi-label">週間店舗前出売上</div>
+      <div class="kpi-value" data-count="1042305" data-format="currency">¥0</div>
+      <div class="kpi-sub">日平均 ¥148,900</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">週間注文売上</div>
+      <div class="kpi-value" data-count="109984" data-format="currency">¥0</div>
+      <div class="kpi-sub">15件</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">ロス率（前出売上比）</div>
+      <div class="kpi-value" data-count="3.6" data-suffix="%">3.6%</div>
+      <span class="kpi-badge badge-up">目標 6.0%以下</span>
+      <div class="kpi-sub">¥37,374</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-label">人件費率</div>
+      <div class="kpi-value" data-count="19.1" data-suffix="%">19.1%</div>
+      <span class="kpi-badge badge-up">目標 25.0%以下</span>
+      <div class="kpi-sub">¥220,247</div>
+    </div>
+  </div>
+</div>
+
+<!-- ③ DAILY SALES CHART -->
+<div class="section">
+  <div class="section-header">
+    <span class="sec-icon">📊</span>
+    <span class="sec-title">日別売上推移</span>
+    <span class="sec-sub">店舗前出売上 + 注文売上</span>
+  </div>
+  <div class="section-body">
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--chart-store)"></div><span>店舗前出売上</span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--chart-order)"></div><span>注文売上</span></div>
+    </div>
+    <div class="daily-chart-area">
+      <div class="y-axis">
+        <div>¥250k</div><div>¥187k</div><div>¥125k</div><div>¥62k</div><div>¥0k</div>
+        <div>¥0</div>
+      </div>
+      <div class="grid-lines">
+        <div class="grid-line" style="top:0%"></div>
+        <div class="grid-line" style="top:25%"></div>
+        <div class="grid-line" style="top:50%"></div>
+        <div class="grid-line" style="top:75%"></div>
+        <div class="grid-line" style="top:100%"></div>
+      </div>
+      
+    <div class="day-col">
+      <div class="bar-tooltip">
+        日（3/15）<br>
+        注文：¥19,148<br>
+        前出：¥197,397<br>
+        合計：¥216,545
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:10px'></div>
+        <div class="bar-seg store" style="height:110px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">日</div>
+        <div class="day-date">3/15</div>
+        <div class="day-total">¥216,545</div>
+        <div class="day-store-lbl">前出 ¥197,397</div>
+        <div class="day-order-lbl">注文 ¥19,148</div>
+      </div>
+    </div>
+    <div class="day-col">
+      <div class="bar-tooltip">
+        月（3/16）<br>
+        注文：¥14,222<br>
+        前出：¥122,402<br>
+        合計：¥136,624
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:7px'></div>
+        <div class="bar-seg store" style="height:68px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">月</div>
+        <div class="day-date">3/16</div>
+        <div class="day-total">¥136,624</div>
+        <div class="day-store-lbl">前出 ¥122,402</div>
+        <div class="day-order-lbl">注文 ¥14,222</div>
+      </div>
+    </div>
+    <div class="day-col">
+      <div class="bar-tooltip">
+        火（3/17）<br>
+        注文：¥14,252<br>
+        前出：¥105,144<br>
+        合計：¥119,396
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:7px'></div>
+        <div class="bar-seg store" style="height:58px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">火</div>
+        <div class="day-date">3/17</div>
+        <div class="day-total">¥119,396</div>
+        <div class="day-store-lbl">前出 ¥105,144</div>
+        <div class="day-order-lbl">注文 ¥14,252</div>
+      </div>
+    </div>
+    <div class="day-col">
+      <div class="bar-tooltip">
+        水（3/18）<br>
+        注文：¥26,482<br>
+        前出：¥123,092<br>
+        合計：¥149,574
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:14px'></div>
+        <div class="bar-seg store" style="height:68px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">水</div>
+        <div class="day-date">3/18</div>
+        <div class="day-total">¥149,574</div>
+        <div class="day-store-lbl">前出 ¥123,092</div>
+        <div class="day-order-lbl">注文 ¥26,482</div>
+      </div>
+    </div>
+    <div class="day-col">
+      <div class="bar-tooltip">
+        木（3/19）<br>
+        注文：¥2,546<br>
+        前出：¥151,144<br>
+        合計：¥153,690
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:2px'></div>
+        <div class="bar-seg store" style="height:84px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">木</div>
+        <div class="day-date">3/19</div>
+        <div class="day-total">¥153,690</div>
+        <div class="day-store-lbl">前出 ¥151,144</div>
+        <div class="day-order-lbl">注文 ¥2,546</div>
+      </div>
+    </div>
+    <div class="day-col">
+      <div class="bar-tooltip">
+        金（3/20）<br>
+        注文：¥22,657<br>
+        前出：¥180,417<br>
+        合計：¥203,074
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:12px'></div>
+        <div class="bar-seg store" style="height:101px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">金</div>
+        <div class="day-date">3/20</div>
+        <div class="day-total">¥203,074</div>
+        <div class="day-store-lbl">前出 ¥180,417</div>
+        <div class="day-order-lbl">注文 ¥22,657</div>
+      </div>
+    </div>
+    <div class="day-col">
+      <div class="bar-tooltip">
+        土（3/21）<br>
+        注文：¥10,677<br>
+        前出：¥162,709<br>
+        合計：¥173,386
+      </div>
+      <div class="bar-stack-wrap">
+        <div class='bar-seg order' style='height:5px'></div>
+        <div class="bar-seg store" style="height:91px"></div>
+      </div>
+      <div class="day-info">
+        <div class="day-label">土</div>
+        <div class="day-date">3/21</div>
+        <div class="day-total">¥173,386</div>
+        <div class="day-store-lbl">前出 ¥162,709</div>
+        <div class="day-order-lbl">注文 ¥10,677</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- ④ WEEKDAY/WEEKEND COMPARISON -->
+<div class="section">
+  <div class="section-header">
+    <span class="sec-icon">📅</span>
+    <span class="sec-title">平日/週末 比較分析</span>
+    <span class="sec-sub">平日5日 vs 週末2日</span>
+  </div>
+  <div class="section-body">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th style="text-align:left">指標</th>
+          <th class="th-weekday">平日（日平均）</th>
+          <th class="th-weekend">週末（日平均）</th>
+          <th class="th-diff">差分（週末÷平日）</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+    <tr>
+      <td style="font-weight:600;">合計売上</td>
+      <td style="text-align:center;font-weight:700;">¥152,471</td>
+      <td style="text-align:center;font-weight:700;">¥194,965</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+27.9%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥42,494</span>
+    </div></td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">前出売上</td>
+      <td style="text-align:center;font-weight:700;">¥136,439</td>
+      <td style="text-align:center;font-weight:700;">¥180,053</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+32.0%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥43,613</span>
+    </div></td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">注文売上</td>
+      <td style="text-align:center;font-weight:700;">¥16,031</td>
+      <td style="text-align:center;font-weight:700;">¥14,912</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-negative">-7.0%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-negative">¥-1,119</span>
+    </div></td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">客数</td>
+      <td style="text-align:center;font-weight:700;">180人</td>
+      <td style="text-align:center;font-weight:700;">199人</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+10.7%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥19</span>
+    </div></td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">客単価</td>
+      <td style="text-align:center;font-weight:700;">¥758</td>
+      <td style="text-align:center;font-weight:700;">¥904</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+19.2%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥146</span>
+    </div></td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">ロス率</td>
+      <td style="text-align:center;font-weight:700;">4.2%</td>
+      <td style="text-align:center;font-weight:700;">2.4%</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-negative">-42.5%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-negative">-1.8pt</span>
+    </div></td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">人時生産高</td>
+      <td style="text-align:center;font-weight:700;">¥5,058</td>
+      <td style="text-align:center;font-weight:700;">¥5,679</td>
+      <td style="text-align:center;"><div class="diff-cell">
+        <span class="diff-pct diff-positive">+12.3%</span>
+        <div class="diff-sep"></div>
+        <span class="diff-amt diff-positive">+¥621</span>
+    </div></td>
+    </tr>
+      </tbody>
+    </table>
+    <div class="insight-list">
+      <div class="insight-item"><span class="insight-icon">💡</span><span>週末の合計売上は平日比で+27.9%。日曜日（¥216,545）が週間最高売上を記録。</span></div>
+      <div class="insight-item"><span class="insight-icon">💡</span><span>週末の客単価が平日より高く、まとめ買い需要の取り込みに成功。特に日曜は客単価¥1,002と突出。</span></div>
+      <div class="insight-item"><span class="insight-icon">💡</span><span>金曜日は注文売上が¥22,657（6件）と好調。法事・イベント需要が集中する傾向。</span></div>
+      <div class="insight-item"><span class="insight-icon">💡</span><span>平日のロス率4.2%に対し週末2.4%。週末は客足増で効率的に売り切れている。</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ TIME BAND DISTRIBUTION -->
+<div class="section">
+  <div class="section-header">
+    <span class="sec-icon">⏰</span>
+    <span class="sec-title">時間帯別売上分布</span>
+    <span class="sec-sub">店舗前出売上のみ（注文売上は含まない）</span>
+  </div>
+  <div class="section-body">
+    <div class="time-grid">
+      
+    <div>
+      <div class="time-panel-title weekday">📅 平日（月〜金）日平均</div>
+      <div class="time-chart">
+        <div class="time-bar-group">
+          <div class="time-bar normal" style="height:87px"></div>
+          <div class="time-label">06-08</div>
+          <div class="time-val">¥31,090</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar sub-peak" style="height:117px"></div>
+          <div class="time-label">09-11</div>
+          <div class="time-val">¥41,802</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar peak" style="height:130px"></div>
+          <div class="time-label">12-14</div>
+          <div class="time-val">¥46,295</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar normal" style="height:48px"></div>
+          <div class="time-label">15-17</div>
+          <div class="time-val">¥17,220</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar normal" style="height:4px"></div>
+          <div class="time-label">18+</div>
+          <div class="time-val">¥31</div>
+        </div></div>
+      <div style="font-size:11px;color:var(--text-secondary);margin-top:8px;">
+        🔴 ピーク: 12-14時（34%）
+      </div>
+    </div>
+      
+    <div>
+      <div class="time-panel-title weekend">🌟 週末（土・日）日平均</div>
+      <div class="time-chart">
+        <div class="time-bar-group">
+          <div class="time-bar normal" style="height:82px"></div>
+          <div class="time-label">06-08</div>
+          <div class="time-val">¥38,673</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar sub-peak" style="height:112px"></div>
+          <div class="time-label">09-11</div>
+          <div class="time-val">¥52,729</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar peak" style="height:130px"></div>
+          <div class="time-label">12-14</div>
+          <div class="time-val">¥61,173</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar normal" style="height:58px"></div>
+          <div class="time-label">15-17</div>
+          <div class="time-val">¥27,477</div>
+        </div>
+        <div class="time-bar-group">
+          <div class="time-bar normal" style="height:4px"></div>
+          <div class="time-label">18+</div>
+          <div class="time-val">¥0</div>
+        </div></div>
+      <div style="font-size:11px;color:var(--text-secondary);margin-top:8px;">
+        🔴 ピーク: 12-14時（34%）
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑥ WASTE/LOSS ANALYSIS -->
+<div class="section">
+  <div class="section-header">
+    <span class="sec-icon">🗑️</span>
+    <span class="sec-title">廃棄ロス分析</span>
+    <span class="sec-sub">分母 = 店舗前出売上 ¥1,042,305</span>
+  </div>
+  <div class="section-body">
+    <!-- Summary Cards -->
+    <div class="loss-summary-grid">
+      <div class="loss-card">
+        <div class="loss-card-label">値引調整額</div>
+        <div class="loss-card-val">¥24,135</div>
+        <div style="font-size:22px;font-weight:700;color:var(--brand-red);">2.3%</div>
+        <div class="loss-card-pct">前出売上比（ロス全体の65%）</div>
+      </div>
+      <div class="loss-card">
+        <div class="loss-card-label">廃棄額</div>
+        <div class="loss-card-val">¥11,269</div>
+        <div style="font-size:22px;font-weight:700;color:var(--brand-red);">1.1%</div>
+        <div class="loss-card-pct">前出売上比（ロス全体の30%）</div>
+      </div>
+      <div class="loss-card">
+        <div class="loss-card-label">従業員割引額</div>
+        <div class="loss-card-val">¥1,970</div>
+        <div style="font-size:22px;font-weight:700;color:var(--brand-red);">0.2%</div>
+        <div class="loss-card-pct">前出売上比（ロス全体の5%）</div>
+      </div>
+    </div>
+
+    <!-- Loss Rate Highlight Bar -->
+    <div style="background:linear-gradient(135deg,#FFEBEE,#FFF0EE);border:1px solid rgba(204,34,0,0.2);border-radius:10px;padding:12px 18px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div style="font-weight:700;font-size:13px;">週間ロス率（前出売上比）</div>
+      <div style="font-size:32px;font-weight:900;color:var(--brand-red);">3.6%</div>
+      <div style="font-size:12px;">目標 6.0%以下　<span style="color:var(--accent-green);">✓ 目標内</span></div>
+      <div style="margin-left:auto;">
+        <div style="height:10px;width:180px;background:#f0e8e4;border-radius:100px;overflow:hidden;">
+          <div style="height:100%;width:36%;background:linear-gradient(90deg,#CC2200,#FF4422);border-radius:100px;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text-dim);margin-top:2px;">
+          <span>0%</span><span>目標6%</span><span>10%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Waste TOP10 -->
+    <div style="font-weight:700;font-size:14px;margin-bottom:10px;">🔍 廃棄TOP10（廃棄区分のみ）</div>
+    <div style="display:grid;grid-template-columns:24px 1fr 56px 3fr 56px 56px 56px 64px;gap:6px;padding:4px 6px;margin-bottom:4px;font-size:10px;font-weight:700;color:var(--text-dim);letter-spacing:0.05em;">
+      <span></span><span>商品名</span><span style="text-align:right;">前出比</span><span></span>
+      <span style="color:var(--accent-blue);text-align:center;">平日</span>
+      <span style="color:var(--accent-orange);text-align:center;">週末</span>
+      <span style="text-align:center;">合計</span>
+      <span style="text-align:right;">廃棄額</span>
+    </div>
+    
+        <div class="loss-row-v2">
+          <span class="loss-rank">1</span>
+          <span class="loss-name-v2">魚天ぷら</span>
+          <span class="loss-pct-v2">0.13%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:100%"></div></div>
+          <span class="loss-qty wd">25個</span>
+          <span class="loss-qty we">0個</span>
+          <span class="loss-qty tot">25個</span>
+          <span class="loss-val-v2">¥1,392</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank">2</span>
+          <span class="loss-name-v2">イカ天ぷら</span>
+          <span class="loss-pct-v2">0.10%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:78%"></div></div>
+          <span class="loss-qty wd">20個</span>
+          <span class="loss-qty we">1個</span>
+          <span class="loss-qty tot">21個</span>
+          <span class="loss-val-v2">¥1,089</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank">3</span>
+          <span class="loss-name-v2">かぼちゃ天ぷら</span>
+          <span class="loss-pct-v2">0.07%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:51%"></div></div>
+          <span class="loss-qty wd">12個</span>
+          <span class="loss-qty we">4個</span>
+          <span class="loss-qty tot">16個</span>
+          <span class="loss-val-v2">¥708</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">4</span>
+          <span class="loss-name-v2">おにコロパック（梅）</span>
+          <span class="loss-pct-v2">0.05%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:40%"></div></div>
+          <span class="loss-qty wd">5個</span>
+          <span class="loss-qty we">0個</span>
+          <span class="loss-qty tot">5個</span>
+          <span class="loss-val-v2">¥562</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">5</span>
+          <span class="loss-name-v2">ミニ唐揚げ弁当</span>
+          <span class="loss-pct-v2">0.05%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:35%"></div></div>
+          <span class="loss-qty wd">0個</span>
+          <span class="loss-qty we">2個</span>
+          <span class="loss-qty tot">2個</span>
+          <span class="loss-val-v2">¥481</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">6</span>
+          <span class="loss-name-v2">ごはん(小)200g</span>
+          <span class="loss-pct-v2">0.04%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:31%"></div></div>
+          <span class="loss-qty wd">4個</span>
+          <span class="loss-qty we">2個</span>
+          <span class="loss-qty tot">6個</span>
+          <span class="loss-val-v2">¥433</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">7</span>
+          <span class="loss-name-v2">巻き寿司(三ツ切り)</span>
+          <span class="loss-pct-v2">0.04%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:31%"></div></div>
+          <span class="loss-qty wd">5個</span>
+          <span class="loss-qty we">0個</span>
+          <span class="loss-qty tot">5個</span>
+          <span class="loss-val-v2">¥426</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">8</span>
+          <span class="loss-name-v2">寿司助六パック大</span>
+          <span class="loss-pct-v2">0.04%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:31%"></div></div>
+          <span class="loss-qty wd">1個</span>
+          <span class="loss-qty we">0個</span>
+          <span class="loss-qty tot">1個</span>
+          <span class="loss-val-v2">¥426</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">9</span>
+          <span class="loss-name-v2">イモ天ぷら</span>
+          <span class="loss-pct-v2">0.03%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:26%"></div></div>
+          <span class="loss-qty wd">0個</span>
+          <span class="loss-qty we">7個</span>
+          <span class="loss-qty tot">7個</span>
+          <span class="loss-val-v2">¥359</span>
+        </div>
+        <div class="loss-row-v2">
+          <span class="loss-rank low">10</span>
+          <span class="loss-name-v2">チキン天ぷら</span>
+          <span class="loss-pct-v2">0.03%</span>
+          <div class="loss-bar-wrap"><div class="loss-bar" style="width:24%"></div></div>
+          <span class="loss-qty wd">4個</span>
+          <span class="loss-qty we">1個</span>
+          <span class="loss-qty tot">5個</span>
+          <span class="loss-val-v2">¥340</span>
+        </div>
+
+    <!-- Analysis Comment -->
+    <div class="loss-analysis-box" style="margin-top:16px;">
+      <div class="analysis-title">📝 廃棄傾向の分析・コメント</div>
+      <div class="analysis-item">廃棄TOP1は「魚天ぷら」で¥1,391。平日25個・週末0個と平日に集中。製造量の調整が有効。</div>
+      <div class="analysis-item">木曜日は廃棄額¥194と週間最少。需要予測の精度が高い日として参考に。</div>
+      <div class="analysis-item">【良かった点】土曜日は廃棄額¥0を達成。売り切りオペレーションが機能。</div>
+      <div class="analysis-item">【改善目標】来週のロス率目標を3.0%に設定。値引調整の早期タイミング見直しを推奨。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ HOT/COLD PRODUCT ANALYSIS -->
+<div class="section">
+  <div class="section-header">
+    <span class="sec-icon">🏆</span>
+    <span class="sec-title">売れ筋・死に筋 分析</span>
+    <span class="sec-sub">週間販売実績 TOP10</span>
+  </div>
+  <div class="section-body" style="padding-top:0;">
+    <div class="abc-tabs">
+      <button class="abc-tab active" onclick="switchAbc('hot',this)">🔥 売れ筋 TOP10</button>
+      <button class="abc-tab" onclick="switchAbc('cold',this)">🧊 死に筋 TOP10</button>
+    </div>
+    <div class="abc-col-header">
+      <span></span><span>商品名</span><span></span>
+      <span style="color:var(--accent-blue);">平日</span>
+      <span style="color:var(--accent-orange);">週末</span>
+      <span>合計</span>
+      <span style="text-align:right;">売上合計</span>
+    </div>
+    <div class="abc-panel active" id="panel-hot">
+      
+        <div class="abc-row">
+          <span class="abc-rank-hot">1</span>
+          <span class="abc-name">魚天ぷら</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">788個</span>
+          <span class="abc-amount hot">¥123,980</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">2</span>
+          <span class="abc-name">イカ天ぷら</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:86%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">679個</span>
+          <span class="abc-amount hot">¥98,925</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">3</span>
+          <span class="abc-name">沖縄そば(小)</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:56%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">441個</span>
+          <span class="abc-amount hot">¥70,520</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">4</span>
+          <span class="abc-name">レジ袋</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:54%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">425個</span>
+          <span class="abc-amount hot">¥2,115</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">5</span>
+          <span class="abc-name">野菜天ぷら</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:32%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">254個</span>
+          <span class="abc-amount hot">¥35,070</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">6</span>
+          <span class="abc-name">ゲソ天ぷら</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:25%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">195個</span>
+          <span class="abc-amount hot">¥32,780</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">7</span>
+          <span class="abc-name">イモ天ぷら</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:21%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">164個</span>
+          <span class="abc-amount hot">¥22,590</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">8</span>
+          <span class="abc-name">骨なしチキン</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:21%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">164個</span>
+          <span class="abc-amount hot">¥28,260</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">9</span>
+          <span class="abc-name">沖縄そば(中)</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:20%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">161個</span>
+          <span class="abc-amount hot">¥48,100</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-hot">10</span>
+          <span class="abc-name">かぼちゃ天ぷら</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-hot" style="width:19%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">152個</span>
+          <span class="abc-amount hot">¥20,790</span>
+        </div>
+    </div>
+    <div class="abc-panel" id="panel-cold">
+      
+        <div class="abc-row">
+          <span class="abc-rank-cold">1</span>
+          <span class="abc-name">ちゃわきオードブル(赤)</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥3,500</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">2</span>
+          <span class="abc-name">ウチャヌク</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥850</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">3</span>
+          <span class="abc-name">軟骨ソーキ 単品</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥230</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">4</span>
+          <span class="abc-name">おかず惣菜パック￥200</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥200</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">5</span>
+          <span class="abc-name">おかず惣菜パック￥300</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥300</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">6</span>
+          <span class="abc-name">ウチャヌク（店）</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥850</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">7</span>
+          <span class="abc-name">そばだし</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥70</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">8</span>
+          <span class="abc-name">全部乗せそば（中）</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥850</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">9</span>
+          <span class="abc-name">オリジナルタンブラー</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:100%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">1個</span>
+          <span class="abc-amount cold">¥1,000</span>
+        </div>
+        <div class="abc-row">
+          <span class="abc-rank-cold">10</span>
+          <span class="abc-name">寿司助六パック大</span>
+          <div class="abc-bar-wrap"><div class="abc-bar-cold" style="width:50%"></div></div>
+          <span class="abc-qty wd">—</span>
+          <span class="abc-qty we">—</span>
+          <span class="abc-qty tot">2個</span>
+          <span class="abc-amount cold">¥980</span>
+        </div>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:12px;font-size:11px;color:var(--text-dim);">
+      <span><span style="background:#E3EEF8;color:var(--accent-blue);padding:1px 6px;border-radius:3px;font-weight:700;">平日</span> 月〜金の販売個数</span>
+      <span><span style="background:#FFF0E0;color:var(--accent-orange);padding:1px 6px;border-radius:3px;font-weight:700;">週末</span> 土・日の販売個数</span>
+      <span><span style="background:#F5F5F0;padding:1px 6px;border-radius:3px;font-weight:700;">合計</span> 週間合計個数</span>
+    </div>
+    <div style="font-size:10px;color:var(--text-dim);margin-top:8px;">※ 売上実績商品別データに日付情報がないため、平日/週末の内訳は「—」表示です。</div>
+  </div>
+</div>
+
+<!-- ⑧ STAFF & LABOR -->
+<div class="section">
+  <div class="section-header">
+    <span class="sec-icon">👥</span>
+    <span class="sec-title">スタッフ・人件費</span>
+    <span class="sec-sub">週間実績</span>
+  </div>
+  <div class="section-body">
+    <div class="staff-grid">
+      
+    <div class="staff-card">
+      <div class="staff-name">宮城 禎彦</div>
+      <div class="staff-days">担当 7日 / 49.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">松村正巳</div>
+      <div class="staff-days">担当 6日 / 42.5h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">土居颯</div>
+      <div class="staff-days">担当 4日 / 16.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">禰覇愛美</div>
+      <div class="staff-days">担当 3日 / 15.2h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">前田セイラ</div>
+      <div class="staff-days">担当 3日 / 22.5h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">野原幸広</div>
+      <div class="staff-days">担当 2日 / 5.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">吉里梨惠子</div>
+      <div class="staff-days">担当 2日 / 10.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">バスネットビナヤク</div>
+      <div class="staff-days">担当 2日 / 11.2h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">名嘉眞綾乃</div>
+      <div class="staff-days">担当 2日 / 10.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">瀬長 美鈴</div>
+      <div class="staff-days">担当 1日 / 8.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">森山操</div>
+      <div class="staff-days">担当 1日 / 9.0h</div>
+    </div>
+    <div class="staff-card">
+      <div class="staff-name">菱沼沙綾</div>
+      <div class="staff-days">担当 1日 / 4.0h</div>
+    </div>
+    </div>
+    <div class="labor-grid">
+      <div class="labor-item"><div class="labor-label">週間人件費</div><div class="labor-val">¥220,247</div></div>
+      <div class="labor-item"><div class="labor-label">人件費率</div><div class="labor-val">19.1%</div></div>
+      <div class="labor-item"><div class="labor-label">残業実績</div><div class="labor-val" style="color:#CC2200">あり (24.0h)</div></div>
+      <div class="labor-item"><div class="labor-label">総労働時間（CSV）</div><div class="labor-val">202.5h</div></div>
+      <div class="labor-item"><div class="labor-label">平均時給</div><div class="labor-val">¥1,087</div></div>
+      <div class="labor-item"><div class="labor-label">目標人件費率</div><div class="labor-val" style="color:#1A8A50">25.0% ✓</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑨ IMPROVEMENT PROPOSALS -->
+<div class="section">
+  <div class="improvement-header">
+    <div class="imp-title">🏪 店長への改善提案</div>
+    <div class="imp-sub">今週のデータが導く、明日の行動</div>
+  </div>
+  <div style="background:var(--bg-section);border:1px solid var(--border);border-radius:0 0 14px 14px;padding:20px;">
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards('all',this)">すべて表示</button>
+      <button class="filter-btn" onclick="filterCards('today',this)">★☆☆ 今日できる</button>
+      <button class="filter-btn" onclick="filterCards('week',this)">★★☆ 今週中</button>
+      <button class="filter-btn" onclick="filterCards('month',this)">★★★ 来月から</button>
+    </div>
+
+    <div class="priority-action-card" data-priority="week">
+      <div class="priority-badge">🔥 今週最も優先すべきアクション</div>
+      <div class="priority-title">値引調整の最適化でロス率3.6% → 3.0%へ</div>
+      <div class="action-steps">
+        <div class="action-step" id="step0">
+          <div class="step-num">①</div>
+          <div style="flex:1"><strong>今日・松村さん</strong>が確認：値引タイミングを15時→14時に前倒しし、閉店前廃棄を削減</div>
+          <div class="step-check" id="check0" onclick="toggleCheck(0)"></div>
+        </div>
+        <div class="action-step" id="step1">
+          <div class="step-num">②</div>
+          <div style="flex:1"><strong>水曜日まで</strong>：廃棄TOP商品（魚天ぷら等）の平日製造量を10%削減テスト</div>
+          <div class="step-check" id="check1" onclick="toggleCheck(1)"></div>
+        </div>
+        <div class="action-step" id="step2">
+          <div class="step-num">③</div>
+          <div style="flex:1"><strong>金曜日</strong>：1週間の結果を確認し、製造量の微調整を実施</div>
+          <div class="step-check" id="check2" onclick="toggleCheck(2)"></div>
+        </div>
+      </div>
+      <div id="completeMsg" class="complete-msg">今週の改善完了！お疲れ様でした 🎉</div>
+      <div class="kpi-highlight-row">
+        <div class="kpi-hl-item"><div class="kpi-hl-val">3.6%</div><div class="kpi-hl-label">現在のロス率</div></div>
+        <div class="kpi-hl-item"><div class="kpi-hl-val">→ 3.0%</div><div class="kpi-hl-label">目標</div></div>
+        <div class="kpi-hl-item"><div class="kpi-hl-val">¥6,105</div><div class="kpi-hl-label">週間改善見込み額</div></div>
+      </div>
+    </div>
+
+    <div class="imp-cards-grid">
+      <!-- 今週の勝ちポイント -->
+      <div class="imp-card" data-priority="today">
+        <div class="imp-card-header"><span class="imp-icon">📈</span><span class="imp-card-title">今週の勝ちポイント</span></div>
+        <div class="data-badge">予算達成率 <span class="hl">131.7%</span></div>
+        <ul class="imp-list">
+          <li>週間合計売上¥1,152,289で予算¥875,000を¥277,289上回る好成績</li>
+          <li>金曜日は注文6件と受注が活発。日曜は客単価¥1,002で最高値</li>
+          <li>土曜日の廃棄ゼロ達成は今後の基準モデルに</li>
+        </ul>
+        <div class="difficulty-badge diff-1">★☆☆ 今日できる（現状維持）</div>
+      </div>
+
+      <!-- ロス削減チャレンジ -->
+      <div class="imp-card" data-priority="week">
+        <div class="imp-card-header"><span class="imp-icon">🗑️</span><span class="imp-card-title">ロス削減チャレンジ</span></div>
+        <div class="data-badge">週間ロス率 <span class="hl">3.6%</span>（目標6.0%）</div>
+        <ul class="imp-list">
+          <li>値引調整が全ロスの65%を占める。タイミングの前倒しで改善余地大</li>
+          <li>火曜日のロス率5.5%が最大。人員配置との連動を検討</li>
+          <li>土曜の廃棄ゼロモデルを平日にも展開</li>
+        </ul>
+        <div class="mini-sparkline">
+          <div class="spark-bar" style="height:41%"></div><div class="spark-bar" style="height:100%"></div><div class="spark-bar" style="height:88%"></div><div class="spark-bar" style="height:58%"></div><div class="spark-bar" style="height:24%"></div><div class="spark-bar" style="height:76%"></div><div class="spark-bar" style="height:35%"></div>
+        </div>
+        <div class="difficulty-badge diff-2">★★☆ 今週中</div>
+      </div>
+
+      <!-- 人件費最適化 -->
+      <div class="imp-card" data-priority="today">
+        <div class="imp-card-header"><span class="imp-icon">👥</span><span class="imp-card-title">人件費最適化ヒント</span></div>
+        <div class="data-badge">人件費率 <span class="hl">19.1%</span>・残業 <span class="hl">あり ⚠️</span></div>
+        <ul class="imp-list">
+          <li>松村さんの残業24.0hが発生。シフト調整で残業削減を検討</li>
+          <li>火曜日の人件費率33.3%が突出。売上¥105,144に対して人件費¥35,028</li>
+          <li>人時生産高の平日平均¥5,058を¥5,000以上に安定させる</li>
+        </ul>
+        <div class="mini-gauge">
+          <div class="gauge-track"><div class="gauge-fill" style="width:64%"></div></div>
+          <div class="gauge-labels"><span>0%</span><span>目標25% ✓</span><span>30%</span></div>
+        </div>
+        <div class="difficulty-badge diff-1">★☆☆ 今日できる</div>
+      </div>
+
+      <!-- 週末強化策 -->
+      <div class="imp-card" data-priority="month">
+        <div class="imp-card-header"><span class="imp-icon">🌟</span><span class="imp-card-title">週末強化策</span></div>
+        <div class="data-badge">週末注文売上 <span class="hl">¥14,912/日</span></div>
+        <ul class="imp-list">
+          <li>日曜の高客単価（¥1,002）を活かしたセット商品の拡充を検討</li>
+          <li>金曜の注文6件の成功パターン（法事・イベント需要）を土日にも展開</li>
+          <li>週末12-14時のピーク対応を強化し、機会損失を最小化</li>
+        </ul>
+        <div class="mini-sparkline">
+          <div class="spark-bar yellow" style="height:100%"></div>
+          <div class="spark-bar yellow" style="height:76%"></div>
+        </div>
+        <div class="difficulty-badge diff-3">★★★ 来月から</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>上間沖縄天ぷら 美里店｜週次パフォーマンスレポート｜2026年03月15日〜21日</div>
+  <div style="margin-top:4px;">Generated by 上間レポートシステム</div>
+</div>
+
+<script>
+const SALES_ACHIEVEMENT = 131.7;
+const LOSS_RATE = 3.6;
+const LABOR_RATE = 19.1;
+const HAS_OVERTIME = true;
+
+function calcSalesScore(pct){if(pct>=100)return 40;if(pct>=98)return 34;if(pct>=95)return 26;if(pct>=92)return 18;if(pct>=90)return 10;return 0}
+function calcLossScore(rate){if(rate<=3)return 30;if(rate<=4)return 24;if(rate<=5)return 18;if(rate<=6)return 12;if(rate<=7)return 6;return 0}
+function calcLaborScore(rate,ot){const m=ot?24:30;if(rate<=25)return m;if(rate<=26)return Math.round(m*0.6);if(rate<=27)return Math.round(m*0.4);if(rate<=28)return Math.round(m*0.2);return 0}
+function gradeLabel(s){if(s>=95)return{grade:'S',label:'今週は完璧な運営でした！'};if(s>=80)return{grade:'A',label:'優秀な週です'};if(s>=65)return{grade:'B',label:'標準的な週です'};if(s>=50)return{grade:'C',label:'改善の余地があります'};return{grade:'D',label:'要注意週です'}}
+
+const ptsSales=calcSalesScore(SALES_ACHIEVEMENT);
+const ptsLoss=calcLossScore(LOSS_RATE);
+const ptsLabor=calcLaborScore(LABOR_RATE,HAS_OVERTIME);
+const total=ptsSales+ptsLoss+ptsLabor;
+const{grade,label}=gradeLabel(total);
+
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    const arc=document.getElementById('scoreArc');
+    const circ=326.7;
+    arc.style.transition='stroke-dashoffset 1.8s ease-out';
+    arc.style.strokeDashoffset=circ*(1-total/100);
+    const numEl=document.getElementById('scoreTotalNum');
+    const dur=1600,start=performance.now();
+    (function tick(now){const p=Math.min((now-start)/dur,1);const e=1-Math.pow(1-p,4);numEl.textContent=Math.round(total*e);if(p<1)requestAnimationFrame(tick)})(performance.now());
+    document.getElementById('scoreGrade').textContent=grade;
+    document.getElementById('scoreGradeLabel').textContent=label;
+    setTimeout(()=>{
+      document.getElementById('barSales').style.width=(ptsSales/40*100)+'%';
+      document.getElementById('barLoss').style.width=(ptsLoss/30*100)+'%';
+      document.getElementById('barLabor').style.width=(ptsLabor/30*100)+'%';
+      document.getElementById('ptsSales').textContent=ptsSales;
+      document.getElementById('ptsLoss').textContent=ptsLoss;
+      document.getElementById('ptsLabor').textContent=ptsLabor;
+    },200);
+  },300);
+});
+
+function animateCount(el){const target=parseFloat(el.dataset.count);const suffix=el.dataset.suffix||'';const isFloat=!Number.isInteger(target);const dur=1500,start=performance.now();(function tick(now){const p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,4);const cur=target*e;el.textContent=el.dataset.format==='currency'?'¥'+Math.floor(cur).toLocaleString():(isFloat?cur.toFixed(1):Math.floor(cur).toLocaleString())+suffix;if(p<1)requestAnimationFrame(tick)})(performance.now())}
+
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.animationPlayState='running';e.target.querySelectorAll('[data-count]').forEach(animateCount);io.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.section,.kpi-card').forEach(el=>{el.style.animationPlayState='paused';io.observe(el)});
+document.querySelectorAll('.kpi-card').forEach((c,i)=>{c.style.animationDelay=(i*0.1)+'s';c.style.animationPlayState='running';const ce=c.querySelector('[data-count]');if(ce)setTimeout(()=>animateCount(ce),i*100+400)});
+
+const cs=JSON.parse(localStorage.getItem('wr_checks_misato_v1')||'{}');
+[0,1,2].forEach(i=>{if(cs[i]){document.getElementById('check'+i).classList.add('checked');document.getElementById('step'+i).classList.add('checked')}});
+function toggleCheck(i){const c=document.getElementById('check'+i);const s=document.getElementById('step'+i);const on=c.classList.toggle('checked');s.classList.toggle('checked',on);cs[i]=on;localStorage.setItem('wr_checks_misato_v1',JSON.stringify(cs));document.getElementById('completeMsg').style.display=[0,1,2].every(j=>cs[j])?'block':'none'}
+function filterCards(priority,btn){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.imp-card,.priority-action-card').forEach(card=>{const m=priority==='all'||card.dataset.priority===priority;card.style.opacity=m?'1':'0.25';card.style.pointerEvents=m?'auto':'none'})}
+function switchAbc(type,btn){document.querySelectorAll('.abc-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.abc-panel').forEach(p=>p.classList.remove('active'));document.getElementById('panel-'+type).classList.add('active')}
+</script>
+</body>
+</html>
